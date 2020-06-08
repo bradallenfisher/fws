@@ -128,14 +128,6 @@ a {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-a:focus {
-  outline-style: solid;
-  outline-width: 5px;
-  outline-color: yellow; }
-
-a:focus img {
-  border: 5px solid yellow; }
-
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
@@ -1219,40 +1211,30 @@ a .social-network-tag-line {
 .navbar {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background: #062F87;
+  background: white;
   overflow: hidden;
   top: 0;
   width: 100%;
-  z-index: 9999;
-  -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
-  border-bottom: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 0.3s, -webkit-transform .3s;
-  transition: background-color 0.3s, -webkit-transform .3s;
-  -o-transition: background-color 0.3s, transform .3s;
-  transition: background-color 0.3s, transform .3s;
-  transition: background-color 0.3s, transform .3s, -webkit-transform .3s; }
+  z-index: 9999; }
   @media (min-width: 990px) {
     .navbar ul {
       height: 68px;
-      float: right; } }
+      float: left; } }
   @media (min-width: 990px) {
     .navbar ul li {
       display: inline-block; } }
   .navbar li {
-    text-align: right; }
+    text-align: center; }
     .navbar li:last-child a {
       border-bottom: 0px !important; }
     .navbar li a, .navbar li a.is-active {
-      color: #fff;
+      color: #062F87;
       display: block;
       font-weight: 700;
       letter-spacing: 1px;
       font-size: 11px;
       text-transform: uppercase;
       line-height: 2;
-      border-bottom: 1px solid #222;
       padding: 20px; }
       @media (min-width: 990px) {
         .navbar li a, .navbar li a.is-active {
@@ -1277,15 +1259,17 @@ a .social-network-tag-line {
 #navbar {
   text-align: right;
   display: none;
-  background: #062F87;
+  background: white;
   clear: both;
   overflow: hidden; }
   @media (min-width: 990px) {
     #navbar {
       display: block !important;
-      background: none;
       clear: none;
-      height: 68px; } }
+      height: 68px;
+      margin-left: 200px;
+      margin-top: 10px;
+      float: left; } }
 
 #navbar.open {
   display: block; }
@@ -1295,8 +1279,7 @@ a .social-network-tag-line {
 
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 0;
+  padding: 10px 20px;
   font-size: 18px;
   line-height: 20px; }
   .navbar-brand img {
@@ -1304,10 +1287,6 @@ a .social-network-tag-line {
     height: auto;
     display: block;
     vertical-align: middle; }
-    @media (min-width: 990px) {
-      .navbar-brand img {
-        position: absolute;
-        padding-left: 36px; } }
 
 /* Icon 1 */
 #nav-icon {
@@ -1367,6 +1346,25 @@ a .social-network-tag-line {
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg); }
+
+.phone {
+  color: #e05050;
+  font-weight: 100; }
+  .phone a {
+    display: block;
+    color: #e05050;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    background: #f1f1f1;
+    padding: 10px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1; }
+    @media (min-width: 990px) {
+      .phone a {
+        text-align: left;
+        font-weight: normal;
+        font-size: 16px; } }
 
 /*////////////////////////////////////////
 // Typography

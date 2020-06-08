@@ -13,17 +13,12 @@ body.toolbar-fixed,body.toolbar-vertical {
   top: 0;
   width: 100%;
   z-index: 9999;
-  box-shadow: 0 0 50px 0 rgba(0,0,0,0.3);
-  border-bottom: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background-color 0.3s, transform .3s;
-
 
   ul {
 
     @include breakpoint(990px, true) {
       height: 68px;
-      float: right;
+      float: left;
     }
 
     li {
@@ -34,7 +29,7 @@ body.toolbar-fixed,body.toolbar-vertical {
   }
 
   li {
-    text-align: right;
+    text-align: center;
 
     &:last-child {
       a {
@@ -50,7 +45,6 @@ body.toolbar-fixed,body.toolbar-vertical {
       font-size: 11px;
       text-transform: uppercase;
       line-height: 2;
-      border-bottom: 1px solid #222;
       padding: 20px;
 
       @include breakpoint(990px, true) {
@@ -80,15 +74,17 @@ body.toolbar-fixed,body.toolbar-vertical {
 #navbar {
   text-align: right;
   display: none;
-  background: $primary_1;
+  background: white;
   clear: both;
   overflow: hidden;
 
   @include breakpoint(990px, true) {
     display: block !important;
-    background: none;
     clear: none;
     height: 68px;
+    margin-left: 200px;
+    margin-top: 10px;
+    float: left;
   }
 }
 #navbar.open {
@@ -100,8 +96,7 @@ body.toolbar-fixed,body.toolbar-vertical {
 
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 0;
+  padding: 10px 20px;
   font-size: 18px;
   line-height: 20px;
 
@@ -110,9 +105,5 @@ body.toolbar-fixed,body.toolbar-vertical {
     height: auto;
     display: block;
     vertical-align: middle;
-    @include breakpoint(990px, true) {
-      position: absolute;
-      padding-left: 36px;
-    }
   }
 }

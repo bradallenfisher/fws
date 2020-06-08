@@ -150,13 +150,10 @@ a {
  */
 
 a:focus {
-  outline-style: solid;
-  outline-width: 5px;
-  outline-color: yellow;
+
 
 }
 
-a:focus img {border: 5px solid yellow; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
