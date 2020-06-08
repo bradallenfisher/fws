@@ -1,0 +1,118 @@
+body.toolbar-fixed,body.toolbar-vertical {
+  .navbar {
+    //top:79px;
+  }
+}
+
+
+.navbar {
+  @include reg_font();
+  background: white;
+  overflow: hidden;
+  //position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 0 50px 0 rgba(0,0,0,0.3);
+  border-bottom: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s, transform .3s;
+
+
+  ul {
+
+    @include breakpoint(990px, true) {
+      height: 68px;
+      float: right;
+    }
+
+    li {
+      @include breakpoint(990px, true) {
+        display: inline-block;
+      }
+    }
+  }
+
+  li {
+    text-align: right;
+
+    &:last-child {
+      a {
+        border-bottom: 0px!important;
+      }
+    }
+
+    a, a.is-active {
+      color: $primary_1;
+      display: block;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 11px;
+      text-transform: uppercase;
+      line-height: 2;
+      border-bottom: 1px solid #222;
+      padding: 20px;
+
+      @include breakpoint(990px, true) {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.search-icon a {
+  font-size: 1.5rem;
+  color: #bbb;
+  border-bottom: 1px solid #222;
+  padding: 20px;
+  display: block;
+
+  @include breakpoint(990px, true) {
+    float: right;
+    border-bottom: none;
+    padding: 25px 31px 16px 21px;
+    display: block;
+    border-bottom: none;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 0;
+  }
+}
+#navbar {
+  text-align: right;
+  display: none;
+  background: $primary_1;
+  clear: both;
+  overflow: hidden;
+
+  @include breakpoint(990px, true) {
+    display: block !important;
+    background: none;
+    clear: none;
+    height: 68px;
+  }
+}
+#navbar.open {
+  display: block;
+  @include breakpoint(990px, true) {
+    display: none !important;
+  }
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+
+  img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    @include breakpoint(990px, true) {
+      position: absolute;
+      padding-left: 36px;
+    }
+  }
+}

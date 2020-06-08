@@ -1,0 +1,20 @@
+//Colors
+$primary_1: #062F87;
+$primary_2: #009ADE;
+$primary_3: #94BFE6;
+$primary_4: #A2A9AD;
+$primary_5: #2A5673;
+$primary_6: #57B6B2;
+
+//Fonts
+@mixin reg_font {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@mixin container {
+  box-sizing: border-box;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}

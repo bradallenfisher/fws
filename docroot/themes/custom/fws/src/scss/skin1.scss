@@ -1,0 +1,10 @@
+// Set a variable containing current brand
+$skin: 'skin1';
+// Import all components
+
+@import "node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "_base/**/*.scss";
+@import "_paragraphs/**/*";
+@import "_themed/**/*";
+@import "_views/**/*";
+@import "_wysiwyg/**/*";

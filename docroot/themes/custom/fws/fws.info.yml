@@ -1,0 +1,15 @@
+name: fws
+type: theme
+description: 'FWS theme'
+package: FWS
+core: 8.x
+libraries:
+  - fws/global-styling
+  - fws/global-scripts
+  - fws/roboto-slab
+  - fws/roboto
+  - fws/slick-css
+  - fws/slick-css-theme
+  - fws/slick-js
+
+base theme: classy

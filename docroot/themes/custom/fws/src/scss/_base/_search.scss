@@ -1,0 +1,46 @@
+.container-inline label {
+  display: none;
+}
+.path-search {
+  .item-list {
+    text-align: center;
+  }
+  .region-content {
+    padding: 20px;
+  }
+  p {
+    width: 80%;
+    font-size: 1.3em;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .form-item, .form-actions {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+  #search-form {
+
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+
+
+    .form-search {
+      width: 70%;
+      float: left;
+      margin-right: 5px;
+    }
+    input#edit-submit {
+      float: left;
+      width: 25%;
+      background-color: #009CDE;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.slick-play-pause {
+  position: relative;
+  button.play, button.pause {
+    background-color: transparent;
+    opacity: 0; //opacity is being used instead of display none for keyboard navigation (accessibility)
+    z-index: 999999;
+    border: none;
+    position: absolute;
+    z-index: 999999;
+    right: 0;
+    top: 15px;
+
+    &:focus { //this is here because IE doesn't support focus-within
+      outline: solid #ffe000 thin;
+      opacity: 1;
+    }
+
+    i.fad { // style the two tone font-awesome icon states
+      font-size: 2.4em;
+      color: $primary_1;
+
+       &::after {
+        opacity: .7;
+        opacity: var(--fa-secondary-opacity,.7);
+      }
+
+      &::before {
+        opacity: .1;
+        opacity: var(--fa-primary-opacity,.1);
+      }
+
+      &:hover, &:focus {
+        &::after {
+          opacity: .9;
+          opacity: var(--fa-secondary-opacity,.9);
+        }
+      }
+    }
+  }
+
+  button.play{ //hide on load let js toggle this
+    display: none; //deliberate use of display none in this instace so only play or pause are present for screen reader and keyboard only users.
+  }
+}
+
+.field--name-field-hero-slider {
+  &:hover, &:focus-within {
+    .slick-arrow {
+      opacity: 1;
+      z-index: 999999;
+    }
+  }
+
+  &:hover, &:focus-within {
+    .slick-play-pause {
+      button.play, button.pause {
+      opacity: 1;
+      z-index: 999999;
+      }
+    }
+  }
+}
+
+.hero-slider {
+  //arrows
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0px;
+  }
+
+  .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: $primary_1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-next, .slick-prev {
+    z-index: 9999999;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: inherit;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    cursor: pointer;
+    color: black;
+    border: none;
+    outline: 0;
+    background: 0 0;
+    bottom: -80px;
+
+    @include breakpoint(900px, true) {
+      top: 50%;
+      bottom: inherit;
+    }
+  }
+
+  .slick-arrow {
+    opacity: 0;
+    z-index: 999999;
+
+    &:focus {
+      outline: solid #ffe000 thin;
+      opacity: 1;
+    }
+  }
+}

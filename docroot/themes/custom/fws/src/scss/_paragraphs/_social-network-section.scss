@@ -1,0 +1,49 @@
+.social-icon {
+  @include breakpoint(500px, true){
+    display: inline-block;
+    padding: 10px 26px;
+    width: 30%;
+  }
+  @include breakpoint(700px, true){
+    width: inherit;
+  }
+
+  a {
+    display: block;
+  }
+  i {
+    padding: 20px;
+    min-width: 50px;
+    border-radius: 3.5rem;
+    opacity: .4;
+    transition: opacity .3s, background-color .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+  p {
+    margin:0;
+  }
+  h2 {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+
+}
+.social-network-section {
+  .social-background-image {
+    background-size: cover;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400px;
+  }
+}
+
+
+a .social-network-tag-line  {
+  color: #bbb;
+}
