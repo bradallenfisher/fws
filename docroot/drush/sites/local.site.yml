@@ -1,0 +1,4 @@
+# Application 'psufandbsites', environment 'test'.
+seosc:
+  root: /var/www/html/fws/docroot
+  uri: seostatecollege.fws.test

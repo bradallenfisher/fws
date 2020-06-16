@@ -1,0 +1,9 @@
+# this file holds all of the prod aliases
+# Application 'psufandbsites', environment 'prod'.
+seosc:
+  root: /var/www/html/fws/docroot
+  uri: seostatecollege.com
+  host: 172.104.215.47
+  user: fws
+  paths:
+    drush-script: drush9
