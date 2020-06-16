@@ -4,7 +4,8 @@ $skin: 'skin1';
 
 @import "node_modules/breakpoint-sass/stylesheets/breakpoint";
 @import "_base/**/*.scss";
-@import "_paragraphs/**/*";
-@import "_themed/**/*";
-@import "_views/**/*";
-@import "_wysiwyg/**/*";
+@import "_content/**/*.scss";
+@import "_globals/**/*.scss";
+@import "_paragraphs/**/*.scss";
+@import "_views/**/*.scss";
+@import "_wysiwyg/**/*.scss";

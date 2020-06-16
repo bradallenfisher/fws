@@ -1,0 +1,4 @@
+.paragraph--type--text-box {
+  @include container();
+  padding:10px 30px;
+}

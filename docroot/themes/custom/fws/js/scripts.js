@@ -21,14 +21,14 @@
     });
 
     //Slick Carousel
-    $('.hero-slider').slick({
-      dots: true,
-      focusOnSelect: true,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      arrows: true,
-      adaptiveHeight: true
-    });
+    //$('.hero-slider').slick({
+    //  dots: true,
+     // focusOnSelect: true,
+     // autoplay: true,
+     // autoplaySpeed: 5000,
+     // arrows: true,
+     // adaptiveHeight: true
+    //});
 
     //Slick Carousel pause/play functions
     $('.pause').on('click', function() {

@@ -1,5 +1,6 @@
 var gulp          = require('gulp'),
-    autoprefixer  = require('gulp-autoprefixer'),
+    autoprefixer  = require('autoprefixer')
+    postcss       = require('gulp-postcss');
     sourcemaps    = require('gulp-sourcemaps'),
     uglify        = require('gulp-uglify'),
     sass          = require('gulp-sass'),
@@ -31,10 +32,7 @@ gulp.task('sass', function() {
   return gulp.src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass())
-    .pipe(autoprefixer({
-            browsers: ['last 4 versions', '> 5%'],
-            cascade: false
-        }))
+    .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest(output.css));
 });
 
