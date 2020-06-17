@@ -5,5 +5,3 @@ seosc:
   uri: seostatecollege.com
   host: 172.104.215.47
   user: fws
-  paths:
-    drush-script: drush9
