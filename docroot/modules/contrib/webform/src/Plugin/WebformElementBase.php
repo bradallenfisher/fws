@@ -270,6 +270,7 @@ class WebformElementBase extends PluginBase implements WebformElementInterface, 
       'multiple__add_more_button_label' => (string) $this->t('Add'),
       'multiple__add_more_input' => TRUE,
       'multiple__add_more_input_label' => (string) $this->t('more items'),
+      'multiple__item_label' => (string) $this->t('item'),
       'multiple__no_items_message' => (string) $this->t('No items entered. Please add items below.'),
       'multiple__sorting' => TRUE,
       'multiple__operations' => TRUE,
@@ -2862,6 +2863,11 @@ class WebformElementBase extends PluginBase implements WebformElementInterface, 
       '#title' => $this->t('Table header label'),
       '#description' => $this->t('This is used as the table header for this webform element when displaying multiple values.'),
     ];
+    $form['multiple']['multiple__item_label'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Item label'),
+      '#description' => $this->t('This is used by the add/remove (+/-) icons.'),
+    ];
     $form['multiple']['multiple__no_items_message'] = [
       '#type' => 'webform_html_editor',
       '#title' => $this->t('No items message'),
@@ -3030,6 +3036,20 @@ class WebformElementBase extends PluginBase implements WebformElementInterface, 
       '#class__description' => $this->t("Apply classes to the details' summary around both the field and its label."),
       '#style__description' => $this->t("Apply custom styles to the details' summary."),
       '#attributes__description' => $this->t("Enter additional attributes to be added to the details' summary."),
+    ];
+
+    /* Title attributes */
+
+    $form['title_attributes'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Title attributes'),
+    ];
+    $form['title_attributes']['title_attributes'] = [
+      '#type' => 'webform_element_attributes',
+      '#title' => $this->t('Title'),
+      '#class__description' => $this->t("Apply classes to the title tag."),
+      '#style__description' => $this->t("Apply custom styles to the  title tag."),
+      '#attributes__description' => $this->t("Enter additional attributes to be added to the title tag."),
     ];
 
     /* Submission display */
@@ -3407,6 +3427,7 @@ class WebformElementBase extends PluginBase implements WebformElementInterface, 
           'element_attributes',
           'label_attributes',
           'summary_attributes',
+          'title_attributes',
           'display',
           'admin',
           'options_properties',

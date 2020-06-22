@@ -635,7 +635,7 @@ class WebformSubmissionForm extends ContentEntityForm {
     // The data parameter is append to the URL after the form has
     // been submitted.
     //
-    // @see js/webform.form.wizard.js
+    // @see js/webform.wizard.track.js
     $track = $this->getWebform()->getSetting('wizard_track');
     if ($track && $this->getRequest()->isMethod('POST')) {
       $current_page = $this->getCurrentPage($form, $form_state);
@@ -749,7 +749,7 @@ class WebformSubmissionForm extends ContentEntityForm {
 
     // Add wizard progress tracker and page links to the webform.
     $pages = $webform->getPages($this->operation);
-    if ($pages) {
+    if ($pages && $operation !== 'edit_all') {
       $current_page = $this->getCurrentPage($form, $form_state);
 
       // Add hidden pages submit actions.
@@ -771,7 +771,7 @@ class WebformSubmissionForm extends ContentEntityForm {
 
     // Required indicator.
     $current_page = $this->getCurrentPage($form, $form_state);
-    if ($current_page != 'webform_preview' && $this->getWebformSetting('form_required') && $webform->hasRequired()) {
+    if ($current_page != WebformInterface::PAGE_PREVIEW && $this->getWebformSetting('form_required') && $webform->hasRequired()) {
       $form['required'] = [
         '#theme' => 'webform_required',
         '#label' => $this->getWebformSetting('form_required_label'),
@@ -779,7 +779,10 @@ class WebformSubmissionForm extends ContentEntityForm {
     }
 
     // Append elements to the webform.
-    $form['elements'] = $elements;
+    $form['elements'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => ['webform-elements']],
+    ] + $elements;
 
     // Pages: Set current wizard or preview page.
     $this->displayCurrentPage($form, $form_state);
@@ -841,7 +844,7 @@ class WebformSubmissionForm extends ContentEntityForm {
     }
 
     // Display inline confirmation message with back to link.
-    if ($form_state->get('current_page') === 'webform_confirmation') {
+    if ($form_state->get('current_page') === WebformInterface::PAGE_CONFIRMATION) {
       $form['confirmation'] = [
         '#theme' => 'webform_confirmation',
         '#webform' => $webform,
@@ -851,7 +854,16 @@ class WebformSubmissionForm extends ContentEntityForm {
       // Add hidden back (aka reset) button used by the Ajaxified back to link.
       // NOTE: Below code could be used to add a 'Reset' button to any webform.
       // @see Drupal.behaviors.webformConfirmationBackAjax
-      $form['actions'] = ['#type' => 'actions'];
+      $form['actions'] = [
+        '#type' => 'actions',
+        '#attributes' => ['style' => 'display:none'],
+        // Do not process the actions element. This prevents the
+        // .form-actions class from being added, which then makes the button
+        // appear in dialogs.
+        // @see \Drupal\Core\Render\Element\Actions::processActions
+        // @see Drupal.behaviors.dialog.prepareDialogButtons
+        '#process' => [],
+      ];
       $form['actions']['reset'] = [
         '#type' => 'submit',
         '#value' => $this->t('Reset'),
@@ -1198,7 +1210,7 @@ class WebformSubmissionForm extends ContentEntityForm {
     }
 
     $current_page_name = $this->getCurrentPage($form, $form_state);
-    if (!$this->getWebformSetting('wizard_progress_link') && !($this->getWebformSetting('wizard_preview_link') && $current_page_name === 'webform_preview')) {
+    if (!$this->getWebformSetting('wizard_progress_link') && !($this->getWebformSetting('wizard_preview_link') && $current_page_name === WebformInterface::PAGE_PREVIEW)) {
       return NULL;
     }
 
@@ -1253,7 +1265,7 @@ class WebformSubmissionForm extends ContentEntityForm {
           'data-webform-page' => $page_name,
           'formnovalidate' => 'formnovalidate',
           'class' => ['webform-wizard-pages-link', 'js-webform-wizard-pages-link'],
-          'title' => $this->t("Edit '@label' (Page @start of @end)", $t_args),
+          'title' => $this->t("Edit '@label' (@start of @end)", $t_args),
         ],
         '#access' => $access,
       ];
@@ -1336,15 +1348,15 @@ class WebformSubmissionForm extends ContentEntityForm {
         case 'name':
           $track_previous_page = $previous_page;
           $track_next_page = $next_page;
-          $track_last_page = 'webform_confirmation';
+          $track_last_page = WebformInterface::PAGE_CONFIRMATION;
           break;
       }
 
       $is_first_page = ($current_page == $this->getFirstPage($pages)) ? TRUE : FALSE;
-      $is_last_page = (in_array($current_page, ['webform_preview', 'webform_confirmation', $this->getLastPage($pages)])) ? TRUE : FALSE;
-      $is_preview_page = ($current_page == 'webform_preview');
-      $is_next_page_preview = ($next_page == 'webform_preview') ? TRUE : FALSE;
-      $is_next_page_complete = ($next_page == 'webform_confirmation') ? TRUE : FALSE;
+      $is_last_page = (in_array($current_page, [WebformInterface::PAGE_PREVIEW, WebformInterface::PAGE_CONFIRMATION, $this->getLastPage($pages)])) ? TRUE : FALSE;
+      $is_preview_page = ($current_page == WebformInterface::PAGE_PREVIEW);
+      $is_next_page_preview = ($next_page == WebformInterface::PAGE_PREVIEW) ? TRUE : FALSE;
+      $is_next_page_complete = ($next_page == WebformInterface::PAGE_CONFIRMATION) ? TRUE : FALSE;
       $is_next_page_optional_preview = ($is_next_page_preview && $preview_mode != DRUPAL_REQUIRED);
 
       // Only show that save button if this is the last page of the wizard or
@@ -1530,13 +1542,13 @@ class WebformSubmissionForm extends ContentEntityForm {
     // submit this form.
     // @see \Drupal\webform\WebformSubmissionForm::wizardSubmit
     if (empty($next_page)) {
-      $next_page = 'webform_confirmation';
+      $next_page = WebformInterface::PAGE_CONFIRMATION;
     }
 
     // Skip preview page and move to the confirmation page.
     // @see
-    if ($skip_preview && $next_page === 'webform_preview') {
-      $next_page = 'webform_confirmation';
+    if ($skip_preview && $next_page === WebformInterface::PAGE_PREVIEW) {
+      $next_page = WebformInterface::PAGE_CONFIRMATION;
     }
 
     // Set next page.
@@ -1579,7 +1591,7 @@ class WebformSubmissionForm extends ContentEntityForm {
   protected function wizardSubmit(array &$form, FormStateInterface $form_state) {
     $current_page = $form_state->get('current_page');
 
-    if ($current_page === 'webform_confirmation') {
+    if ($current_page === WebformInterface::PAGE_CONFIRMATION) {
       $this->complete($form, $form_state);
       $this->submitForm($form, $form_state);
       $this->save($form, $form_state);
@@ -1615,7 +1627,7 @@ class WebformSubmissionForm extends ContentEntityForm {
           '@start' => ($current_index + 1),
           '@end' => $total_pages,
         ];
-        $this->announce($this->t('"@title: @page" loaded. (Page @start of @end)', $t_args));
+        $this->announce($this->t('"@title: @page" loaded. (@start of @end)', $t_args));
       }
     }
   }
@@ -2178,7 +2190,7 @@ class WebformSubmissionForm extends ContentEntityForm {
    */
   protected function displayCurrentPage(array &$form, FormStateInterface $form_state) {
     $current_page = $this->getCurrentPage($form, $form_state);
-    if ($current_page == 'webform_preview') {
+    if ($current_page == WebformInterface::PAGE_PREVIEW) {
       // Hide all elements except 'webform_actions'.
       foreach ($form['elements'] as $element_key => $element) {
         if (isset($element['#type']) && $element['#type'] === 'webform_actions') {
@@ -2339,7 +2351,7 @@ class WebformSubmissionForm extends ContentEntityForm {
         return;
 
       case WebformInterface::CONFIRMATION_INLINE:
-        $form_state->set('current_page', 'webform_confirmation');
+        $form_state->set('current_page', WebformInterface::PAGE_CONFIRMATION);
         $form_state->setRebuild();
         return;
 

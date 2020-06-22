@@ -2,11 +2,10 @@
 
 namespace Drupal\Tests\responsive_menu\Functional;
 
-use Drupal\Core\Entity\EntityStorageException;
 use Drupal\Tests\BrowserTestBase;
 
 /**
- * Class SettingsPageTest
+ * Class SettingsPageTest.
  *
  * @package Drupal\Tests\responsive_menu\Functional
  *
@@ -38,13 +37,13 @@ class ResponsiveMenuAdminTest extends BrowserTestBase {
    */
   protected static $userPermissions = [
     'access content',
-    'administer site configuration'
+    'administer site configuration',
   ];
 
   /**
    * {@inheritdoc}
    *
-   * @throws EntityStorageException
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   protected function setUp() {
     parent::setUp();

@@ -2187,18 +2187,18 @@
     },
     {
         "name": "drupal/admin_toolbar",
-        "version": "2.2.0",
-        "version_normalized": "2.2.0.0",
+        "version": "2.3.0",
+        "version_normalized": "2.3.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-            "reference": "8.x-2.2"
+            "reference": "8.x-2.3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.2.zip",
-            "reference": "8.x-2.2",
-            "shasum": "41ea0e3321e6d1e190c486be49a99e60446d8dd7"
+            "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.3.zip",
+            "reference": "8.x-2.3",
+            "shasum": "cf8ee1aa8adfc604db4394655e3ba4c423d5f24a"
         },
         "require": {
             "drupal/core": "^8.8.0 || ^9.0"
@@ -2206,8 +2206,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-2.2",
-                "datestamp": "1585017179",
+                "version": "8.x-2.3",
+                "datestamp": "1592535597",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -2217,7 +2217,7 @@
         "installation-source": "dist",
         "notification-url": "https://packages.drupal.org/8/downloads",
         "license": [
-            "GPL-2.0+"
+            "GPL-2.0-or-later"
         ],
         "authors": [
             {
@@ -2261,7 +2261,7 @@
             "Toolbar"
         ],
         "support": {
-            "source": "http://cgit.drupalcode.org/admin_toolbar",
+            "source": "https://git.drupalcode.org/project/admin_toolbar",
             "issues": "https://www.drupal.org/project/issues/admin_toolbar"
         }
     },
@@ -3806,18 +3806,18 @@
     },
     {
         "name": "drupal/responsive_menu",
-        "version": "4.1.1",
-        "version_normalized": "4.1.1.0",
+        "version": "4.2.0",
+        "version_normalized": "4.2.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/responsive_menu.git",
-            "reference": "4.1.1"
+            "reference": "4.2.0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/responsive_menu-4.1.1.zip",
-            "reference": "4.1.1",
-            "shasum": "940cfeb89ad76198517efbfbd39d399217ccaed0"
+            "url": "https://ftp.drupal.org/files/projects/responsive_menu-4.2.0.zip",
+            "reference": "4.2.0",
+            "shasum": "4f5c7151d588aabd24f343db020cfaef8d877d29"
         },
         "require": {
             "drupal/core": "^8 || ^9"
@@ -3825,8 +3825,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "4.1.1",
-                "datestamp": "1591864269",
+                "version": "4.2.0",
+                "datestamp": "1592465858",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -4121,18 +4121,18 @@
     },
     {
         "name": "drupal/webform",
-        "version": "5.16.0",
-        "version_normalized": "5.16.0.0",
+        "version": "5.17.0",
+        "version_normalized": "5.17.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/webform.git",
-            "reference": "8.x-5.16"
+            "reference": "8.x-5.17"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.16.zip",
-            "reference": "8.x-5.16",
-            "shasum": "a8bfe83d56ffd0fce16af9aa7eb4209247e5d420"
+            "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.17.zip",
+            "reference": "8.x-5.17",
+            "shasum": "05ad1c707119279a11680751b8ca39fc2e331532"
         },
         "require": {
             "drupal/core": "^8.8"
@@ -4142,20 +4142,23 @@
             "drupal/bootstrap": "~3.0",
             "drupal/captcha": "~1.0",
             "drupal/chosen": "~2.0",
-            "drupal/devel": "*",
-            "drupal/entity_print": "*",
+            "drupal/clientside_validation": "~3.0",
+            "drupal/clientside_validation_jquery": "*",
+            "drupal/devel": "~3.0",
+            "drupal/entity_print": "~2.0",
             "drupal/gnode": "*",
-            "drupal/group": "*",
-            "drupal/lingotek": "~2.0",
+            "drupal/group": "~1.0",
+            "drupal/lingotek": "~3.0",
             "drupal/mailsystem": "~4.0",
             "drupal/paragraphs": "~1.0",
             "drupal/select2": "~1.0",
             "drupal/smtp": "~1.0",
             "drupal/styleguide": "~1.0",
             "drupal/telephone_validation": "~2.0",
-            "drupal/token": "*",
+            "drupal/token": "~1.0",
             "drupal/webform_access": "*",
             "drupal/webform_attachment": "*",
+            "drupal/webform_clientside_validation": "*",
             "drupal/webform_devel": "*",
             "drupal/webform_entity_print": "*",
             "drupal/webform_group": "*",
@@ -4168,8 +4171,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-5.16",
-                "datestamp": "1591198998",
+                "version": "8.x-5.17",
+                "datestamp": "1592841189",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -6304,17 +6307,17 @@
     },
     {
         "name": "phpdocumentor/type-resolver",
-        "version": "1.1.0",
-        "version_normalized": "1.1.0.0",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/phpDocumentor/TypeResolver.git",
-            "reference": "7462d5f123dfc080dfdf26897032a6513644fc95"
+            "reference": "30441f2752e493c639526b215ed81d54f369d693"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/7462d5f123dfc080dfdf26897032a6513644fc95",
-            "reference": "7462d5f123dfc080dfdf26897032a6513644fc95",
+            "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/30441f2752e493c639526b215ed81d54f369d693",
+            "reference": "30441f2752e493c639526b215ed81d54f369d693",
             "shasum": ""
         },
         "require": {
@@ -6325,11 +6328,11 @@
             "ext-tokenizer": "^7.2",
             "mockery/mockery": "~1"
         },
-        "time": "2020-02-18T18:59:58+00:00",
+        "time": "2020-06-19T20:22:09+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.x-dev"
+                "dev-1.x": "1.x-dev"
             }
         },
         "installation-source": "dist",
@@ -9188,27 +9191,31 @@
     },
     {
         "name": "symfony/polyfill-php80",
-        "version": "v1.17.0",
-        "version_normalized": "1.17.0.0",
+        "version": "v1.17.1",
+        "version_normalized": "1.17.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php80.git",
-            "reference": "5e30b2799bc1ad68f7feb62b60a73743589438dd"
+            "reference": "4a5b6bba3259902e386eb80dd1956181ee90b5b2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/5e30b2799bc1ad68f7feb62b60a73743589438dd",
-            "reference": "5e30b2799bc1ad68f7feb62b60a73743589438dd",
+            "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4a5b6bba3259902e386eb80dd1956181ee90b5b2",
+            "reference": "4a5b6bba3259902e386eb80dd1956181ee90b5b2",
             "shasum": ""
         },
         "require": {
             "php": ">=7.0.8"
         },
-        "time": "2020-05-12T16:47:27+00:00",
+        "time": "2020-06-06T08:46:27+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
                 "dev-master": "1.17-dev"
+            },
+            "thanks": {
+                "name": "symfony/polyfill",
+                "url": "https://github.com/symfony/polyfill"
             }
         },
         "installation-source": "dist",

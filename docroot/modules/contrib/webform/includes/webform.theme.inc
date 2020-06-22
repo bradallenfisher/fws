@@ -173,6 +173,7 @@ function webform_theme() {
         'webform_submission' => NULL,
         'current_page' => NULL,
         'operation' => NULL,
+        'pages' => [],
       ],
     ],
 
@@ -183,6 +184,7 @@ function webform_theme() {
         'current_page' => NULL,
         'operation' => NULL,
         'max_pages' => 10,
+        'pages' => [],
       ],
     ],
 
@@ -193,6 +195,7 @@ function webform_theme() {
         'current_page' => NULL,
         'operation' => NULL,
         'max_pages' => 10,
+        'pages' => [],
       ],
     ],
   ];
@@ -679,6 +682,9 @@ function _webform_preprocess_options(array &$variables) {
   $variables['attributes']['class'][] = Html::getClass('js-webform-' . $element['#type']);
 
   if (!empty($element['#options_display'])) {
+    if (strpos($element['#options_display'], 'buttons_') === 0) {
+      $variables['attributes']['class'][] = 'webform-options-display-buttons';
+    }
     $variables['attributes']['class'][] = Html::getClass('webform-options-display-' . $element['#options_display']);
     $variables['#attached']['library'][] = 'webform/webform.element.options';
   }
@@ -1177,7 +1183,7 @@ function _webform_theme_suggestions_options(array $variables, $type) {
 
   $element = $variables['element'];
   $suggestions = [];
-  if (!empty($element['#options_display']) && $element['#options_display'] === 'buttons') {
+  if (!empty($element['#options_display']) && strpos($element['#options_display'], 'buttons') === 0) {
     $suggestions[] = $type . '__webform_' . $element['#options_display'];
   }
   return $suggestions;

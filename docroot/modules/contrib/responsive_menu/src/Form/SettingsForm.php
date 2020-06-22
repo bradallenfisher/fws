@@ -2,13 +2,9 @@
 
 namespace Drupal\responsive_menu\Form;
 
-use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
-use Drupal\Component\Plugin\Exception\PluginNotFoundException;
-use Drupal\Core\Config\ImmutableConfig;
-use Drupal\system\MenuInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
@@ -21,23 +17,23 @@ use Drupal\Core\Cache\Cache;
 class SettingsForm extends ConfigFormBase {
 
   /**
-   * Configuration Factory.
-   *
-   * @var ConfigFactoryInterface
+   * {@inheritdoc}
    */
   protected $configFactory;
 
   /**
    * The entity type manager.
    *
-   * @var EntityTypeManagerInterface
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
    */
   protected $entityTypeManager;
 
   /**
    * Stored configuration for the module.
    *
-   * @var ImmutableConfig
+   * @var \Drupal\Core\Config\ImmutableConfig
+   * @noinspection PhpFullyQualifiedNameUsageInspection
    */
   protected $config;
 
@@ -52,12 +48,7 @@ class SettingsForm extends ConfigFormBase {
   }
 
   /**
-   * Constructs a SettingsForm object.
-   *
-   * @param ConfigFactoryInterface $config_factory
-   *   The config factory.
-   * @param EntityTypeManagerInterface $entity_type_manager
-   *   The entity type manager.
+   * {@inheritDoc}
    */
   public function __construct(ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager) {
     parent::__construct($config_factory);
@@ -203,8 +194,10 @@ class SettingsForm extends ConfigFormBase {
       '#options' => [
         'left' => $this->t('Left'),
         'right' => $this->t('Right'),
+        // To switch left/right position based on the language.
+        'contextual' => $this->t('Contextual'),
       ],
-      '#title' => $this->t('Which side the mobile menu panel should slide out from'),
+      '#title' => $this->t("Which side the mobile menu panel should slide out from. Choose the 'Contextual' option to have the menu slide out from the left for LTR languages and from the right for RTL languages."),
       '#default_value' => $this->config->get('off_canvas_position'),
     ];
     // The theme of the slideout panel.
@@ -381,14 +374,12 @@ class SettingsForm extends ConfigFormBase {
    *
    * @return array
    *   Keys are menu names (ids) values are the menu labels.
-   *
-   * @throws InvalidPluginDefinitionException
-   * @throws PluginNotFoundException
+   * @noinspection PhpFullyQualifiedNameUsageInspection
    */
   protected function getMenuOptions(array $menu_names = NULL) {
     $menus = $this->entityTypeManager->getStorage('menu')->loadMultiple($menu_names);
     $options = [];
-    /** @var MenuInterface[] $menus */
+    /** @var \Drupal\system\MenuInterface[] $menus */
     foreach ($menus as $menu) {
       $options[$menu->id()] = $menu->label();
     }

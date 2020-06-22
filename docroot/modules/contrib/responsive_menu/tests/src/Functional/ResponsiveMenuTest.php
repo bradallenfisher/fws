@@ -2,11 +2,10 @@
 
 namespace Drupal\Tests\responsive_menu\Functional;
 
-use Drupal\Core\Entity\EntityStorageException;
 use Drupal\Tests\BrowserTestBase;
 
 /**
- * Class SettingsPageTest
+ * Class SettingsPageTest.
  *
  * @package Drupal\Tests\responsive_menu\Functional
  *
@@ -43,7 +42,7 @@ class ResponsiveMenuTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    *
-   * @throws EntityStorageException
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   protected function setUp() {
     parent::setUp();
@@ -66,4 +65,5 @@ class ResponsiveMenuTest extends BrowserTestBase {
     $this->drupalGet('/node/3');
     $this->assertSession()->elementContains('css', '.responsive-menu-block-wrapper', 'Menu item without children');
   }
+
 }

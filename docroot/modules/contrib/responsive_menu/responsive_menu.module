@@ -138,10 +138,10 @@ function responsive_menu_page_bottom(&$page) {
   // Add the mmenu library.
   $output['#attached']['library'][] = 'responsive_menu/responsive_menu.mmenu';
 
-  // If the polyfills are requested and the file exists then add it too. Note that
-  // in the past the final build files have not included the polyfills file
-  // (see d.o issues #3143984, #3111949) so we need to check if its actually there to
-  // avoid a 404.
+  // If the polyfills are requested and the file exists then add it too.
+  // Note that in the past the final build files have not included the
+  // polyfills file (see d.o issues #3143984, #3111949) so we need to
+  // check if its actually there to avoid a 404.
   if ($config->get('use_polyfills') && file_exists(DRUPAL_ROOT . '/libraries/mmenu/dist/mmenu.polyfills.js')) {
     $output['#attached']['library'][] = 'responsive_menu/responsive_menu.polyfills';
   }
@@ -168,6 +168,16 @@ function responsive_menu_page_bottom(&$page) {
     ],
     'drag' => $config->get('drag'),
   ];
+
+  // Allow for the menu position to be based on the language direction.
+  // @see issue #3095162 for details.
+  if ($config->get('off_canvas_position') === 'contextual') {
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getDirection();
+    $output['#attached']['drupalSettings']['responsive_menu']['position'] = $language === 'rtl' ? 'right' : 'left';
+  }
+  else {
+    $output['#attached']['drupalSettings']['responsive_menu']['position'] = $config->get('off_canvas_position');
+  }
 
   $output['#cache']['keys'] = [
     'responsive_menu',
