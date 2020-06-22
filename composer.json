@@ -26,6 +26,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^2.1",
         "drupal/entity": "^1.0",
+        "drupal/google_analytics": "^3.1",
         "drupal/http2_server_push": "^1.1",
         "drupal/linkit": "^4.3",
         "drupal/metatag": "^1.13",
