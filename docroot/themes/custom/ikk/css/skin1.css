@@ -585,6 +585,9 @@ table {
 #jump {
   height: 30px; }
 
+.field--name-field-blog p {
+  font-size: 24px; }
+
 .recipe-section {
   border: 3px solid;
   padding: 20px;
