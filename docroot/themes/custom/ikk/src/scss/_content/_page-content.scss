@@ -1,0 +1,34 @@
+$start-filters: 1000px;
+.page-content {
+  @include container();
+  padding: 20px;
+}
+
+.sidebar-second {
+
+  .page-content {
+
+    @include breakpoint($start-filters, true) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 2rem;
+    }
+
+    .region-content {
+      @include breakpoint($start-filters, true) {
+        grid-column-start: 1;
+        grid-column-end: 10;
+      }
+    }
+
+    .region-sidebar-second {
+      label {
+        font-weight: bold;
+      }
+      @include breakpoint($start-filters, true) {
+        grid-column-start: 10;
+        grid-column-end: 13;
+      }
+    }
+  }
+}

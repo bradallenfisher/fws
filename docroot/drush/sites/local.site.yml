@@ -2,3 +2,7 @@
 seosc:
   root: /var/www/html/fws/docroot
   uri: seostatecollege.fws.test
+
+ikk:
+  root: /var/www/html/fws/docroot
+  uri: ikkd8.fws.test

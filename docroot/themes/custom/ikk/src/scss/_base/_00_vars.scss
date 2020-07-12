@@ -1,0 +1,46 @@
+//Colors
+/*
+* Better function for color palettes using Sass maps
+* Usage: color: palette(brand,salmon);
+*/
+@function palette($palette, $tone: 'white') {
+    @return map-get( map-get($palettes, $palette), $tone );
+}
+
+$palettes: (
+  mono: (
+    black: #000,
+    dark: #191a1c,
+    medium: #35383c,
+    base: #666,
+    light: #f9f9fb,
+    white: #fff,
+  ),
+  brand: (
+    main: #FF69B4,
+  )
+);
+
+//Fonts
+@mixin reg_font {
+  font-family: 'Karla', sans-serif;
+  color: palette(mono,dark);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+@mixin heading_font {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  color: palette(mono,dark);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+@mixin container {
+  box-sizing: border-box;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}

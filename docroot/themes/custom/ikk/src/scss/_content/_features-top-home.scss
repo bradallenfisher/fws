@@ -1,0 +1,11 @@
+$flex-start: 600px;
+.features-top-home {
+  @include breakpoint($flex-start, true) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .item {
+    margin: 10px;
+  }
+}

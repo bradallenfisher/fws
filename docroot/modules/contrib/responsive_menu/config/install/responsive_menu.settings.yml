@@ -20,3 +20,6 @@ allow_admin: false
 wrapper_admin: true
 wrapper_theme: false
 use_polyfills: false
+modify_viewport: true
+use_bootstrap: true
+

@@ -174,6 +174,12 @@ class SettingsForm extends ConfigFormBase {
       '#type' => 'fieldset',
       '#title' => 'Theme compatiblity',
     ];
+    $form['responsive_menu']['theme_compatibility']['use_bootstrap'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Enable compatibility mode for Bootstrap 4 themes'),
+      '#description' => $this->t("Enabling this setting will override the Bootstrap 4 navbar menu icon so that it opens the off-canvas menu at the desired breakpoint instead of the Bootstrap navbar mobile menu. This will only work if the Bootstrap menu icon is within an element with the css ID #navbar-main, which is the default if using bootstrap_bario theme. See the README.md for more detail."),
+      '#default_value' => $this->config->get('use_bootstrap'),
+    ];
     // Whether to add a theme wrapper for the front end theme.
     $form['responsive_menu']['theme_compatibility']['wrapper_theme'] = [
       '#type' => 'checkbox',
@@ -223,6 +229,14 @@ class SettingsForm extends ConfigFormBase {
       ],
       '#title' => $this->t('The colour to dim the page to when the menu slides out'),
       '#default_value' => $this->config->get('pagedim'),
+    ];
+    // Chrome has a problem with displaying the mmenu correctly at mobile widths
+    // unless a specific viewport value is provided.
+    $form['responsive_menu']['modify_viewport'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Dynamically modify the viewport meta tag'),
+      '#default_value' => $this->config->get('modify_viewport'),
+      '#description' => $this->t("Chrome has an issue displaying the off-canvas menu correctly unless a specific viewport meta tag value is provided. Checking this will leave your theme's viewport meta tag as it is until the off-canvas menu is opened at which point it will use an optimised value (width=device-width, initial-scale=1.0, minimum-scale=1.0)"),
     ];
     // A javascript enhancements fieldset.
     $form['responsive_menu']['js'] = [
@@ -320,10 +334,12 @@ class SettingsForm extends ConfigFormBase {
       ->set('use_breakpoint', $values['use_breakpoint'])
       ->set('include_css', $values['css'])
       ->set('allow_admin', $values['allow_admin'])
+      ->set('use_bootstrap', $values['use_bootstrap'])
       ->set('wrapper_admin', $values['wrapper_admin'])
       ->set('wrapper_theme', $values['wrapper_theme'])
       ->set('use_polyfills', $values['use_polyfills'])
       ->set('pagedim', $values['pagedim'])
+      ->set('modify_viewport', $values['modify_viewport'])
       ->set('off_canvas_menus', $values['off_canvas_menus'])
       ->set('off_canvas_position', $values['position'])
       ->set('off_canvas_theme', $values['theme'])
@@ -374,6 +390,9 @@ class SettingsForm extends ConfigFormBase {
    *
    * @return array
    *   Keys are menu names (ids) values are the menu labels.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    * @noinspection PhpFullyQualifiedNameUsageInspection
    */
   protected function getMenuOptions(array $menu_names = NULL) {

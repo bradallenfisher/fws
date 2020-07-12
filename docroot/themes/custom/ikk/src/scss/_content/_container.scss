@@ -1,0 +1,23 @@
+.container {
+  @include container();
+}
+.region-content {
+  .flex-container {
+    @include breakpoint ($imagefloat, true) {
+      display: flex;
+    }
+  }
+  .item {
+
+    img {
+      max-width: 400px;
+      margin: 0 auto;
+      @include breakpoint ($imagefloat, true) {
+        float: left;
+        max-width: 350px;
+        height: auto;
+        margin-right: 40px;
+      }
+    }
+  }
+}

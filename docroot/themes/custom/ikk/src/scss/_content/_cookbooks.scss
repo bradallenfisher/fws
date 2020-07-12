@@ -1,0 +1,142 @@
+$full: 1000px;
+.cookbook {
+
+  .cookbook-inner {
+    overflow: hidden;
+  }
+  .cookbook-image {
+
+    .field--name-field-image {
+      text-align: center;
+
+      img {
+        width: 50%;
+        @include breakpoint($full, true) {
+          width: 25%;
+          float: left;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .cookbook-text {
+    @include breakpoint($full, true) {
+      float: right;
+      width: 70%;
+    }
+  }
+  h1.cookbook-title {
+    color: palette(mono, black);
+    font-size: 2em;
+    text-align:  center;
+    @include breakpoint($full, true){
+      text-align: left;
+    }
+  }
+  .field--name-field-paypal {
+    text-align: center;
+    max-width: 500px;
+    input {
+      max-width: 100%;
+    }
+    @include breakpoint($full, true){
+      text-align: left;
+    }
+  }
+}
+.cookbook-body {
+    font-size: 1.7em;
+    float: right;
+    padding: 0 20px 20px;
+    font-weight: 300;
+}
+
+
+.page-cookbooks .l-main {
+  display: block;
+}
+
+.view-cookbooks {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  .contact.box-style input, .contact.box-style textarea, input, textarea {
+
+    border: none;
+
+  }
+  .view-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+  }
+
+  .views-row {
+    width: 49%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    @include breakpoint($full, true) {
+      width: 30%;
+    }
+  }
+
+  .view-header {
+    text-align: center;
+    margin-bottom: 0;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .buyboth {
+      margin-bottom: 10px;
+
+    }
+
+    .paypal-form {
+      margin-bottom: 20px;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      width: 100%;
+      max-width: 400px;
+
+      input[type="image"] {
+        display: block;
+        width: 100%;
+      }
+      input {
+        display: block;
+      }
+    }
+  }
+
+  .views-field-title {
+    h2 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+
+  .views-field-field-image {
+
+
+    img {
+
+
+    }
+  }
+
+  .views-field-title h2 {
+
+
+  }
+
+}
+.field--name-field-paypal, .paypal-form {
+  input {
+    cursor: pointer;
+  }
+}
+

@@ -1,0 +1,30 @@
+name: ikk
+type: theme
+description: 'ikk theme'
+package: ikk
+core: 8.x
+libraries:
+  - ikk/global-styling
+  - ikk/global-scripts
+  - ikk/karla
+  - ikk/slick-css
+  - ikk/slick-css-theme
+  - ikk/slick-js
+
+base theme: classy
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  top: 'Page top'
+  bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+  menu_icon: 'Menu Icon'
+  search_region: 'Search Region'

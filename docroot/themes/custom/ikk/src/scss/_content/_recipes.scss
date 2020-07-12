@@ -1,0 +1,54 @@
+.view-recipes {
+
+  .view-content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content:space-between;
+
+    .views-row {
+      background: #f9f9f9;
+      clear:both;
+      margin-bottom: 20px;
+      display: inline-block;
+      width: 100%;
+      padding-bottom: 20px;
+
+
+      @include breakpoint(510px, true) {
+        width: 49.4%;
+      }
+
+      @include breakpoint(1100px, true) {
+        width: 32.8%;
+      }
+
+    .views-field-title {
+      padding: 10px;
+      line-height: 1.1;
+
+      a {
+         font-size: 1.1em;
+         font-weight: bold;
+         color: palette(mono, black);
+         text-decoration: none;
+
+        }
+      }
+    }
+
+    .views-field-field-calories-per-serving {
+      padding: 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .views-field-field-servings {
+      padding: 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .views-field-field-phase {
+      padding: 0 10px;
+      font-size: 1.1rem;
+    }
+  }
+}

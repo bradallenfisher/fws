@@ -1,0 +1,17 @@
+a:link,
+a:focus,
+a:hover,
+a:visited{
+  text-decoration: none;
+}
+.region-content {
+  a:link,
+  a:focus,
+  a:visited {
+    color: palette(brand, main);
+    font-weight: bold;
+  }
+  a:hover {
+    color: palette(mono, black);
+  }
+}

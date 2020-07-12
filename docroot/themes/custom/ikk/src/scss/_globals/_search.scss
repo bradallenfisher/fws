@@ -1,0 +1,29 @@
+.click-search-form {
+  display: none;
+  padding: 20px;
+
+  #edit-submit {
+    display: none;
+  }
+}
+.click-search-form.open {
+  display: block;
+}
+
+.js input.form-autocomplete {
+  padding-left: 10px;
+}
+.ui-autocomplete-field-created {
+  display: none !important;
+}
+
+#search-block-form {
+  #edit-actions {
+    display: none;
+  }
+}
+.search-form {
+  #edit-basic {
+    display: none;
+  }
+}

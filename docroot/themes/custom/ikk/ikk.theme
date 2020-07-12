@@ -1,0 +1,27 @@
+<?php
+
+function ikk_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['search_block_form', 'search_form'])) {
+      $form['keys']['#attributes']['placeholder'] = t('Search...');
+  }
+}
+/* Allow is_front to be used on other templates */
+function ikk_preprocess_page_title(&$variables, $hook) {
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    $variables['is_front'] = FALSE;
+  }
+  // Ensure the cache varies correctly (new in Drupal 8.3).
+  $variables['#cache']['contexts'][] = 'url.path.is_front';
+}
+
+/**
+ * Implements template_preprocess_region().
+ */
+function ikk_preprocess_html(&$variables) {
+  if(isset($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'sidebar-second';
+  }
+}

@@ -46,3 +46,7 @@ responsive_menu.settings:
       type: boolean
     use_polyfills:
       type: boolean
+    modify_viewport:
+      type: boolean
+    use_bootstrap:
+      type: boolean
