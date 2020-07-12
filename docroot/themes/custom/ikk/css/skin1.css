@@ -644,6 +644,13 @@ table {
     padding: 0 10px;
     font-size: 1.1rem; }
 
+#block-googleheaderbanner {
+  box-sizing: border-box;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
 /*////////////////////////////////////////
 // Buttons
 ///////////////////////////////////////*/

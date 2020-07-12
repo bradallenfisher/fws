@@ -5,3 +5,8 @@ seosc:
   uri: seostatecollege.com
   host: 172.104.215.47
   user: fws
+ikk:
+  root: /var/www/html/fws/docroot
+  uri: dev.insidekellyskitchen.com
+  host: 172.104.215.47
+  user: fws
