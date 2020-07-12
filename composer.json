@@ -36,6 +36,7 @@
         "drupal/metatag": "^1.13",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/printfriendly": "^3.4",
         "drupal/redirect": "^1.6",
         "drupal/replicate": "^1.0",
         "drupal/replicate_ui": "^1.0",
