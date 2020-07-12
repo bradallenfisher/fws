@@ -106,6 +106,25 @@
     <div class="top-content">
       {{ content.field_blog }}
     </div>
+
+    <!--only place second ad if there is blog content-->
+    {% if content.field_blog|render|striptags|trim is not empty %}
+    <div class="google-ad">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Recipes Text and Banner -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-5270832306245806"
+           data-ad-slot="5755103978"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    {% endif %}
+
+
     <div id="jump"></div>
     <div class="recipe-section">
 
@@ -120,6 +139,7 @@
     </div>
   </div>
 
-  <div id="amzn-assoc-ad-c8d9917d-c785-4ac8-8922-0ad33e45275a"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=c8d9917d-c785-4ac8-8922-0ad33e45275a"></script>
+  <div id="amzn-assoc-ad-c8d9917d-c785-4ac8-8922-0ad33e45275a"></div>
+  <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=c8d9917d-c785-4ac8-8922-0ad33e45275a"></script>
 
 </article>
