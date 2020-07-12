@@ -657,6 +657,11 @@ table {
 .google-middle-ad {
   margin: 20px 0; }
 
+#block-googlebottomblock {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px; }
+
 /*////////////////////////////////////////
 // Buttons
 ///////////////////////////////////////*/
