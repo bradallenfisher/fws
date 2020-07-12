@@ -107,13 +107,9 @@
       {{ content.field_blog }}
     </div>
 
-    <!--only place second ad if there is blog content-->
-    {% if content.field_blog|render|striptags|trim is not empty %}
-    <div class="google-ad">
-      hi folks
+    <div class="google-middle-ad">
+      {{ content.field_google_middle_ad }}
     </div>
-    {% endif %}
-
 
     <div id="jump"></div>
     <div class="recipe-section">
