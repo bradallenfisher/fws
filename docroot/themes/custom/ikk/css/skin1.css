@@ -442,98 +442,6 @@ table {
 .region-content {
   min-height: 700px; }
 
-.cookbook .cookbook-inner {
-  overflow: hidden; }
-
-.cookbook .cookbook-image .field--name-field-image {
-  text-align: center; }
-  .cookbook .cookbook-image .field--name-field-image img {
-    width: 50%; }
-    @media (min-width: 1000px) {
-      .cookbook .cookbook-image .field--name-field-image img {
-        width: 25%;
-        float: left;
-        margin-right: 20px; } }
-
-@media (min-width: 1000px) {
-  .cookbook .cookbook-text {
-    float: right;
-    width: 70%; } }
-
-.cookbook h1.cookbook-title {
-  color: #000;
-  font-size: 2em;
-  text-align: center; }
-  @media (min-width: 1000px) {
-    .cookbook h1.cookbook-title {
-      text-align: left; } }
-
-.cookbook .field--name-field-paypal {
-  text-align: center;
-  max-width: 500px; }
-  .cookbook .field--name-field-paypal input {
-    max-width: 100%; }
-  @media (min-width: 1000px) {
-    .cookbook .field--name-field-paypal {
-      text-align: left; } }
-
-.cookbook-body {
-  font-size: 1.7em;
-  float: right;
-  padding: 0 20px 20px;
-  font-weight: 300; }
-
-.page-cookbooks .l-main {
-  display: block; }
-
-.view-cookbooks {
-  overflow: hidden;
-  max-width: 900px;
-  margin: 0 auto; }
-  .view-cookbooks .contact.box-style input, .view-cookbooks .contact.box-style textarea, .view-cookbooks input, .view-cookbooks textarea {
-    border: none; }
-  .view-cookbooks .view-content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    padding: 1%; }
-  .view-cookbooks .views-row {
-    width: 49%;
-    overflow: hidden;
-    margin-bottom: 10px; }
-    @media (min-width: 1000px) {
-      .view-cookbooks .views-row {
-        width: 30%; } }
-  .view-cookbooks .view-header {
-    text-align: center;
-    margin-bottom: 0; }
-    .view-cookbooks .view-header h1 {
-      margin-bottom: 0; }
-    .view-cookbooks .view-header .buyboth {
-      margin-bottom: 10px; }
-    .view-cookbooks .view-header .paypal-form {
-      margin-bottom: 20px;
-      margin: 0 auto;
-      text-align: center;
-      display: block;
-      width: 100%;
-      max-width: 400px; }
-      .view-cookbooks .view-header .paypal-form input[type="image"] {
-        display: block;
-        width: 100%; }
-      .view-cookbooks .view-header .paypal-form input {
-        display: block; }
-  .view-cookbooks .views-field-title h2 {
-    font-size: 1.2em;
-    text-align: center; }
-
-.field--name-field-paypal input, .paypal-form input {
-  cursor: pointer; }
-
 @media (min-width: 600px) {
   .features-top-home {
     display: -webkit-box;
@@ -603,49 +511,6 @@ table {
     font-size: 1.2rem; }
   .recipe-section .field__label {
     font-size: 1.2rem; }
-
-.view-recipes .view-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: wrap;
-      -ms-flex-flow: wrap;
-          flex-flow: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .view-recipes .view-content .views-row {
-    background: #f9f9f9;
-    clear: both;
-    margin-bottom: 20px;
-    display: inline-block;
-    width: 100%;
-    padding-bottom: 20px; }
-    @media (min-width: 510px) {
-      .view-recipes .view-content .views-row {
-        width: 49.4%; } }
-    @media (min-width: 1100px) {
-      .view-recipes .view-content .views-row {
-        width: 32.8%; } }
-    .view-recipes .view-content .views-row .views-field-title {
-      padding: 10px;
-      line-height: 1.1; }
-      .view-recipes .view-content .views-row .views-field-title a {
-        font-size: 1.1em;
-        font-weight: bold;
-        color: #000;
-        text-decoration: none; }
-  .view-recipes .view-content .views-field-field-calories-per-serving {
-    padding: 0 10px;
-    font-size: 1.1rem; }
-  .view-recipes .view-content .views-field-field-servings {
-    padding: 0 10px;
-    font-size: 1.1rem; }
-  .view-recipes .view-content .views-field-field-phase {
-    padding: 0 10px;
-    font-size: 1.1rem; }
 
 #block-googleheaderbanner {
   box-sizing: border-box;
@@ -794,7 +659,7 @@ button, select {
   padding: 10px;
   cursor: pointer; }
 
-.contact.box-style input, .contact.box-style textarea, input, textarea {
+#search-block-form input, #search-block-form textarea {
   padding: 10px 0;
   border: 1px solid #e1e1e1;
   width: 100%; }
@@ -1816,6 +1681,141 @@ a:focus,
 a:active {
   text-decoration: none;
   outline: none; }
+
+.cookbook .cookbook-inner {
+  overflow: hidden; }
+
+.cookbook .cookbook-image .field--name-field-image {
+  text-align: center; }
+  .cookbook .cookbook-image .field--name-field-image img {
+    width: 50%; }
+    @media (min-width: 1000px) {
+      .cookbook .cookbook-image .field--name-field-image img {
+        width: 25%;
+        float: left;
+        margin-right: 20px; } }
+
+@media (min-width: 1000px) {
+  .cookbook .cookbook-text {
+    float: right;
+    width: 70%; } }
+
+.cookbook h1.cookbook-title {
+  color: #000;
+  font-size: 2em;
+  text-align: center; }
+  @media (min-width: 1000px) {
+    .cookbook h1.cookbook-title {
+      text-align: left; } }
+
+.cookbook .field--name-field-paypal {
+  text-align: center;
+  max-width: 500px; }
+  .cookbook .field--name-field-paypal input {
+    max-width: 100%; }
+  @media (min-width: 1000px) {
+    .cookbook .field--name-field-paypal {
+      text-align: left; } }
+
+.cookbook-body {
+  font-size: 1.7em;
+  float: right;
+  padding: 0 20px 20px;
+  font-weight: 300; }
+
+.page-cookbooks .l-main {
+  display: block; }
+
+.view-cookbooks {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto; }
+  .view-cookbooks .contact.box-style input, .view-cookbooks .contact.box-style textarea, .view-cookbooks input, .view-cookbooks textarea {
+    border: none; }
+  .view-cookbooks .view-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 1%; }
+  .view-cookbooks .views-row {
+    width: 49%;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    @media (min-width: 1000px) {
+      .view-cookbooks .views-row {
+        width: 30%; } }
+  .view-cookbooks .view-header {
+    text-align: center;
+    margin-bottom: 0; }
+    .view-cookbooks .view-header h1 {
+      margin-bottom: 0; }
+    .view-cookbooks .view-header .buyboth {
+      margin-bottom: 10px; }
+    .view-cookbooks .view-header .paypal-form {
+      margin-bottom: 20px;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      width: 100%;
+      max-width: 400px; }
+      .view-cookbooks .view-header .paypal-form input[type="image"] {
+        display: block;
+        width: 100%; }
+      .view-cookbooks .view-header .paypal-form input {
+        display: block; }
+  .view-cookbooks .views-field-title h2 {
+    font-size: 1.2em;
+    text-align: center; }
+
+.field--name-field-paypal input, .paypal-form input {
+  cursor: pointer; }
+
+.view-recipes .view-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .view-recipes .view-content .views-row {
+    background: #f9f9f9;
+    clear: both;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 20px; }
+    @media (min-width: 510px) {
+      .view-recipes .view-content .views-row {
+        width: 49.4%; } }
+    @media (min-width: 1100px) {
+      .view-recipes .view-content .views-row {
+        width: 32.8%; } }
+    .view-recipes .view-content .views-row .views-field-title {
+      padding: 10px;
+      line-height: 1.1; }
+      .view-recipes .view-content .views-row .views-field-title a {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none; }
+  .view-recipes .view-content .views-field-field-calories-per-serving {
+    padding: 0 10px;
+    font-size: 1.1rem; }
+  .view-recipes .view-content .views-field-field-servings {
+    padding: 0 10px;
+    font-size: 1.1rem; }
+  .view-recipes .view-content .views-field-field-phase {
+    padding: 0 10px;
+    font-size: 1.1rem; }
 
 ul.fontawesome, ul.fontawesome li {
   list-style: none;
