@@ -657,7 +657,7 @@ table {
 .google-middle-ad {
   margin: 20px 0; }
 
-#block-googlebottomblock {
+#block-stickysidebar {
   position: -webkit-sticky;
   position: sticky;
   top: 20px; }
