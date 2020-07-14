@@ -112,9 +112,11 @@
       </div>
       {% endif %}
 
+      {% if content.field_video[0] is not empty %}
       <div class="video-container">
         {{ content.field_video}}
       </div>
+      {% endif %}
 
       {{ content.field_blog }}
     </div>
