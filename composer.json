@@ -42,6 +42,7 @@
         "drupal/replicate_ui": "^1.0",
         "drupal/responsive_menu": "^4.1",
         "drupal/rrssb": "^2.2",
+        "drupal/schema_metatag": "^1.6",
         "drupal/search_autocomplete": "^2.0",
         "drupal/search_kint": "^1.0",
         "drupal/superfish": "^1.4",
