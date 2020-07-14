@@ -35,7 +35,7 @@
     color:white;
     border: 2px solid #222;
 }
-p {
+p, span {
   a:link.btn-dark, a:visited.btn-dark {
     color:white;
   }
@@ -45,7 +45,7 @@ p {
     background: white;
     border-color: palette(brand, main);
 }
-p {
+p, span {
   a:link.btn-dark:hover, a:visited.btn-dark:hover {
     color: palette(brand, main);
   }

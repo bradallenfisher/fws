@@ -104,6 +104,18 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
     <div class="top-content">
+      {{ content.field_intro }}
+
+      {% if content.field_blog[0] is not empty %}
+      <div class="jump-section">
+        <p><a class="btn btn-dark" href="#jump">Jump To Recipe</a></p>
+      </div>
+      {% endif %}
+
+      <div class="video-container">
+        {{ content.field_video}}
+      </div>
+
       {{ content.field_blog }}
     </div>
 
@@ -126,7 +138,6 @@
     <div id="jump"></div>
 
     <div class="recipe-section">
-
       {{ content.field_recipe_image }}
       <h2>{{ label }}</h2>
       {{ content.field_phase }}

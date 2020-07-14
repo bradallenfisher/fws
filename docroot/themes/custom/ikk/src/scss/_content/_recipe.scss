@@ -1,7 +1,23 @@
+$jumpcenter: 700px;
+
+.jump-section {
+  text-align: center;
+  @include breakpoint($jumpcenter, true){
+    text-align: left;
+  }
+  a {
+    display: block;
+    @include breakpoint($jumpcenter, true){
+      display: inline-block;
+    }
+  }
+}
+
 #jump {
   height: 30px;
 }
-.field--name-field-blog {
+.field--name-field-blog, .field--name-field-intro {
+  clear: both;
   p {
     font-size: 24px;
   }

@@ -490,11 +490,24 @@ table {
     grid-column-start: 10;
     grid-column-end: 13; } }
 
+.jump-section {
+  text-align: center; }
+  @media (min-width: 700px) {
+    .jump-section {
+      text-align: left; } }
+  .jump-section a {
+    display: block; }
+    @media (min-width: 700px) {
+      .jump-section a {
+        display: inline-block; } }
+
 #jump {
   height: 30px; }
 
-.field--name-field-blog p {
-  font-size: 24px; }
+.field--name-field-blog, .field--name-field-intro {
+  clear: both; }
+  .field--name-field-blog p, .field--name-field-intro p {
+    font-size: 24px; }
 
 .recipe-section {
   border: 3px solid;
@@ -562,7 +575,7 @@ table {
   color: white;
   border: 2px solid #222; }
 
-p a:link.btn-dark, p a:visited.btn-dark {
+p a:link.btn-dark, p a:visited.btn-dark, span a:link.btn-dark, span a:visited.btn-dark {
   color: white; }
 
 .btn-dark:hover, .webform-button--submit:hover {
@@ -570,7 +583,7 @@ p a:link.btn-dark, p a:visited.btn-dark {
   background: white;
   border-color: #FF69B4; }
 
-p a:link.btn-dark:hover, p a:visited.btn-dark:hover {
+p a:link.btn-dark:hover, p a:visited.btn-dark:hover, span a:link.btn-dark:hover, span a:visited.btn-dark:hover {
   color: #FF69B4; }
 
 /* Button Shapes */
