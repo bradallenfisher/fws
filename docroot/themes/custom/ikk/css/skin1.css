@@ -408,13 +408,15 @@ table {
       display: flex; } }
   #block-homepageblock .item img {
     max-width: 400px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 100%; }
     @media (min-width: 800px) {
       #block-homepageblock .item img {
         float: left;
         max-width: 350px;
         height: auto;
-        margin-right: 40px; } }
+        margin-right: 40px;
+        width: inherit; } }
 
 .container {
   box-sizing: border-box;
