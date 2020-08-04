@@ -470,7 +470,6 @@ footer {
           color: palett(mono, black); }
         .header .header-inner .navigation ul.horizontal-menu ul.menu.sub-nav {
           margin: 0;
-          padding-top: 10px;
           background: #191a1c;
           cursor: pointer; }
           .header .header-inner .navigation ul.horizontal-menu ul.menu.sub-nav li a {
@@ -487,11 +486,11 @@ footer {
             height: 0;
             position: absolute;
             width: 0;
-            border: 15px solid transparent;
+            border: 5px solid transparent;
             border-bottom-color: #000;
             position: absolute;
-            top: -25px;
-            left: 3em;
+            top: -10px;
+            left: 20px;
             z-index: 2; }
     .header .header-inner .navigation.open {
       display: block; }

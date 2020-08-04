@@ -99,7 +99,6 @@ $header_shift_3: 1500px;
 
         ul.menu.sub-nav {
           margin: 0;
-          padding-top: 10px;
           background: palette(mono, dark);
           cursor: pointer;
 
@@ -123,11 +122,11 @@ $header_shift_3: 1500px;
             height: 0;
             position: absolute;
             width: 0;
-            border: 15px solid transparent;
+            border: 5px solid transparent;
             border-bottom-color: #000;
             position: absolute;
-            top: -25px;
-            left: 3em;
+            top: -10px;
+            left: 20px;
             z-index: 2;
           }
         }
