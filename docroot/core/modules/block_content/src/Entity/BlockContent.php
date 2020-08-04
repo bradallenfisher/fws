@@ -204,7 +204,7 @@ class BlockContent extends EditorialContentEntityBase implements BlockContentInt
         'weight' => -5,
       ])
       ->setDisplayConfigurable('form', TRUE)
-      ->addConstraint('UniqueField', []);
+      ->addConstraint('UniqueBlockContentLabel', []);
 
     $fields['changed'] = BaseFieldDefinition::create('changed')
       ->setLabel(t('Changed'))

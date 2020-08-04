@@ -1,0 +1,53 @@
+.top-row{
+  border-bottom: 1px solid palette(mono, light);
+
+  .top-row-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    @include container();
+    padding:10px;
+
+    @include breakpoint($desktop, true) {
+      padding: 5px;
+    }
+
+    .contact {
+      grid-column-start: 5;
+      grid-column-end: 13;
+      display: flex;
+      align-items: center;
+      order: 2;
+      justify-content: flex-end;
+
+      @include breakpoint($desktop, true) {
+        order: 1;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        justify-content: flex-start;
+      }
+    }
+
+    .social {
+      display: flex !important;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      order: 1;
+      align-items: center;
+      justify-content: flex-end;
+
+      @include breakpoint($desktop, true) {
+        order: 2;
+        grid-column-start: 10;
+        grid-column-end: 13;
+      }
+      .field--name-body {
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+    }
+  }
+}

@@ -6,3 +6,7 @@ seosc:
 ikk:
   root: /var/www/html/fws/docroot
   uri: ikkd8.fws.test
+
+rv:
+  root: /var/www/html/fws/docroot
+  uri: rvfastfix.fws.test

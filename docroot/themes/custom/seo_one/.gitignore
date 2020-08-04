@@ -1,0 +1,12 @@
+# osx noise
+.DS_Store
+profile
+
+#ignore sass caches
+.sass-cache
+
+#ignore node_modules
+node_modules
+
+#ignore bower_components
+bower_components

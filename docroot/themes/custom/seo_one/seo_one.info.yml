@@ -1,0 +1,32 @@
+name: SEO One
+type: theme
+description: 'seo_one theme'
+package: seo_one
+core: 8.x
+libraries:
+  - seo_one/global-styling
+  - seo_one/global-scripts
+  - seo_one/poppins
+  - seo_one/slick-css
+  - seo_one/slick-css-theme
+  - seo_one/slick-js
+
+base theme: classy
+
+regions:
+  header: Header
+  contact: Contact
+  social: Social
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  top: 'Page top'
+  bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+  menu_icon: 'Menu Icon'
+  tabs_region: 'Tabs Region'
