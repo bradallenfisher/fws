@@ -1,7 +1,7 @@
 <?php
 
-$sites['seostatecollege.fws.test'] = 'default';
-$sites['seostatecollege.com'] = 'default';
+$sites['seostatecollege.fws.test'] = 'seostatecollege';
+$sites['seostatecollege.com'] = 'seostatecollege';
 $sites['ikkd8.fws.test'] = 'insidekellyskitchen';
 $sites['dev.insidekellyskitchen.com'] = 'insidekellyskitchen';
 $sites['insidekellyskitchen.com'] = 'insidekellyskitchen';
