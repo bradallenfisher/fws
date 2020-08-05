@@ -7,6 +7,11 @@ seosc:
   user: fws
 ikk:
   root: /var/www/html/fws/docroot
-  uri: dev.insidekellyskitchen.com
+  uri: insidekellyskitchen.com
+  host: 172.104.215.47
+  user: fws
+rv:
+  root: /var/www/html/fws/docroot
+  uri: rvfastfix.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws

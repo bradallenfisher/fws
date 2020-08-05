@@ -10,3 +10,7 @@ ikk:
 rv:
   root: /var/www/html/fws/docroot
   uri: rvfastfix.fws.test
+
+lg:
+  root: /var/www/html/fws/docroot
+  uri: lg.fws.test

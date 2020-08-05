@@ -8,3 +8,5 @@ $sites['insidekellyskitchen.com'] = 'insidekellyskitchen';
 $sites['rvfastfix.fws.test'] = 'rvfastfix';
 $sites['rvfastfix.fisherwebsolutions.com'] = 'rvfastfix';
 $sites['rvfastfix.com'] = 'rvfastfix';
+$sites['lg.fws.test'] = 'lg';
+$sites['lg.fisherwebsolutions.com'] = 'lg';
