@@ -33,12 +33,22 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h1{{ title_attributes }}>{{ label }}</h1>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    {{ content }}
+  <div class="hero-top">
+    {{ title_prefix }}
+    {% if label %}
+      <h1{{ title_attributes }}>{{ label }}</h1>
+    {% endif %}
+    {{ title_suffix }}
+    {% block content %}
+
+    {{ content.field_hero_background_image }}
+    {{ content.field_hero_logo }}
+    <div class="hero-button">
+      {{ content.field_button }}
+    </div>
+  </div>
+
   {% endblock %}
+
 </div>
+

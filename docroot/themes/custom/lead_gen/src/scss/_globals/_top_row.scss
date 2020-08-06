@@ -31,8 +31,8 @@
 
       a {
         display: block;
-        border: 2px solid palette(vibrant, discovery);
-        color: palette(vibrant, discovery);
+        border: 2px solid palette(brand, green);
+        color: palette(brand, green);
         padding: 10px;
         @include breakpoint($desktop, true) {
           border: none;

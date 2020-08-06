@@ -7,7 +7,7 @@ a:visited{
 
   p, .paragraph--type--text-box, h2 {
     a:link, a:focus, a:visited {
-      color: palette(vibrant, discovery);
+      color: palette(brand, green);
       font-weight: bold;
     }
     a:hover {
@@ -15,14 +15,3 @@ a:visited{
       font-weight: bold;
     }
   }
-.creek {
-  a:link, a:focus, a:visited {
-    color: palette(penn, beaver-blue);
-    font-weight: bold;
-  }
-
-  a:hover {
-    color: palette(penn, nittany-navy);
-    font-weight: bold;
-  }
-}

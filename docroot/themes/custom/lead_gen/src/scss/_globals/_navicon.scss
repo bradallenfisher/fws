@@ -8,7 +8,7 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   border-radius: 5px;
-  background: palette(vibrant, discovery);
+  background: palette(brand, green);
   padding: 10px;
     @include breakpoint(990px, true) {
     display: none !important;

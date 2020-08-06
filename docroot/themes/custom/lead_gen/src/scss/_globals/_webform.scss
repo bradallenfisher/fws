@@ -1,7 +1,10 @@
-.block-webform {
-  max-width: 800px;
-  margin: 0 auto;
-
+.block-webform-block {
+  input  {
+    width: 100%;
+  }
+  .webform-button--submit {
+    width: inherit;
+  }
   .form-actions {
     text-align: center;
   }

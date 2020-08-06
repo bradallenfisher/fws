@@ -2,7 +2,7 @@
 // Buttons
 ///////////////////////////////////////*/
 .btn, .webform-button--submit {
-    font-size: .9rem;
+    font-size: 1rem;
     background-color: transparent;
     line-height: 1;
     letter-spacing: 1px;
@@ -11,6 +11,7 @@
     display: inline-block;
     border-radius: 3px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .btn:hover {
 }
@@ -24,18 +25,18 @@
 }
 .btn-light, .webform-button--submit {
   background-color: white;
-  color: palette(vibrant, discovery);
-  border: 2px solid palette(vibrant, discovery);
+  color: palette(brand, green);
+  border: 2px solid palette(brand, green);
 }
 .btn-light:hover, .btn-dark:focus, .webform-button--submit:hover {
-    background-color: palette(vibrant, discovery);
+    background-color: palette(brand, green);
     color: white;
-    border-color: palette(vibrant, discovery);
+    border-color: palette(brand, green);
 }
 .btn-dark {
-    background-color: #222;
+    background-color: palette(brand, green);
     color:white;
-    border: 2px solid #222;
+    border: 2px solid palette(brand, green);
 }
 p {
   a:link.btn-dark, a:visited.btn-dark {
@@ -46,13 +47,13 @@ p {
   text-align: center;
 }
 .btn-dark:hover {
-    color: palette(vibrant, discovery);
+    color: palette(brand, green);
     background: white;
-    border-color: palette(vibrant, discovery);
+    border-color: palette(brand, green);
 }
 p {
   a:link.btn-dark:hover, a:visited.btn-dark:hover {
-    color: palette(vibrant, discovery);
+    color: palette(brand, green);
   }
 }
 /* Button Shapes */
