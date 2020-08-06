@@ -44,27 +44,4 @@ class BlockContentValidationTest extends BlockContentTestBase {
     ]));
   }
 
-  /**
-   * Tests block label validation.
-   */
-  public function testLabelValidation() {
-    $block = $this->createBlockContent('foo', 'basic');
-    $block->setNonReusable();
-    $block->save();
-
-    $block2 = $this->createBlockContent('foo', 'basic');
-
-    $violations = $block2->validate();
-    // Make sure we have no violations.
-    $this->assertCount(0, $violations);
-
-    $block2->save();
-
-    $block3 = $this->createBlockContent('foo', 'basic');
-    $violations = $block3->validate();
-    // Make sure we have 1 violation.
-    $this->assertCount(1, $violations);
-    $this->assertEquals('info', $violations[0]->getPropertyPath());
-  }
-
 }

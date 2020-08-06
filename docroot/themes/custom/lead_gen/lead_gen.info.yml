@@ -1,0 +1,32 @@
+name: Lead Gen
+type: theme
+description: 'Lead Generation theme'
+package: lead_gen
+core: 8.x
+libraries:
+  - lead_gen/global-styling
+  - lead_gen/global-scripts
+  - lead_gen/poppins
+  - lead_gen/slick-css
+  - lead_gen/slick-css-theme
+  - lead_gen/slick-js
+
+base theme: classy
+
+regions:
+  header: Header
+  contact: Contact
+  social: Social
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  top: 'Page top'
+  bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+  menu_icon: 'Menu Icon'
+  tabs_region: 'Tabs Region'
