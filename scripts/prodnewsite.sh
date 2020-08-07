@@ -7,15 +7,17 @@ prefix="fws_"
 
 cd /var/www/html/fws/docroot/sites
 mkdir -p $site
-cat /usr/local/bin/scripts/prod.settings.txt > /var/www/html/fws/docroot/sites/$site/settings.php
+cat /var/www/html/fws/scripts/prod.settings.txt > /var/www/html/fws/docroot/sites/$site/settings.php
+
 sed -i "s/databasename/fws_$site/g" /var/www/html/fws/docroot/sites/$site/settings.php
 sed -i "s/rootuser/fws_admin/g" /var/www/html/fws/docroot/sites/$site/settings.php
 sed -i "s/rootpass/BafLjfMySql_2019/g" /var/www/html/fws/docroot/sites/$site/settings.php
 
 mkdir -p $site/files/
 chown -R www-data:www-data $site/files/
-chown -R www-data:www-data $site/settings.php
-chown vagrant:vagrant $site
+chown fws:fws $site
+chown fws:fws $site/settings.php
+chmod 644 $site/settings.php
 chmod -R 755 $site/files
 
 # Create the DB first since we have global read, a .my.cnf file and no grant option.
@@ -42,4 +44,7 @@ cd /var/www/html/fws/docroot/sites/
       fi
   done
 
-echo ##### Add server config /etc/hosts on term and enable the conf.
+echo ##### Adding server config /etc/hosts on term and enable the conf.
+cat /var/www/html/fws/scripts/vhost.txt > /etc/apache2/sites-available/$site.conf
+sed -i "s/website/$site/g" /etc/apache2/sites-available/$site.conf
+a2ensite $site
