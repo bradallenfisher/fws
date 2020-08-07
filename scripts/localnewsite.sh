@@ -21,8 +21,6 @@ chmod -R 775 $site/files
 # Create the DB first since we have global read, a .my.cnf file and no grant option.
 ##########################################################
 mysql -e "create database if not exists fws_$site;"
-mysqldump fws_lg > /var/www/$site.sql
-mysql fws_$site < /var/www/$site.sql
 
 cat /dev/null > /var/www/html/fws/docroot/sites/sites.php
 echo "<?php" >> /var/www/html/fws/docroot/sites/sites.php
