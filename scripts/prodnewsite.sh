@@ -14,7 +14,7 @@ sed -i "s/rootuser/fws_admin/g" /var/www/html/fws/docroot/sites/$site/settings.p
 sed -i "s/rootpass/BafLjfMySql_2019/g" /var/www/html/fws/docroot/sites/$site/settings.php
 
 mkdir -p $site/files/
-cp lg/files/* $site/files/
+cp lg/files/* $site/files/ -rf
 chown -R www-data:www-data $site/files/
 chown fws:fws $site
 chown fws:fws $site/settings.php
