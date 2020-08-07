@@ -44,7 +44,7 @@ cd /var/www/html/fws/docroot/sites/
       fi
   done
 
-echo ##### Adding server config /etc/hosts on term and enable the conf.
-cat /var/www/html/fws/scripts/vhost.txt > /etc/apache2/sites-available/$site.conf
+echo "##### Adding server config /etc/hosts on term and enable the conf."
+cat /var/www/html/fws/scripts/prod.vhost.txt > /etc/apache2/sites-available/$site.conf
 sed -i "s/website/$site/g" /etc/apache2/sites-available/$site.conf
 a2ensite $site
