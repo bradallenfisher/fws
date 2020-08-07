@@ -11,6 +11,7 @@ cat /var/www/html/fws/scripts/settings.local.txt > /var/www/html/fws/docroot/sit
 sed -i "s/databasename/fws_$site/g" /var/www/html/fws/docroot/sites/$site/settings.local.php
 
 mkdir -p $site/files/
+cp lg/files/* $site/files/ -r
 chown -R www-data:www-data $site/files/
 chown -R vagrant:vagrant $site/settings.php
 chmod 644 $site/settings.php

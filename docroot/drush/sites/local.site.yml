@@ -14,3 +14,7 @@ rv:
 lg:
   root: /var/www/html/fws/docroot
   uri: lg.fws.test
+
+tuscaloosalawncare:
+  root: /var/www/html/fws/docroot
+  uri: tuscaloosalawncare.fws.test
