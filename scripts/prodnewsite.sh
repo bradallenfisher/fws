@@ -15,7 +15,7 @@ sed -i "s/rootpass/BafLjfMySql_2019/g" /var/www/html/fws/docroot/sites/$site/set
 
 mkdir -p $site/files/
 cp lg/files/* $site/files/ -rf
-chown -R www-data:www-data $site/files/
+chown -R www-data:fws $site/files/
 chown fws:fws $site
 chown fws:fws $site/settings.php
 chmod 644 $site/settings.php
@@ -48,5 +48,5 @@ echo "##### Adding server config /etc/hosts on term and enable the conf."
 cat /var/www/html/fws/scripts/prod.vhost.txt > /etc/apache2/sites-available/$site.conf
 sed -i "s/website/$site/g" /etc/apache2/sites-available/$site.conf
 a2ensite $site
-echo "run new site sync on local"
+echo "run newsitesync.sh on local as vagrant"
 
