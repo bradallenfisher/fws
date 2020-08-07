@@ -15,3 +15,8 @@ rv:
   uri: rvfastfix.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws
+lg:
+  root: /var/www/html/fws/docroot
+  uri: lg.fisherwebsolutions.com
+  host: 172.104.215.47
+  user: fws

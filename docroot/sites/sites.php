@@ -1,12 +1,26 @@
 <?php
 
+
+$sites['insidekellyskitchen.fisherwebsolutions.com'] = 'insidekellyskitchen';
+$sites['insidekellyskitchen.fws.test'] = 'insidekellyskitchen';
+$sites['insidekellyskitchen.com'] = 'insidekellyskitchen';
+
+
+$sites['lg.fisherwebsolutions.com'] = 'lg';
+$sites['lg.fws.test'] = 'lg';
+$sites['lg.com'] = 'lg';
+
+
+$sites['rvfastfix.fisherwebsolutions.com'] = 'rvfastfix';
+$sites['rvfastfix.fws.test'] = 'rvfastfix';
+$sites['rvfastfix.com'] = 'rvfastfix';
+
+
+$sites['seostatecollege.fisherwebsolutions.com'] = 'seostatecollege';
 $sites['seostatecollege.fws.test'] = 'seostatecollege';
 $sites['seostatecollege.com'] = 'seostatecollege';
-$sites['ikkd8.fws.test'] = 'insidekellyskitchen';
-$sites['dev.insidekellyskitchen.com'] = 'insidekellyskitchen';
-$sites['insidekellyskitchen.com'] = 'insidekellyskitchen';
-$sites['rvfastfix.fws.test'] = 'rvfastfix';
-$sites['rvfastfix.fisherwebsolutions.com'] = 'rvfastfix';
-$sites['rvfastfix.com'] = 'rvfastfix';
-$sites['lg.fws.test'] = 'lg';
-$sites['lg.fisherwebsolutions.com'] = 'lg';
+
+
+$sites['tuscaloosalawncare.fisherwebsolutions.com'] = 'tuscaloosalawncare';
+$sites['tuscaloosalawncare.fws.test'] = 'tuscaloosalawncare';
+$sites['tuscaloosalawncare.com'] = 'tuscaloosalawncare';
