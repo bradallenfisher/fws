@@ -48,3 +48,5 @@ echo "##### Adding server config /etc/hosts on term and enable the conf."
 cat /var/www/html/fws/scripts/prod.vhost.txt > /etc/apache2/sites-available/$site.conf
 sed -i "s/website/$site/g" /etc/apache2/sites-available/$site.conf
 a2ensite $site
+echo "run new site sync on local"
+
