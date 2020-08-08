@@ -35,6 +35,7 @@
         "drupal/entity_browser_block": "^1.1",
         "drupal/fontawesome": "^2.17",
         "drupal/google_analytics": "^3.1",
+        "drupal/google_map_field": "^1.14",
         "drupal/helper": "^1.5",
         "drupal/http2_server_push": "^1.1",
         "drupal/inline_entity_form": "^1.0@RC",
