@@ -120,7 +120,7 @@ select {
 .block-inline-blockimage {
   margin: 0 20px; }
 
-.block-layout-block img {
+.block-layout-builder img {
   display: block;
   height: auto;
   margin-bottom: 20px; }
