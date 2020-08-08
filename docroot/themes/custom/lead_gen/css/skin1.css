@@ -98,7 +98,7 @@ select {
     .block-inline-blockhero {
       background-attachment: fixed !important;
       background-position: top center !important; } }
-  .block-inline-blockhero h1 {
+  .block-inline-blockhero h1, .block-inline-blockhero p {
     font-size: 5vw;
     color: white;
     padding: 5px 25px;
