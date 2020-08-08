@@ -77,8 +77,6 @@ select {
     padding: 0 20px; }
   .block-inline-blockbasic h2 {
     text-transform: uppercase; }
-  .block-inline-blockbasic img {
-    margin-bottom: 20px; }
 
 .field--name-body p {
   margin-bottom: 20px; }
@@ -121,10 +119,11 @@ select {
 
 .block-inline-blockimage {
   margin: 0 20px; }
-  .block-inline-blockimage img {
-    display: block;
-    height: auto;
-    margin-bottom: 20px; }
+
+.block-layout-block img {
+  display: block;
+  height: auto;
+  margin-bottom: 20px; }
 
 #block-phonenumbertopofsite a {
   font-size: 2rem;
