@@ -1323,6 +1323,12 @@ h6 {
   .block-webform-block .form-actions {
     text-align: center; }
 
+.webform-confirmation__message, .webform-confirmation__back {
+  box-sizing: border-box;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .box .layout-inner {
   box-sizing: border-box;
   max-width: 1350px;

@@ -10,3 +10,6 @@
     text-align: center;
   }
 }
+.webform-confirmation__message, .webform-confirmation__back {
+    @include container();
+}
