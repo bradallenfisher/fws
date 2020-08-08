@@ -605,7 +605,8 @@ a:link,
 a:focus,
 a:hover,
 a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+  word-break: break-all; }
 
 p a:link, p a:focus, p a:visited, .paragraph--type--text-box a:link, .paragraph--type--text-box a:focus, .paragraph--type--text-box a:visited, h2 a:link, h2 a:focus, h2 a:visited, .field--name-body a:link, .field--name-body a:focus, .field--name-body a:visited {
   color: #007C0C;

@@ -3,6 +3,7 @@ a:focus,
 a:hover,
 a:visited{
   text-decoration: none;
+  word-break: break-all;
 }
 
   p, .paragraph--type--text-box, h2, .field--name-body {
