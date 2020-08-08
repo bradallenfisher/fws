@@ -1,0 +1,10 @@
+name: Helper
+type: module
+description: 'Provides development helpers.'
+core_version_requirement: ^8.8 || ^9
+php: 7.2
+
+# Information added by Drupal.org packaging script on 2020-05-28
+version: '8.x-1.5'
+project: 'helper'
+datestamp: 1590701385

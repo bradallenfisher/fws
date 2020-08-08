@@ -3947,6 +3947,52 @@
         }
     },
     {
+        "name": "drupal/helper",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/helper.git",
+            "reference": "8.x-1.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/helper-8.x-1.5.zip",
+            "reference": "8.x-1.5",
+            "shasum": "d5dddbbb28b3498e2635d2f1624ba768b28874ca"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.5",
+                "datestamp": "1590702012",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            }
+        ],
+        "description": "Provides development helpers.",
+        "homepage": "https://www.drupal.org/project/helper",
+        "support": {
+            "source": "https://git.drupalcode.org/project/helper"
+        }
+    },
+    {
         "name": "drupal/http2_server_push",
         "version": "1.1.0",
         "version_normalized": "1.1.0.0",
