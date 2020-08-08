@@ -21,6 +21,12 @@ $sites['seostatecollege.fws.test'] = 'seostatecollege';
 $sites['seostatecollege.com'] = 'seostatecollege';
 
 
+$sites['test.fisherwebsolutions.com'] = 'test';
+$sites['test.fws.test'] = 'test';
+$sites['test.com'] = 'test';
+
+
 $sites['tuscaloosalawncare.fisherwebsolutions.com'] = 'tuscaloosalawncare';
 $sites['tuscaloosalawncare.fws.test'] = 'tuscaloosalawncare';
 $sites['tuscaloosalawncare.com'] = 'tuscaloosalawncare';
+$sites['www.tuscaloosalawncare.com'] = 'tuscaloosalawncare';
