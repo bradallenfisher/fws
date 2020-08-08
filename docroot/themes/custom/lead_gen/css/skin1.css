@@ -77,6 +77,8 @@ select {
     padding: 0 20px; }
   .block-inline-blockbasic h2 {
     text-transform: uppercase; }
+  .block-inline-blockbasic img {
+    margin-bottom: 20px; }
 
 .field--name-body p {
   margin-bottom: 20px; }
