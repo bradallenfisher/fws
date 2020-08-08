@@ -104,7 +104,8 @@ select {
     padding: 5px 25px;
     text-align: center;
     border-radius: .3rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: inherit; }
   .block-inline-blockhero .hero-top {
     margin: 40px; }
     @media (min-width: 768px) {
