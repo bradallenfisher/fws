@@ -36,7 +36,11 @@
   <div class="hero-top">
     {{ title_prefix }}
     {% if label %}
-      <h1{{ title_attributes }}>{{ label }}</h1>
+      {% if content.field_heading_level|render %}
+        <{{ content.field_heading_level[0] }} {{ title_attributes }}>{{ label }}</{{ content.field_heading_level[0] }}>
+      {% else %}
+        <h1{{ title_attributes }}>{{ label }}</h1>
+      {% endif %}
     {% endif %}
     {{ title_suffix }}
     {% block content %}
