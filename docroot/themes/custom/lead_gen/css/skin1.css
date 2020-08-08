@@ -121,7 +121,8 @@ select {
   margin: 0 20px; }
   .block-inline-blockimage img {
     display: block;
-    height: auto; }
+    height: auto;
+    margin-bottom: 20px; }
 
 #block-phonenumbertopofsite a {
   font-size: 2rem;
@@ -1303,14 +1304,14 @@ h6 {
   margin-top: 20px;
   line-height: 1.2; }
 
-.block-webform-block input {
-  width: 100%; }
-
-.block-webform-block .webform-button--submit {
-  width: inherit; }
-
-.block-webform-block .form-actions {
-  text-align: center; }
+.block-webform-block {
+  margin: 20px; }
+  .block-webform-block input {
+    width: 100%; }
+  .block-webform-block .webform-button--submit {
+    width: inherit; }
+  .block-webform-block .form-actions {
+    text-align: center; }
 
 .box .layout-inner {
   box-sizing: border-box;
