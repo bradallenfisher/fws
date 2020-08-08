@@ -10,7 +10,7 @@
   }
 
   h1, p {
-    @mixin heading_font ();
+    @include heading_font();
     font-size: 5vw;
     color: white;
     padding: 5px 25px;
