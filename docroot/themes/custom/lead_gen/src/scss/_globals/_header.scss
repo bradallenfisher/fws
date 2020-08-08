@@ -63,7 +63,7 @@ $header_shift_3: 1500px;
       @include breakpoint($header_shift_1, true) {
         display: flex !important;
         grid-column-start: 6;
-        grid-column-end: 13;
+        grid-column-end: 12;
         order: 2;
         align-items: center;
         justify-content: flex-end;
