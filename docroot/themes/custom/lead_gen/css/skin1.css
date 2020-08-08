@@ -123,8 +123,7 @@ select {
 .block-layout-builder img {
   display: block;
   height: auto;
-  margin-bottom: 20px;
-  margin: 0 auto; }
+  margin: 0 auto 20px auto; }
 
 #block-phonenumbertopofsite a {
   font-size: 2rem;
