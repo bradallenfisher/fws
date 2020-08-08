@@ -607,11 +607,11 @@ a:hover,
 a:visited {
   text-decoration: none; }
 
-p a:link, p a:focus, p a:visited, .paragraph--type--text-box a:link, .paragraph--type--text-box a:focus, .paragraph--type--text-box a:visited, h2 a:link, h2 a:focus, h2 a:visited, .field--name-body p a:link, .field--name-body p a:focus, .field--name-body p a:visited {
+p a:link, p a:focus, p a:visited, .paragraph--type--text-box a:link, .paragraph--type--text-box a:focus, .paragraph--type--text-box a:visited, h2 a:link, h2 a:focus, h2 a:visited, .field--name-body a:link, .field--name-body a:focus, .field--name-body a:visited {
   color: #007C0C;
   font-weight: bold; }
 
-p a:hover, .paragraph--type--text-box a:hover, h2 a:hover, .field--name-body p a:hover {
+p a:hover, .paragraph--type--text-box a:hover, h2 a:hover, .field--name-body a:hover {
   color: #000;
   font-weight: bold; }
 

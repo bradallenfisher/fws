@@ -5,7 +5,7 @@ a:visited{
   text-decoration: none;
 }
 
-  p, .paragraph--type--text-box, h2, .field--name-body p {
+  p, .paragraph--type--text-box, h2, .field--name-body {
     a:link, a:focus, a:visited {
       color: palette(brand, green);
       font-weight: bold;
