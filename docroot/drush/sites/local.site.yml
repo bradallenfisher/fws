@@ -18,3 +18,7 @@ lg:
 tuscaloosalawncare:
   root: /var/www/html/fws/docroot
   uri: tuscaloosalawncare.fws.test
+
+homeremodelinglincoln:
+  root: /var/www/html/fws/docroot
+  uri: homeremodelinglincoln.fws.test
