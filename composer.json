@@ -55,6 +55,7 @@
         "drupal/replicate": "^1.0",
         "drupal/replicate_ui": "^1.0",
         "drupal/responsive_menu": "^4.1",
+        "drupal/robotstxt": "^1.4",
         "drupal/rrssb": "^2.2",
         "drupal/schema_metatag": "^1.6",
         "drupal/search_autocomplete": "^2.0",
@@ -90,6 +91,10 @@
             "locations": {
                 "web-root": "./docroot"
             }
+        },
+        "file-mapping": {
+            "docroot/robots.txt": false,
+            "docroot/.htaccess": false
         },
         "installer-paths": {
             "docroot/core": ["type:drupal-core"],

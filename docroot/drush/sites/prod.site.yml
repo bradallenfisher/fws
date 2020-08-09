@@ -22,6 +22,6 @@ lg:
   user: fws
 tuscaloosalawncare:
   root: /var/www/html/fws/docroot
-  uri: tuscaloosalawncare.fisherwebsolutions.com
+  uri: tuscaloosalawncare.com
   host: 172.104.215.47
   user: fws
