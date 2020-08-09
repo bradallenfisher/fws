@@ -3,7 +3,10 @@
 ## RUN ./newsite.sh foundationrepairprosbatonrouge wp_
 
 site=$1
-prefix="fws_"
+echo "##### Adding server config /etc/hosts on term and enable the conf."
+cat /var/www/html/fws/scripts/prod.vhost.txt > /etc/apache2/sites-available/$site.conf
+sed -i "s/website/$site/g" /etc/apache2/sites-available/$site.conf
+a2ensite $site
 
 cd /var/www/html/fws/docroot/sites
 mkdir -p $site
@@ -23,7 +26,7 @@ chmod -R 755 $site/files
 
 # Create the DB first since we have global read, a .my.cnf file and no grant option.
 ##########################################################
-mysql -e "create database if not exists $prefix$site;"
+mysql -e "create database if not exists fws_$site;"
 mysqldump fws_lg > /var/www/$site.sql
 mysql fws_$site < /var/www/$site.sql
 
@@ -44,8 +47,3 @@ cd /var/www/html/fws/docroot/sites/
         echo "\$sites['${site}.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
       fi
   done
-
-echo "##### Adding server config /etc/hosts on term and enable the conf."
-cat /var/www/html/fws/scripts/prod.vhost.txt > /etc/apache2/sites-available/$site.conf
-sed -i "s/website/$site/g" /etc/apache2/sites-available/$site.conf
-a2ensite $site
