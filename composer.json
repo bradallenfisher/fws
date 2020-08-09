@@ -25,6 +25,7 @@
         "drupal/bg_image_formatter": "^1.14",
         "drupal/block_field": "^1.0@RC",
         "drupal/ckeditor_templates": "^1.1",
+        "drupal/colorbox": "^1.6",
         "drupal/context": "^4.0@beta",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
@@ -38,6 +39,7 @@
         "drupal/google_map_field": "^1.14",
         "drupal/helper": "^1.5",
         "drupal/http2_server_push": "^1.1",
+        "drupal/image_effects": "^3.0",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/layout_bg": "^1.0@RC",
         "drupal/layout_builder_modal": "^1.1",
@@ -90,12 +92,13 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "./docroot"
+            },
+            "file-mapping": {
+              "[web-root]/robots.txt": false,
+              "[web-root]/.htaccess": false
             }
         },
-        "file-mapping": {
-            "docroot/robots.txt": false,
-            "docroot/.htaccess": false
-        },
+
         "installer-paths": {
             "docroot/core": ["type:drupal-core"],
             "docroot/libraries/{$name}": ["type:drupal-library"],
