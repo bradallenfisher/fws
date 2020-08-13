@@ -47,7 +47,8 @@ a:not([class]) {
 /* Make images easier to work with */
 img {
   max-width: 100%;
-  display: block; }
+  display: block;
+  height: auto; }
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -524,17 +525,18 @@ footer {
           color: palett(mono, black); }
         .header .header-inner .navigation ul.horizontal-menu ul.menu.sub-nav {
           margin: 0;
-          background: #191a1c;
           cursor: pointer; }
           .header .header-inner .navigation ul.horizontal-menu ul.menu.sub-nav li a {
             color: #fff;
             display: block;
             font-weight: 300;
-            padding-left: 20px;
-            border-radius: 0; }
+            padding-left: 10px;
+            border-radius: 0;
+            background: #191a1c; }
             .header .header-inner .navigation ul.horizontal-menu ul.menu.sub-nav li a:hover {
               padding-left: 10px;
-              border-radius: 0; }
+              border-radius: 0;
+              background: #35383c; }
           .header .header-inner .navigation ul.horizontal-menu ul.menu.sub-nav:before {
             content: ' ';
             height: 0;
@@ -1373,7 +1375,8 @@ h6 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
-          flex: 0 1 100%; }
+          flex: 0 1 100%;
+  padding: 5px; }
 
 @media screen and (min-width: 40em) {
   .layout--fourcol-section > .layout-inner > .layout__region {

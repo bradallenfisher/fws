@@ -106,7 +106,7 @@ $header_shift_3: 1500px;
 
         ul.menu.sub-nav {
           margin: 0;
-          background: palette(mono, dark);
+
           cursor: pointer;
 
           li {
@@ -114,12 +114,15 @@ $header_shift_3: 1500px;
               color: palette(mono, white);
               display: block;
               font-weight: 300;
-              padding-left:  20px;
+              padding-left:  10px;
               border-radius: 0;
+              background: palette(mono, dark);
+
 
               &:hover {
                 padding-left: 10px;
                 border-radius: 0;
+                background: palette(mono, medium);
               }
             }
           }

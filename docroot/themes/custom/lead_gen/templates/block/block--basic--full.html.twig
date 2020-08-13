@@ -30,12 +30,17 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
+    (render_var(content.field_padding.0)),
   ]
 %}
+
+{% set title_align = create_attribute() %}
+{% set heading_alignment = 'text-align-' ~ (render_var(content.field_heading_alignment.0))|clean_class %}
+
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
-    <{{ content.field_heading_level[0] }} {{ title_attributes }}>{{ label }}</{{ content.field_heading_level[0] }}>
+    <{{ content.field_heading_level[0] }} {{ title_attributes }} {{ title_align.addClass(heading_alignment) }}>{{ label }}</{{ content.field_heading_level[0] }}>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
