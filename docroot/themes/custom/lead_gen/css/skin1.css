@@ -71,10 +71,8 @@ select {
 * Better function for color palettes using Sass maps
 * Usage: color: palette(brand,salmon);
 */
-.block-inline-blockbasic {
-  margin: 0 20px; }
-  .block-inline-blockbasic h2 {
-    text-transform: uppercase; }
+.block-inline-blockbasic h2 {
+  text-transform: uppercase; }
 
 .field--name-body p {
   margin-bottom: 20px; }
@@ -167,6 +165,9 @@ select {
   line-height: 60px; }
   #block-phonenumbertopofsite a:hover {
     color: #007C0C; }
+
+.block-inline-blocksimple-quote.light {
+  background: #f1f1f1; }
 
 /* Testimonials */
 .testimonial {
@@ -1395,6 +1396,11 @@ h6 {
 .layout.border_bottom {
   border-bottom: 1px solid #f1f1f1;
   padding-bottom: 30px; }
+
+.layout.light {
+  background: #f1f1f1 !important; }
+  .layout.light p, .layout.light .layout-builder-block__content-preview-placeholder-label {
+    color: #191a1c; }
 
 /*
  * @file

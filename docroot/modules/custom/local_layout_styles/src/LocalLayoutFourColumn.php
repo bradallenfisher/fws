@@ -76,15 +76,13 @@ class LocalLayoutFourColumn extends LayoutDefault implements PluginFormInterface
       '#empty_option' => " -- NONE -- ",
       '#title' => $this->t('Background Color'),
       '#options' => [
-        'beaver_blue' => $this->t('Beaver Blue'),
-        'penn_sky' => $this->t('Penn Sky'),
-        'slate' => $this->t('Slate'),
-        'creek' => $this->t('Creek'),
-        'nittany_navy' => $this->t('Nittany Navy'),
-        'limestone' => $this->t('Limestone'),
+        'light' => $this->t('Light'),
+        'dark' => $this->t('Dark'),
+        'brand' => $this->t('Brand'),
       ],
       '#default_value' => $configuration['background_color'],
     ];
+
     return $form;
   }
 

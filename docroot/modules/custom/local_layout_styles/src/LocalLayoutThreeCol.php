@@ -87,12 +87,9 @@ class LocalLayoutThreeCol extends LayoutDefault implements PluginFormInterface {
       '#empty_option' => " -- NONE -- ",
       '#title' => $this->t('Background Color'),
       '#options' => [
-        'beaver-blue' => $this->t('Beaver Blue'),
-        'penn-sky' => $this->t('Penn Sky'),
-        'slate' => $this->t('Slate'),
-        'creek' => $this->t('Creek'),
-        'nittany-navy' => $this->t('Nittany Navy'),
-        'limestone' => $this->t('Limestone'),
+        'light' => $this->t('Light'),
+        'dark' => $this->t('Dark'),
+        'brand' => $this->t('Brand'),
       ],
       '#default_value' => $configuration['background_color'],
     ];
