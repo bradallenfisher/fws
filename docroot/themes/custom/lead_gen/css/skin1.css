@@ -137,14 +137,6 @@ select {
   .block-inline-blockhero .hero-button {
     text-align: center; }
 
-.block-inline-blockimage {
-  margin: 0 20px; }
-
-.block-layout-builder img {
-  display: block;
-  height: auto;
-  margin: 0 auto 20px auto; }
-
 #cboxTitle {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -1390,8 +1382,8 @@ h6 {
         -ms-flex: 0 1 25%;
             flex: 0 1 25%; } }
 
-.layout {
-  padding: 20px 0; }
+.layout__region {
+  padding: 10px; }
 
 .layout.border_bottom {
   border-bottom: 1px solid #f1f1f1;
