@@ -1,5 +1,0 @@
-administer media gallery:
-  title: 'Administer media gallery settings'
-  restrict access: true
-access media gallery overview:
-  title: 'Access media gallery overview page'

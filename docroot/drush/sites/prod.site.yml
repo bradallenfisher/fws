@@ -27,6 +27,6 @@ tuscaloosalawncare:
   user: fws
 homeremodelinglincoln:
   root: /var/www/html/fws/docroot
-  uri: homeremodelinglincoln.fisherwebsolutions.com
+  uri: homeremodelinglincoln.com
   host: 172.104.215.47
   user: fws

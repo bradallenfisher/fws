@@ -56,48 +56,48 @@ class LayoutBgUiTest extends WebDriverTestBase {
     $page->uncheckField('layout-builder-content-preview');
 
     // Two-column: Check that blocks start out in the right place.
-    $assert_session->elementTextNotContains('css', '.layout--twocol-section [data-region="background"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="background"]', 'Layout BG Teaser Image');
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="background"]', 'Layout BG Hero Image');
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="first"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="second"]', 'Body');
+    $assert_session->elementTextNotContains('css', '.layout--twocol-sectionhtmltwig [data-region="background"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="background"]', 'Layout BG Teaser Image');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="background"]', 'Layout BG Hero Image');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="first"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="second"]', 'Body');
 
     // One-column: Check that blocks start out in the right place.
-    $assert_session->elementTextNotContains('css', '.layout--onecol [data-region="background"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="background"]', 'Layout BG Teaser Image');
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="background"]', 'Layout BG Hero Image');
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="content"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="content"]', 'Body');
+    $assert_session->elementTextNotContains('css', '.layout--onecolhtmltwig [data-region="background"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="background"]', 'Layout BG Teaser Image');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="background"]', 'Layout BG Hero Image');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="content"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="content"]', 'Body');
 
     // Two-column: Drag the title block to background.
-    $this->sortableTo('.layout--twocol-section .block-field-blocknodelayout-bg-test-nodetitle', '.layout--twocol-section [data-region="first"]', '.layout--twocol-section [data-region="background"]');
+    $this->sortableTo('.layout--twocol-sectionhtmltwig .block-field-blocknodelayout-bg-test-nodetitle', '.layout--twocol-sectionhtmltwig [data-region="first"]', '.layout--twocol-sectionhtmltwig [data-region="background"]');
     $assert_session->assertWaitOnAjaxRequest();
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="background"]', 'Title');
-    $assert_session->elementTextNotContains('css', '.layout--twocol-section [data-region="first"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="background"]', 'Title');
+    $assert_session->elementTextNotContains('css', '.layout--twocol-sectionhtmltwig [data-region="first"]', 'Title');
 
     // One-column: Drag the title block to background.
-    $this->sortableTo('.layout--onecol .block-field-blocknodelayout-bg-test-nodetitle', '.layout--onecol [data-region="content"]', '.layout--onecol [data-region="background"]');
+    $this->sortableTo('.layout--onecolhtmltwig .block-field-blocknodelayout-bg-test-nodetitle', '.layout--onecolhtmltwig [data-region="content"]', '.layout--onecolhtmltwig [data-region="background"]');
     $assert_session->assertWaitOnAjaxRequest();
-    $assert_session->elementTextNotContains('css', '.layout--onecol [data-region="content"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="background"]', 'Title');
+    $assert_session->elementTextNotContains('css', '.layout--onecolhtmltwig [data-region="content"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="background"]', 'Title');
 
     // Save and make sure the config sticks.
     $page->pressButton('Save layout');
     $this->drupalGet($layout_url);
 
     // Two-column.
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="background"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="background"]', 'Layout BG Teaser Image');
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="background"]', 'Layout BG Hero Image');
-    $assert_session->elementTextNotContains('css', '.layout--twocol-section [data-region="first"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--twocol-section [data-region="second"]', 'Body');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="background"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="background"]', 'Layout BG Teaser Image');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="background"]', 'Layout BG Hero Image');
+    $assert_session->elementTextNotContains('css', '.layout--twocol-sectionhtmltwig [data-region="first"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--twocol-sectionhtmltwig [data-region="second"]', 'Body');
 
     // One-column.
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="background"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="background"]', 'Layout BG Teaser Image');
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="background"]', 'Layout BG Hero Image');
-    $assert_session->elementTextNotContains('css', '.layout--onecol [data-region="content"]', 'Title');
-    $assert_session->elementTextContains('css', '.layout--onecol [data-region="content"]', 'Body');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="background"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="background"]', 'Layout BG Teaser Image');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="background"]', 'Layout BG Hero Image');
+    $assert_session->elementTextNotContains('css', '.layout--onecolhtmltwig [data-region="content"]', 'Title');
+    $assert_session->elementTextContains('css', '.layout--onecolhtmltwig [data-region="content"]', 'Body');
   }
 
 }

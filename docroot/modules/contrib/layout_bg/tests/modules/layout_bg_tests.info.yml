@@ -13,7 +13,7 @@ dependencies:
   - drupal:user
   - drupal:path
 
-# Information added by Drupal.org packaging script on 2020-07-30
-version: '8.x-1.0-rc1'
+# Information added by Drupal.org packaging script on 2020-08-11
+version: '8.x-1.0-rc2'
 project: 'layout_bg'
-datestamp: 1596116718
+datestamp: 1597161365

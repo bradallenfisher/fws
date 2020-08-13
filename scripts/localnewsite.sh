@@ -41,6 +41,7 @@ cd /var/www/html/fws/docroot/sites/
       if [[ -d $site && $site != "default" && $site != "all" ]]
       then
         echo -e "\n"                                             >> /var/www/html/fws/docroot/sites/sites.php
+        echo "\$sites['www.${site}.fisherwebsolutions.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
         echo "\$sites['${site}.fisherwebsolutions.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
         echo "\$sites['${site}.fws.test'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
         echo "\$sites['${site}.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php

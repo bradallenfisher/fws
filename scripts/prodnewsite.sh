@@ -29,21 +29,3 @@ chmod -R 755 $site/files
 mysql -e "create database if not exists fws_$site;"
 mysqldump fws_lg > /var/www/$site.sql
 mysql fws_$site < /var/www/$site.sql
-
-cat /dev/null > /var/www/html/fws/docroot/sites/sites.php
-echo "<?php" >> /var/www/html/fws/docroot/sites/sites.php
-
-#Loop through FBDRUPAL sites Directory
-cd /var/www/html/fws/docroot/sites/
-  # grab each directory by name
-  for site in *
-    do
-      #if it is a directory not a file - and not default - and not all.
-      if [[ -d $site && $site != "default" && $site != "all" ]]
-      then
-        echo -e "\n"                                             >> /var/www/html/fws/docroot/sites/sites.php
-        echo "\$sites['${site}.fisherwebsolutions.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
-        echo "\$sites['${site}.fws.test'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
-        echo "\$sites['${site}.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
-      fi
-  done

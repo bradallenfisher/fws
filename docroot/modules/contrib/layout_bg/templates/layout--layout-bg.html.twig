@@ -12,7 +12,6 @@
  */
 #}
 {% if content %}
-  {% set base_layout = base_layout_template ? {'#markup': include(base_layout_template)} %}
   {% if content.background.layout_builder_add_block %}
     {# Edit Form #}
     <div class="layout-bg-edit">
@@ -28,7 +27,7 @@
           <h3{{ region_attributes.content_attributes.addClass('layout-bg-preview-text') }}>{% trans %}Color preview if image does not load.{% endtrans %}</h3>
         </div>
       </div>
-      <div{{ attributes }}>
+      <div{{ attributes.addClass(base_layout_template|clean_class) }}>
         <div{{ region_attributes.background.addClass('layout__region') }}>
           {{ content.background }}
         </div>
@@ -36,7 +35,7 @@
       <div>
         <h3>{% trans %}Content{% endtrans %}</h3>
       </div>
-      {{ base_layout }}
+      {% include(base_layout_template) %}
     </div>
   {% else %}
     {# Rendering #}
@@ -51,7 +50,7 @@
           {% endif %}
         </div>
         <div {{ region_attributes.content_attributes.addClass('layout-bg-content-container') }}>
-          {{ base_layout }}
+          {% include(base_layout_template) %}
         </div>
       </div>
     </div>
