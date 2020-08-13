@@ -1382,9 +1382,6 @@ h6 {
         -ms-flex: 0 1 25%;
             flex: 0 1 25%; } }
 
-.layout__region {
-  padding: 10px; }
-
 .layout.border_bottom {
   border-bottom: 1px solid #f1f1f1;
   padding-bottom: 30px; }
