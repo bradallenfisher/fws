@@ -1411,7 +1411,8 @@ h6 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
-          flex: 0 1 100%; }
+          flex: 0 1 100%;
+  padding: 10px; }
 
 @media screen and (min-width: 40em) {
   .layout--threecol-section--25-50-25 > .layout-inner > .layout__region--first,
@@ -1460,7 +1461,8 @@ h6 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
-          flex: 0 1 100%; }
+          flex: 0 1 100%;
+  padding: 10px; }
 
 @media screen and (min-width: 40em) {
   .layout--twocol-section.layout--twocol-section--50-50 > .layout-inner > .layout__region--first,
