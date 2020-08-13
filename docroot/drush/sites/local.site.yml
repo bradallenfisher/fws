@@ -1,24 +1,24 @@
 # Application 'psufandbsites', environment 'test'.
 seosc:
   root: /var/www/html/fws/docroot
-  uri: seostatecollege.fws.test
+  uri: www.seostatecollege.fws.test
 
 ikk:
   root: /var/www/html/fws/docroot
-  uri: ikkd8.fws.test
+  uri: www.ikkd8.fws.test
 
 rv:
   root: /var/www/html/fws/docroot
-  uri: rvfastfix.fws.test
+  uri: www.rvfastfix.fws.test
 
 lg:
   root: /var/www/html/fws/docroot
-  uri: lg.fws.test
+  uri: www.lg.fws.test
 
 tuscaloosalawncare:
   root: /var/www/html/fws/docroot
-  uri: tuscaloosalawncare.fws.test
+  uri: www.tuscaloosalawncare.fws.test
 
 homeremodelinglincoln:
   root: /var/www/html/fws/docroot
-  uri: homeremodelinglincoln.fws.test
+  uri: www.homeremodelinglincoln.fws.test

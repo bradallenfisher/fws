@@ -5120,6 +5120,63 @@
         }
     },
     {
+        "name": "drupal/media_gallery",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/media_gallery.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/media_gallery-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "2ba4a05948d7842b373a769cb741bf41974acb9e"
+        },
+        "require": {
+            "drupal/colorbox": "^1",
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1591364743",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "JacobSingh",
+                "homepage": "https://www.drupal.org/user/68912"
+            },
+            {
+                "name": "ivnish",
+                "homepage": "https://www.drupal.org/user/3547706"
+            }
+        ],
+        "description": "A simple gallery of media.",
+        "homepage": "http://drupal.org/project/media_gallery",
+        "keywords": [
+            "Drupal",
+            "Gallery",
+            "Media"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/media_gallery",
+            "issues": "https://www.drupal.org/project/issues/media_gallery"
+        }
+    },
+    {
         "name": "drupal/metatag",
         "version": "1.14.0",
         "version_normalized": "1.14.0.0",
