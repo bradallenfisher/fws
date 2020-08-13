@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Layout\LayoutDefault;
 use Drupal\Core\Plugin\PluginFormInterface;
 
-class LocalLayoutTwoCol extends LayoutDefault implements PluginFormInterface {
+class LocalLayoutFourColumn extends LayoutDefault implements PluginFormInterface {
 
   /**
    * {@inheritdoc}
@@ -22,23 +22,11 @@ class LocalLayoutTwoCol extends LayoutDefault implements PluginFormInterface {
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $configuration = $this->getConfiguration();
+
     $form['label'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Administrative label'),
       '#default_value' => $this->configuration['label'],
-    ];
-
-    $form['column_widths'] = [
-      '#type' => 'select',
-      '#title' => $this->t('Column Widths'),
-      '#options' => [
-        'layout--twocol-section--50-50' => $this->t('50%/50%'),
-        'layout--twocol-section--33-67' => $this->t('33%/67%'),
-        'layout--twocol-section--67-33' => $this->t('67%/33%'),
-        'layout--twocol-section--25-75' => $this->t('25%/75%'),
-        'layout--twocol-section--75-25' => $this->t('75%/25%'),
-      ],
-      '#default_value' => $configuration['column_widths'],
     ];
     $form['sizing'] = [
       '#type' => 'select',
@@ -88,16 +76,15 @@ class LocalLayoutTwoCol extends LayoutDefault implements PluginFormInterface {
       '#empty_option' => " -- NONE -- ",
       '#title' => $this->t('Background Color'),
       '#options' => [
-        'beaver-blue' => $this->t('Beaver Blue'),
-        'penn-sky' => $this->t('Penn Sky'),
+        'beaver_blue' => $this->t('Beaver Blue'),
+        'penn_sky' => $this->t('Penn Sky'),
         'slate' => $this->t('Slate'),
         'creek' => $this->t('Creek'),
-        'nittany-navy' => $this->t('Nittany Navy'),
+        'nittany_navy' => $this->t('Nittany Navy'),
         'limestone' => $this->t('Limestone'),
       ],
       '#default_value' => $configuration['background_color'],
     ];
-
     return $form;
   }
 
@@ -113,13 +100,11 @@ class LocalLayoutTwoCol extends LayoutDefault implements PluginFormInterface {
    */
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
     $this->configuration['label'] = $form_state->getValue('label');
-    $this->configuration['background_color'] = $form_state->getValue('background_color');
+    $this->configuration['slider'] = $form_state->getValue('slider');
+    $this->configuration['sizing'] = $form_state->getValue('sizing');
     $this->configuration['padding'] = $form_state->getValue('padding');
     $this->configuration['margin_top'] = $form_state->getValue('margin_top');
     $this->configuration['margin_bottom'] = $form_state->getValue('margin_bottom');
-    $this->configuration['column_widths'] = $form_state->getValue('column_widths');
-    $this->configuration['sizing'] = $form_state->getValue('sizing');
-
+    $this->configuration['background_color'] = $form_state->getValue('background_color');
   }
-
 }
