@@ -32,6 +32,11 @@ homeremodelinglincoln:
   user: fws
 greensborofoundation:
   root: /var/www/html/fws/docroot
-  uri: www.greensborofoundation.fisherwebsolutions.com
+  uri: www.greensborofoundation.com
+  host: 172.104.215.47
+  user: fws
+carpetcleaningallentown:
+  root: /var/www/html/fws/docroot
+  uri: www.fisherwebsolutions.carpetcleaningallentown.com
   host: 172.104.215.47
   user: fws

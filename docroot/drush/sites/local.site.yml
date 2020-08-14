@@ -26,3 +26,7 @@ homeremodelinglincoln:
 greensborofoundation:
   root: /var/www/html/fws/docroot
   uri: www.greensborofoundation.fws.test
+
+carpetcleaningallentown:
+  root: /var/www/html/fws/docroot
+  uri: www.carpetcleaningallentown.fws.test

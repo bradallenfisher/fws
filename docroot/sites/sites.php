@@ -1,6 +1,13 @@
 <?php
 
 
+$sites['www.carpetcleaningallentown.fisherwebsolutions.com'] = 'carpetcleaningallentown';
+$sites['carpetcleaningallentown.fisherwebsolutions.com'] = 'carpetcleaningallentown';
+$sites['carpetcleaningallentown.fws.test'] = 'carpetcleaningallentown';
+$sites['carpetcleaningallentown.com'] = 'carpetcleaningallentown';
+$sites['www.carpetcleaningallentown.com'] = 'carpetcleaningallentown';
+
+
 $sites['www.greensborofoundation.fisherwebsolutions.com'] = 'greensborofoundation';
 $sites['greensborofoundation.fisherwebsolutions.com'] = 'greensborofoundation';
 $sites['greensborofoundation.fws.test'] = 'greensborofoundation';
