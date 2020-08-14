@@ -8,7 +8,7 @@
         # However, you must set it for any further virtual host explicitly.
 
         ServerName website.com
-        ServerAlias www.website.com dev.website.com website.fisherwebsolutions.com
+        ServerAlias www.website.com dev.website.com www.website.fisherwebsolutions.com
 
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/html/fws/docroot

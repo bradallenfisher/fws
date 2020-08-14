@@ -22,3 +22,7 @@ tuscaloosalawncare:
 homeremodelinglincoln:
   root: /var/www/html/fws/docroot
   uri: www.homeremodelinglincoln.fws.test
+
+greensborofoundation:
+  root: /var/www/html/fws/docroot
+  uri: www.greensborofoundation.fws.test

@@ -2,31 +2,36 @@
 # Application 'psufandbsites', environment 'prod'.
 seosc:
   root: /var/www/html/fws/docroot
-  uri: seostatecollege.com
+  uri: www.seostatecollege.com
   host: 172.104.215.47
   user: fws
 ikk:
   root: /var/www/html/fws/docroot
-  uri: insidekellyskitchen.com
+  uri: www.insidekellyskitchen.com
   host: 172.104.215.47
   user: fws
 rv:
   root: /var/www/html/fws/docroot
-  uri: rvfastfix.fisherwebsolutions.com
+  uri: www.rvfastfix.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws
 lg:
   root: /var/www/html/fws/docroot
-  uri: lg.fisherwebsolutions.com
+  uri: www.lg.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws
 tuscaloosalawncare:
   root: /var/www/html/fws/docroot
-  uri: tuscaloosalawncare.com
+  uri: www.tuscaloosalawncare.com
   host: 172.104.215.47
   user: fws
 homeremodelinglincoln:
   root: /var/www/html/fws/docroot
-  uri: homeremodelinglincoln.com
+  uri: www.homeremodelinglincoln.com
+  host: 172.104.215.47
+  user: fws
+greensborofoundation:
+  root: /var/www/html/fws/docroot
+  uri: www.greensborofoundation.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws

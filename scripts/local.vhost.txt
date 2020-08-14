@@ -3,7 +3,7 @@ DocumentRoot /var/www/html/fws/docroot
 <Directory /var/www/html/fws/docroot>
 AllowOverride All
 </Directory>
-ServerName website.fws.test
+ServerName www.website.fws.test
 DirectoryIndex index.php index.html
 #ErrorLog /var/www/logs/auth/wmo/error_log
 #TransferLog /var/www/logs/auth/wmo/access_log
