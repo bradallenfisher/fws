@@ -1236,6 +1236,13 @@ p a:hover, .paragraph--type--text-box a:hover, h2 a:hover, .field--name-body a:h
 .width100 {
   width: 100%; }
 
+.tabs {
+  text-align: center;
+  background: #000; }
+  .tabs a, .tabs a.is-active {
+    color: white;
+    background: #000; }
+
 .top-row {
   border-bottom: 1px solid #f1f1f1; }
   .top-row .top-row-wrapper {
