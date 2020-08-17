@@ -30,3 +30,7 @@ greensborofoundation:
 carpetcleaningallentown:
   root: /var/www/html/fws/docroot
   uri: www.carpetcleaningallentown.fws.test
+
+huntingtonbeachfoundationrepair:
+  root: /var/www/html/fws/docroot
+  uri: www.huntingtonbeachfoundationrepair.fws.test
