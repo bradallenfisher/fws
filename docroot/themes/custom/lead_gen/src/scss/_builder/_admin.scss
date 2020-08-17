@@ -12,15 +12,16 @@
     padding: 1.1rem 2.1rem;
     transition: all .3s;
     display: inline-block;
-    border-radius: 3px;
     font-weight: bold;
     text-transform: uppercase;
     color: palette(brand, black);
+    background: white;
     border: 2px solid palette(brand, black);
 
     &:hover {
-      color: black;
+      color: white;
       border-color: palette(brand, black);
+      background: black;
     }
   }
 

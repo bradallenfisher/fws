@@ -284,12 +284,13 @@ select {
     -webkit-transition: all .3s;
     transition: all .3s;
     display: inline-block;
-    border-radius: 3px;
     font-weight: bold;
     text-transform: uppercase;
+    background: white;
     border: 2px solid; }
     .node-page-layout-builder-form .button:hover {
-      color: black; }
+      color: white;
+      background: black; }
 
 .js-form-type-linkit input {
   width: 100%; }
