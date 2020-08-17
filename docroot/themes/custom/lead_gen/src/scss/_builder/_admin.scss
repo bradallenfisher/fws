@@ -1,7 +1,29 @@
 .node-page-layout-builder-form {
+  text-align: center;
 
   .vertical-tabs {
     display: none;
+  }
+
+  .button {
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    padding: 1.1rem 2.1rem;
+    transition: all .3s;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    color: palette(brand, black);
+    border: 2px solid palette(brand, black);
+
+    &:hover {
+      background-color: palette(brand, black);
+      color: white;
+      border-color: palette(brand, black);
+    }
   }
 
 }
