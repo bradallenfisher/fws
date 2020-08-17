@@ -1242,6 +1242,9 @@ p a:hover, .paragraph--type--text-box a:hover, h2 a:hover, .field--name-body a:h
   .tabs a, .tabs a.is-active {
     color: white;
     background: #000; }
+    .tabs a:hover, .tabs a.is-active:hover {
+      color: #000;
+      background: #f1f1f1; }
 
 .top-row {
   border-bottom: 1px solid #f1f1f1; }
