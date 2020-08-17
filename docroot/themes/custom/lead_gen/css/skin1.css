@@ -1395,6 +1395,9 @@ h6 {
   .layout.light p, .layout.light .layout-builder-block__content-preview-placeholder-label {
     color: #191a1c; }
 
+.layout--onecol > .layout-inner > .layout__region {
+  padding: 10px; }
+
 /*
  * @file
  * Provides the layout styles for three-column layout section.
