@@ -22,6 +22,13 @@ $sites['homeremodelinglincoln.com'] = 'homeremodelinglincoln';
 $sites['www.homeremodelinglincoln.com'] = 'homeremodelinglincoln';
 
 
+$sites['www.huntingtonbeachfoundationrepair.fisherwebsolutions.com'] = 'huntingtonbeachfoundationrepair';
+$sites['huntingtonbeachfoundationrepair.fisherwebsolutions.com'] = 'huntingtonbeachfoundationrepair';
+$sites['huntingtonbeachfoundationrepair.fws.test'] = 'huntingtonbeachfoundationrepair';
+$sites['huntingtonbeachfoundationrepair.com'] = 'huntingtonbeachfoundationrepair';
+$sites['www.huntingtonbeachfoundationrepair.com'] = 'huntingtonbeachfoundationrepair';
+
+
 $sites['www.insidekellyskitchen.fisherwebsolutions.com'] = 'insidekellyskitchen';
 $sites['insidekellyskitchen.fisherwebsolutions.com'] = 'insidekellyskitchen';
 $sites['insidekellyskitchen.fws.test'] = 'insidekellyskitchen';
