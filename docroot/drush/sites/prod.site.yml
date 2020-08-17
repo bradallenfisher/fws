@@ -37,6 +37,6 @@ greensborofoundation:
   user: fws
 carpetcleaningallentown:
   root: /var/www/html/fws/docroot
-  uri: www.fisherwebsolutions.carpetcleaningallentown.com
+  uri: www.carpetcleaningallentown.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws
