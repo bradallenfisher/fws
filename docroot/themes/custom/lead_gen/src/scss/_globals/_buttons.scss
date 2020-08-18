@@ -30,7 +30,7 @@
 }
 .btn-light:hover, .btn-dark:focus, .webform-button--submit:hover {
     background-color: palette(brand, green);
-    color: white;
+    color: white !important;
     border-color: palette(brand, green);
 }
 .btn-dark {
@@ -53,7 +53,7 @@ p {
 }
 p {
   a:link.btn-dark:hover, a:visited.btn-dark:hover {
-    color: palette(mono, white) !important;
+    color: palette(brand, green);
   }
 }
 /* Button Shapes */

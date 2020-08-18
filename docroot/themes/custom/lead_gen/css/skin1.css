@@ -334,7 +334,7 @@ select {
 
 .btn-light:hover, .btn-dark:focus, .webform-button--submit:hover {
   background-color: #007C0C;
-  color: white;
+  color: white !important;
   border-color: #007C0C; }
 
 .btn-dark {
@@ -354,7 +354,7 @@ p a:link.btn-dark, p a:visited.btn-dark {
   border-color: #007C0C; }
 
 p a:link.btn-dark:hover, p a:visited.btn-dark:hover {
-  color: #fff !important; }
+  color: #007C0C; }
 
 /* Button Shapes */
 .btn-square {
