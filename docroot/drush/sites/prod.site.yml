@@ -47,8 +47,14 @@ huntingtonbeachfoundationrepair:
   user: fws
 bostonfoundations:
   root: /var/www/html/fws/docroot
-  uri: www.bostonfoundations.fisherwebsolutions.com
+  uri: www.bostonfoundations.com
   host: 172.104.215.47
   user: fws
+phoenixfoundationrepairpros:
+  root: /var/www/html/fws/docroot
+  uri: www.phoenixfoundationrepairpros.fisherwebsolutions.com
+  host: 172.104.215.47
+  user: fws
+
 
 

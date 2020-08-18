@@ -2,39 +2,33 @@
 seosc:
   root: /var/www/html/fws/docroot
   uri: www.seostatecollege.fws.test
-
 ikk:
   root: /var/www/html/fws/docroot
   uri: www.ikkd8.fws.test
-
 rv:
   root: /var/www/html/fws/docroot
   uri: www.rvfastfix.fws.test
-
 lg:
   root: /var/www/html/fws/docroot
   uri: www.lg.fws.test
-
 tuscaloosalawncare:
   root: /var/www/html/fws/docroot
   uri: www.tuscaloosalawncare.fws.test
-
 homeremodelinglincoln:
   root: /var/www/html/fws/docroot
   uri: www.homeremodelinglincoln.fws.test
-
 greensborofoundation:
   root: /var/www/html/fws/docroot
   uri: www.greensborofoundation.fws.test
-
 carpetcleaningallentown:
   root: /var/www/html/fws/docroot
   uri: www.carpetcleaningallentown.fws.test
-
 huntingtonbeachfoundationrepair:
   root: /var/www/html/fws/docroot
   uri: www.huntingtonbeachfoundationrepair.fws.test
-
 bostonfoundations:
   root: /var/www/html/fws/docroot
   uri: www.bostonfoundations.fws.test
+phoenixfoundationrepairpros:
+  root: /var/www/html/fws/docroot
+  uri: www.phoenixfoundationrepairpros.fws.test

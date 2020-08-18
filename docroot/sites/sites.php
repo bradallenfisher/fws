@@ -50,6 +50,13 @@ $sites['lg.com'] = 'lg';
 $sites['www.lg.com'] = 'lg';
 
 
+$sites['www.phoenixfoundationrepairpros.fisherwebsolutions.com'] = 'phoenixfoundationrepairpros';
+$sites['phoenixfoundationrepairpros.fisherwebsolutions.com'] = 'phoenixfoundationrepairpros';
+$sites['phoenixfoundationrepairpros.fws.test'] = 'phoenixfoundationrepairpros';
+$sites['phoenixfoundationrepairpros.com'] = 'phoenixfoundationrepairpros';
+$sites['www.phoenixfoundationrepairpros.com'] = 'phoenixfoundationrepairpros';
+
+
 $sites['www.rvfastfix.fisherwebsolutions.com'] = 'rvfastfix';
 $sites['rvfastfix.fisherwebsolutions.com'] = 'rvfastfix';
 $sites['rvfastfix.fws.test'] = 'rvfastfix';
