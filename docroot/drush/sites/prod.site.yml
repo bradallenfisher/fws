@@ -55,6 +55,12 @@ phoenixfoundationrepairpros:
   uri: www.phoenixfoundationrepairpros.com
   host: 172.104.215.47
   user: fws
+foundationrepairprosbatonrouge:
+  root: /var/www/html/fws/docroot
+  uri: www.foundationrepairprosbatonrouge.com
+  host: 172.104.215.47
+  user: fws
+
 
 
 

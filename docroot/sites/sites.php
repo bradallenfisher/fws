@@ -15,6 +15,13 @@ $sites['carpetcleaningallentown.com'] = 'carpetcleaningallentown';
 $sites['www.carpetcleaningallentown.com'] = 'carpetcleaningallentown';
 
 
+$sites['www.foundationrepairprosbatonrouge.fisherwebsolutions.com'] = 'foundationrepairprosbatonrouge';
+$sites['foundationrepairprosbatonrouge.fisherwebsolutions.com'] = 'foundationrepairprosbatonrouge';
+$sites['foundationrepairprosbatonrouge.fws.test'] = 'foundationrepairprosbatonrouge';
+$sites['foundationrepairprosbatonrouge.com'] = 'foundationrepairprosbatonrouge';
+$sites['www.foundationrepairprosbatonrouge.com'] = 'foundationrepairprosbatonrouge';
+
+
 $sites['www.greensborofoundation.fisherwebsolutions.com'] = 'greensborofoundation';
 $sites['greensborofoundation.fisherwebsolutions.com'] = 'greensborofoundation';
 $sites['greensborofoundation.fws.test'] = 'greensborofoundation';
