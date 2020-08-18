@@ -42,7 +42,13 @@ carpetcleaningallentown:
   user: fws
 huntingtonbeachfoundationrepair:
   root: /var/www/html/fws/docroot
-  uri: www.huntingtonbeachfoundationrepair.fisherwebsolutions.com
+  uri: www.huntingtonbeachfoundationrepair.com
   host: 172.104.215.47
   user: fws
+bostonfoundations:
+  root: /var/www/html/fws/docroot
+  uri: www.bostonfoundations.fisherwebsolutions.com
+  host: 172.104.215.47
+  user: fws
+
 

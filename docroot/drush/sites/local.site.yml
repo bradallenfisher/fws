@@ -34,3 +34,7 @@ carpetcleaningallentown:
 huntingtonbeachfoundationrepair:
   root: /var/www/html/fws/docroot
   uri: www.huntingtonbeachfoundationrepair.fws.test
+
+bostonfoundations:
+  root: /var/www/html/fws/docroot
+  uri: www.bostonfoundations.fws.test
