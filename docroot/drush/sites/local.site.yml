@@ -35,3 +35,6 @@ phoenixfoundationrepairpros:
 foundationrepairprosbatonrouge:
   root: /var/www/html/fws/docroot
   uri: www.foundationrepairprosbatonrouge.fws.test
+gilbertfoundations:
+  root: /var/www/html/fws/docroot
+  uri: www.gilbertfoundations.fws.test

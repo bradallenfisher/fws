@@ -60,6 +60,12 @@ foundationrepairprosbatonrouge:
   uri: www.foundationrepairprosbatonrouge.com
   host: 172.104.215.47
   user: fws
+gilbertfoundations:
+  root: /var/www/html/fws/docroot
+  uri: www.gilbertfoundations.fisherwebsolutions.com
+  host: 172.104.215.47
+  user: fws
+
 
 
 

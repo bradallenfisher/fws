@@ -22,6 +22,13 @@ $sites['foundationrepairprosbatonrouge.com'] = 'foundationrepairprosbatonrouge';
 $sites['www.foundationrepairprosbatonrouge.com'] = 'foundationrepairprosbatonrouge';
 
 
+$sites['www.gilbertfoundations.fisherwebsolutions.com'] = 'gilbertfoundations';
+$sites['gilbertfoundations.fisherwebsolutions.com'] = 'gilbertfoundations';
+$sites['gilbertfoundations.fws.test'] = 'gilbertfoundations';
+$sites['gilbertfoundations.com'] = 'gilbertfoundations';
+$sites['www.gilbertfoundations.com'] = 'gilbertfoundations';
+
+
 $sites['www.greensborofoundation.fisherwebsolutions.com'] = 'greensborofoundation';
 $sites['greensborofoundation.fisherwebsolutions.com'] = 'greensborofoundation';
 $sites['greensborofoundation.fws.test'] = 'greensborofoundation';
