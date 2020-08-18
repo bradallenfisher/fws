@@ -53,7 +53,7 @@ p {
 }
 p {
   a:link.btn-dark:hover, a:visited.btn-dark:hover {
-    color: palette(brand, green);
+    color: palette(mono, white) !important;
   }
 }
 /* Button Shapes */

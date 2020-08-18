@@ -354,7 +354,7 @@ p a:link.btn-dark, p a:visited.btn-dark {
   border-color: #007C0C; }
 
 p a:link.btn-dark:hover, p a:visited.btn-dark:hover {
-  color: #007C0C; }
+  color: #fff !important; }
 
 /* Button Shapes */
 .btn-square {
