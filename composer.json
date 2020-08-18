@@ -32,6 +32,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/custom_search": "^1.0@beta",
         "drupal/devel": "^2.1",
+        "drupal/dropzonejs": "^2.1",
         "drupal/entity": "^1.0",
         "drupal/entity_browser_block": "^1.1",
         "drupal/fontawesome": "^2.17",

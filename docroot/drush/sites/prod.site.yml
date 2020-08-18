@@ -52,7 +52,7 @@ bostonfoundations:
   user: fws
 phoenixfoundationrepairpros:
   root: /var/www/html/fws/docroot
-  uri: www.phoenixfoundationrepairpros.fisherwebsolutions.com
+  uri: www.phoenixfoundationrepairpros.com
   host: 172.104.215.47
   user: fws
 
