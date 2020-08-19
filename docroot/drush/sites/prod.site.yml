@@ -70,8 +70,8 @@ birminghamfoundationrepair:
   uri: www.birminghamfoundationrepair.org
   host: 172.104.215.47
   user: fws
-
-
-
-
-
+pianomovingatlanta:
+  root: /var/www/html/fws/docroot
+  uri: www.pianomovingatlanta.fisherwebsolutions.com
+  host: 172.104.215.47
+  user: fws

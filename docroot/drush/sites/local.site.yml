@@ -41,3 +41,6 @@ gilbertfoundations:
 birminghamfoundationrepair:
   root: /var/www/html/fws/docroot
   uri: www.birminghamfoundationrepair.fws.test
+pianomovingatlanta:
+  root: /var/www/html/fws/docroot
+  uri: www.pianomovingatlanta.fws.test
