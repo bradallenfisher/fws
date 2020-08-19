@@ -1,6 +1,13 @@
 <?php
 
 
+$sites['www.birminghamfoundationrepair.fisherwebsolutions.com'] = 'birminghamfoundationrepair';
+$sites['birminghamfoundationrepair.fisherwebsolutions.com'] = 'birminghamfoundationrepair';
+$sites['birminghamfoundationrepair.fws.test'] = 'birminghamfoundationrepair';
+$sites['birminghamfoundationrepair.com'] = 'birminghamfoundationrepair';
+$sites['www.birminghamfoundationrepair.com'] = 'birminghamfoundationrepair';
+
+
 $sites['www.bostonfoundations.fisherwebsolutions.com'] = 'bostonfoundations';
 $sites['bostonfoundations.fisherwebsolutions.com'] = 'bostonfoundations';
 $sites['bostonfoundations.fws.test'] = 'bostonfoundations';

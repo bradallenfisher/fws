@@ -62,7 +62,12 @@ foundationrepairprosbatonrouge:
   user: fws
 gilbertfoundations:
   root: /var/www/html/fws/docroot
-  uri: www.gilbertfoundations.fisherwebsolutions.com
+  uri: www.gilbertfoundations.com
+  host: 172.104.215.47
+  user: fws
+birminghamfoundationrepair:
+  root: /var/www/html/fws/docroot
+  uri: www.birminghamfoundationrepair.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws
 

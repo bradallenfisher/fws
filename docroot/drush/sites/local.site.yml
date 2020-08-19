@@ -38,3 +38,6 @@ foundationrepairprosbatonrouge:
 gilbertfoundations:
   root: /var/www/html/fws/docroot
   uri: www.gilbertfoundations.fws.test
+birminghamfoundationrepair:
+  root: /var/www/html/fws/docroot
+  uri: www.birminghamfoundationrepair.fws.test
