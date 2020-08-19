@@ -67,7 +67,7 @@ gilbertfoundations:
   user: fws
 birminghamfoundationrepair:
   root: /var/www/html/fws/docroot
-  uri: www.birminghamfoundationrepair.fisherwebsolutions.com
+  uri: www.birminghamfoundationrepair.org
   host: 172.104.215.47
   user: fws
 
