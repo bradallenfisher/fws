@@ -44,3 +44,6 @@ birminghamfoundationrepair:
 pianomovingatlanta:
   root: /var/www/html/fws/docroot
   uri: www.pianomovingatlanta.fws.test
+concreteservicemiami:
+  root: /var/www/html/fws/docroot
+  uri: www.concreteservicemiami.fws.test

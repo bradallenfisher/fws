@@ -72,6 +72,11 @@ birminghamfoundationrepair:
   user: fws
 pianomovingatlanta:
   root: /var/www/html/fws/docroot
-  uri: www.pianomovingatlanta.fisherwebsolutions.com
+  uri: www.pianomovingatlanta.com
+  host: 172.104.215.47
+  user: fws
+concreteservicemiami:
+  root: /var/www/html/fws/docroot
+  uri: www.concreteservicemiami.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws
