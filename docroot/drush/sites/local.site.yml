@@ -50,3 +50,6 @@ concreteservicemiami:
 mobilemechanichouston:
   root: /var/www/html/fws/docroot
   uri: www.mobilemechanichouston.fws.test
+pressurewashingrome:
+  root: /var/www/html/fws/docroot
+  uri: www.pressurewashingrome.fws.test

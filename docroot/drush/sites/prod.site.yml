@@ -82,6 +82,11 @@ concreteservicemiami:
   user: fws
 mobilemechanichouston:
   root: /var/www/html/fws/docroot
-  uri: www.mobilemechanichouston.fisherwebsolutions.com
+  uri: www.mobilemechanichouston.co
+  host: 172.104.215.47
+  user: fws
+pressurewashingrome:
+  root: /var/www/html/fws/docroot
+  uri: www.pressurewashingrome.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws

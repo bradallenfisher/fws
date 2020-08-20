@@ -155,6 +155,17 @@ $sites['pianomovingatlanta.com'] = 'pianomovingatlanta';
 $sites['www.pianomovingatlanta.com'] = 'pianomovingatlanta';
 
 
+$sites['www.pressurewashingrome.co'] = 'pressurewashingrome';
+$sites['pressurewashingrome.co'] = 'pressurewashingrome';
+$sites['www.pressurewashingrome.org'] = 'pressurewashingrome';
+$sites['pressurewashingrome.org'] = 'pressurewashingrome';
+$sites['www.pressurewashingrome.fisherwebsolutions.com'] = 'pressurewashingrome';
+$sites['pressurewashingrome.fisherwebsolutions.com'] = 'pressurewashingrome';
+$sites['pressurewashingrome.fws.test'] = 'pressurewashingrome';
+$sites['pressurewashingrome.com'] = 'pressurewashingrome';
+$sites['www.pressurewashingrome.com'] = 'pressurewashingrome';
+
+
 $sites['www.rvfastfix.co'] = 'rvfastfix';
 $sites['rvfastfix.co'] = 'rvfastfix';
 $sites['www.rvfastfix.org'] = 'rvfastfix';
