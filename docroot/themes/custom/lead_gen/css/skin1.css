@@ -78,7 +78,7 @@ select {
 .field--name-body p {
   margin-bottom: 20px; }
 
-.block-inline-blockmedia-gallery .field--name-images {
+.layout--twocol-section .block-inline-blockmedia-gallery .field--name-images {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -90,10 +90,31 @@ select {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-  .block-inline-blockmedia-gallery .field--name-images .field__item {
+  .layout--twocol-section .block-inline-blockmedia-gallery .field--name-images .field__item {
     width: 50%;
     padding: 10px; }
-    .block-inline-blockmedia-gallery .field--name-images .field__item img {
+    .layout--twocol-section .block-inline-blockmedia-gallery .field--name-images .field__item img {
+      margin-bottom: 0; }
+
+.layout--onecol .block-inline-blockmedia-gallery .field--name-images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .layout--onecol .block-inline-blockmedia-gallery .field--name-images .field__item {
+    width: 50%;
+    padding: 10px; }
+    @media (min-width: 960px) {
+      .layout--onecol .block-inline-blockmedia-gallery .field--name-images .field__item {
+        width: 25%; } }
+    .layout--onecol .block-inline-blockmedia-gallery .field--name-images .field__item img {
       margin-bottom: 0; }
 
 .block-inline-blockhero {
