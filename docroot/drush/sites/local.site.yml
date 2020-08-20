@@ -47,3 +47,6 @@ pianomovingatlanta:
 concreteservicemiami:
   root: /var/www/html/fws/docroot
   uri: www.concreteservicemiami.fws.test
+mobilemechanichouston:
+  root: /var/www/html/fws/docroot
+  uri: www.mobilemechanichouston.fws.test

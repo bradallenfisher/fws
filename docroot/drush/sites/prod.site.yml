@@ -77,6 +77,11 @@ pianomovingatlanta:
   user: fws
 concreteservicemiami:
   root: /var/www/html/fws/docroot
-  uri: www.concreteservicemiami.fisherwebsolutions.com
+  uri: www.concreteservicemiami.com
+  host: 172.104.215.47
+  user: fws
+mobilemechanichouston:
+  root: /var/www/html/fws/docroot
+  uri: www.mobilemechanichouston.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws

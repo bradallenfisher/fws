@@ -122,6 +122,17 @@ $sites['lg.com'] = 'lg';
 $sites['www.lg.com'] = 'lg';
 
 
+$sites['www.mobilemechanichouston.co'] = 'mobilemechanichouston';
+$sites['mobilemechanichouston.co'] = 'mobilemechanichouston';
+$sites['www.mobilemechanichouston.org'] = 'mobilemechanichouston';
+$sites['mobilemechanichouston.org'] = 'mobilemechanichouston';
+$sites['www.mobilemechanichouston.fisherwebsolutions.com'] = 'mobilemechanichouston';
+$sites['mobilemechanichouston.fisherwebsolutions.com'] = 'mobilemechanichouston';
+$sites['mobilemechanichouston.fws.test'] = 'mobilemechanichouston';
+$sites['mobilemechanichouston.com'] = 'mobilemechanichouston';
+$sites['www.mobilemechanichouston.com'] = 'mobilemechanichouston';
+
+
 $sites['www.phoenixfoundationrepairpros.co'] = 'phoenixfoundationrepairpros';
 $sites['phoenixfoundationrepairpros.co'] = 'phoenixfoundationrepairpros';
 $sites['www.phoenixfoundationrepairpros.org'] = 'phoenixfoundationrepairpros';
