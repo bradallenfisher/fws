@@ -53,3 +53,6 @@ mobilemechanichouston:
 pressurewashingrome:
   root: /var/www/html/fws/docroot
   uri: www.pressurewashingrome.fws.test
+bds:
+  root: /var/www/html/fws/docroot
+  uri: www.bludigitalsolutions.fws.test

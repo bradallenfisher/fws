@@ -87,6 +87,11 @@ mobilemechanichouston:
   user: fws
 pressurewashingrome:
   root: /var/www/html/fws/docroot
-  uri: www.pressurewashingrome.fisherwebsolutions.com
+  uri: www.pressurewashingrome.com
+  host: 172.104.215.47
+  user: fws
+bds:
+  root: /var/www/html/fws/docroot
+  uri: www.bludigitalsolutions.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws

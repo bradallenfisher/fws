@@ -12,6 +12,17 @@ $sites['birminghamfoundationrepair.com'] = 'birminghamfoundationrepair';
 $sites['www.birminghamfoundationrepair.com'] = 'birminghamfoundationrepair';
 
 
+$sites['www.bludigitalsolutions.co'] = 'bludigitalsolutions';
+$sites['bludigitalsolutions.co'] = 'bludigitalsolutions';
+$sites['www.bludigitalsolutions.org'] = 'bludigitalsolutions';
+$sites['bludigitalsolutions.org'] = 'bludigitalsolutions';
+$sites['www.bludigitalsolutions.fisherwebsolutions.com'] = 'bludigitalsolutions';
+$sites['bludigitalsolutions.fisherwebsolutions.com'] = 'bludigitalsolutions';
+$sites['bludigitalsolutions.fws.test'] = 'bludigitalsolutions';
+$sites['bludigitalsolutions.com'] = 'bludigitalsolutions';
+$sites['www.bludigitalsolutions.com'] = 'bludigitalsolutions';
+
+
 $sites['www.bostonfoundations.co'] = 'bostonfoundations';
 $sites['bostonfoundations.co'] = 'bostonfoundations';
 $sites['www.bostonfoundations.org'] = 'bostonfoundations';
