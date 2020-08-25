@@ -1,0 +1,18 @@
+a:link,
+a:focus,
+a:hover,
+a:visited{
+  text-decoration: none;
+  word-break: break-all;
+}
+
+  p, .paragraph--type--text-box, h2, .field--name-body {
+    a:link, a:focus, a:visited {
+      color: palette(brand, main);
+      font-weight: bold;
+    }
+    a:hover {
+      color: palette(mono, black);
+      font-weight: bold;
+    }
+  }

@@ -8,6 +8,7 @@ $sites['birminghamfoundationrepair.org'] = 'birminghamfoundationrepair';
 $sites['www.birminghamfoundationrepair.fisherwebsolutions.com'] = 'birminghamfoundationrepair';
 $sites['birminghamfoundationrepair.fisherwebsolutions.com'] = 'birminghamfoundationrepair';
 $sites['birminghamfoundationrepair.fws.test'] = 'birminghamfoundationrepair';
+$sites['www.birminghamfoundationrepair.fws.test'] = 'birminghamfoundationrepair';
 $sites['birminghamfoundationrepair.com'] = 'birminghamfoundationrepair';
 $sites['www.birminghamfoundationrepair.com'] = 'birminghamfoundationrepair';
 
@@ -19,6 +20,7 @@ $sites['bludigitalsolutions.org'] = 'bludigitalsolutions';
 $sites['www.bludigitalsolutions.fisherwebsolutions.com'] = 'bludigitalsolutions';
 $sites['bludigitalsolutions.fisherwebsolutions.com'] = 'bludigitalsolutions';
 $sites['bludigitalsolutions.fws.test'] = 'bludigitalsolutions';
+$sites['www.bludigitalsolutions.fws.test'] = 'bludigitalsolutions';
 $sites['bludigitalsolutions.com'] = 'bludigitalsolutions';
 $sites['www.bludigitalsolutions.com'] = 'bludigitalsolutions';
 
@@ -30,6 +32,7 @@ $sites['bostonfoundations.org'] = 'bostonfoundations';
 $sites['www.bostonfoundations.fisherwebsolutions.com'] = 'bostonfoundations';
 $sites['bostonfoundations.fisherwebsolutions.com'] = 'bostonfoundations';
 $sites['bostonfoundations.fws.test'] = 'bostonfoundations';
+$sites['www.bostonfoundations.fws.test'] = 'bostonfoundations';
 $sites['bostonfoundations.com'] = 'bostonfoundations';
 $sites['www.bostonfoundations.com'] = 'bostonfoundations';
 
@@ -41,6 +44,7 @@ $sites['carpetcleaningallentown.org'] = 'carpetcleaningallentown';
 $sites['www.carpetcleaningallentown.fisherwebsolutions.com'] = 'carpetcleaningallentown';
 $sites['carpetcleaningallentown.fisherwebsolutions.com'] = 'carpetcleaningallentown';
 $sites['carpetcleaningallentown.fws.test'] = 'carpetcleaningallentown';
+$sites['www.carpetcleaningallentown.fws.test'] = 'carpetcleaningallentown';
 $sites['carpetcleaningallentown.com'] = 'carpetcleaningallentown';
 $sites['www.carpetcleaningallentown.com'] = 'carpetcleaningallentown';
 
@@ -52,6 +56,7 @@ $sites['concreteservicemiami.org'] = 'concreteservicemiami';
 $sites['www.concreteservicemiami.fisherwebsolutions.com'] = 'concreteservicemiami';
 $sites['concreteservicemiami.fisherwebsolutions.com'] = 'concreteservicemiami';
 $sites['concreteservicemiami.fws.test'] = 'concreteservicemiami';
+$sites['www.concreteservicemiami.fws.test'] = 'concreteservicemiami';
 $sites['concreteservicemiami.com'] = 'concreteservicemiami';
 $sites['www.concreteservicemiami.com'] = 'concreteservicemiami';
 
@@ -63,6 +68,7 @@ $sites['foundationrepairprosbatonrouge.org'] = 'foundationrepairprosbatonrouge';
 $sites['www.foundationrepairprosbatonrouge.fisherwebsolutions.com'] = 'foundationrepairprosbatonrouge';
 $sites['foundationrepairprosbatonrouge.fisherwebsolutions.com'] = 'foundationrepairprosbatonrouge';
 $sites['foundationrepairprosbatonrouge.fws.test'] = 'foundationrepairprosbatonrouge';
+$sites['www.foundationrepairprosbatonrouge.fws.test'] = 'foundationrepairprosbatonrouge';
 $sites['foundationrepairprosbatonrouge.com'] = 'foundationrepairprosbatonrouge';
 $sites['www.foundationrepairprosbatonrouge.com'] = 'foundationrepairprosbatonrouge';
 
@@ -74,6 +80,7 @@ $sites['gilbertfoundations.org'] = 'gilbertfoundations';
 $sites['www.gilbertfoundations.fisherwebsolutions.com'] = 'gilbertfoundations';
 $sites['gilbertfoundations.fisherwebsolutions.com'] = 'gilbertfoundations';
 $sites['gilbertfoundations.fws.test'] = 'gilbertfoundations';
+$sites['www.gilbertfoundations.fws.test'] = 'gilbertfoundations';
 $sites['gilbertfoundations.com'] = 'gilbertfoundations';
 $sites['www.gilbertfoundations.com'] = 'gilbertfoundations';
 
@@ -85,6 +92,7 @@ $sites['greensborofoundation.org'] = 'greensborofoundation';
 $sites['www.greensborofoundation.fisherwebsolutions.com'] = 'greensborofoundation';
 $sites['greensborofoundation.fisherwebsolutions.com'] = 'greensborofoundation';
 $sites['greensborofoundation.fws.test'] = 'greensborofoundation';
+$sites['www.greensborofoundation.fws.test'] = 'greensborofoundation';
 $sites['greensborofoundation.com'] = 'greensborofoundation';
 $sites['www.greensborofoundation.com'] = 'greensborofoundation';
 
@@ -96,6 +104,7 @@ $sites['homeremodelinglincoln.org'] = 'homeremodelinglincoln';
 $sites['www.homeremodelinglincoln.fisherwebsolutions.com'] = 'homeremodelinglincoln';
 $sites['homeremodelinglincoln.fisherwebsolutions.com'] = 'homeremodelinglincoln';
 $sites['homeremodelinglincoln.fws.test'] = 'homeremodelinglincoln';
+$sites['www.homeremodelinglincoln.fws.test'] = 'homeremodelinglincoln';
 $sites['homeremodelinglincoln.com'] = 'homeremodelinglincoln';
 $sites['www.homeremodelinglincoln.com'] = 'homeremodelinglincoln';
 
@@ -107,6 +116,7 @@ $sites['huntingtonbeachfoundationrepair.org'] = 'huntingtonbeachfoundationrepair
 $sites['www.huntingtonbeachfoundationrepair.fisherwebsolutions.com'] = 'huntingtonbeachfoundationrepair';
 $sites['huntingtonbeachfoundationrepair.fisherwebsolutions.com'] = 'huntingtonbeachfoundationrepair';
 $sites['huntingtonbeachfoundationrepair.fws.test'] = 'huntingtonbeachfoundationrepair';
+$sites['www.huntingtonbeachfoundationrepair.fws.test'] = 'huntingtonbeachfoundationrepair';
 $sites['huntingtonbeachfoundationrepair.com'] = 'huntingtonbeachfoundationrepair';
 $sites['www.huntingtonbeachfoundationrepair.com'] = 'huntingtonbeachfoundationrepair';
 
@@ -118,6 +128,7 @@ $sites['insidekellyskitchen.org'] = 'insidekellyskitchen';
 $sites['www.insidekellyskitchen.fisherwebsolutions.com'] = 'insidekellyskitchen';
 $sites['insidekellyskitchen.fisherwebsolutions.com'] = 'insidekellyskitchen';
 $sites['insidekellyskitchen.fws.test'] = 'insidekellyskitchen';
+$sites['www.insidekellyskitchen.fws.test'] = 'insidekellyskitchen';
 $sites['insidekellyskitchen.com'] = 'insidekellyskitchen';
 $sites['www.insidekellyskitchen.com'] = 'insidekellyskitchen';
 
@@ -129,6 +140,7 @@ $sites['lg.org'] = 'lg';
 $sites['www.lg.fisherwebsolutions.com'] = 'lg';
 $sites['lg.fisherwebsolutions.com'] = 'lg';
 $sites['lg.fws.test'] = 'lg';
+$sites['www.lg.fws.test'] = 'lg';
 $sites['lg.com'] = 'lg';
 $sites['www.lg.com'] = 'lg';
 
@@ -140,6 +152,7 @@ $sites['mobilemechanichouston.org'] = 'mobilemechanichouston';
 $sites['www.mobilemechanichouston.fisherwebsolutions.com'] = 'mobilemechanichouston';
 $sites['mobilemechanichouston.fisherwebsolutions.com'] = 'mobilemechanichouston';
 $sites['mobilemechanichouston.fws.test'] = 'mobilemechanichouston';
+$sites['www.mobilemechanichouston.fws.test'] = 'mobilemechanichouston';
 $sites['mobilemechanichouston.com'] = 'mobilemechanichouston';
 $sites['www.mobilemechanichouston.com'] = 'mobilemechanichouston';
 
@@ -151,6 +164,7 @@ $sites['phoenixfoundationrepairpros.org'] = 'phoenixfoundationrepairpros';
 $sites['www.phoenixfoundationrepairpros.fisherwebsolutions.com'] = 'phoenixfoundationrepairpros';
 $sites['phoenixfoundationrepairpros.fisherwebsolutions.com'] = 'phoenixfoundationrepairpros';
 $sites['phoenixfoundationrepairpros.fws.test'] = 'phoenixfoundationrepairpros';
+$sites['www.phoenixfoundationrepairpros.fws.test'] = 'phoenixfoundationrepairpros';
 $sites['phoenixfoundationrepairpros.com'] = 'phoenixfoundationrepairpros';
 $sites['www.phoenixfoundationrepairpros.com'] = 'phoenixfoundationrepairpros';
 
@@ -162,6 +176,7 @@ $sites['pianomovingatlanta.org'] = 'pianomovingatlanta';
 $sites['www.pianomovingatlanta.fisherwebsolutions.com'] = 'pianomovingatlanta';
 $sites['pianomovingatlanta.fisherwebsolutions.com'] = 'pianomovingatlanta';
 $sites['pianomovingatlanta.fws.test'] = 'pianomovingatlanta';
+$sites['www.pianomovingatlanta.fws.test'] = 'pianomovingatlanta';
 $sites['pianomovingatlanta.com'] = 'pianomovingatlanta';
 $sites['www.pianomovingatlanta.com'] = 'pianomovingatlanta';
 
@@ -173,6 +188,7 @@ $sites['pressurewashingrome.org'] = 'pressurewashingrome';
 $sites['www.pressurewashingrome.fisherwebsolutions.com'] = 'pressurewashingrome';
 $sites['pressurewashingrome.fisherwebsolutions.com'] = 'pressurewashingrome';
 $sites['pressurewashingrome.fws.test'] = 'pressurewashingrome';
+$sites['www.pressurewashingrome.fws.test'] = 'pressurewashingrome';
 $sites['pressurewashingrome.com'] = 'pressurewashingrome';
 $sites['www.pressurewashingrome.com'] = 'pressurewashingrome';
 
@@ -184,6 +200,7 @@ $sites['rvfastfix.org'] = 'rvfastfix';
 $sites['www.rvfastfix.fisherwebsolutions.com'] = 'rvfastfix';
 $sites['rvfastfix.fisherwebsolutions.com'] = 'rvfastfix';
 $sites['rvfastfix.fws.test'] = 'rvfastfix';
+$sites['www.rvfastfix.fws.test'] = 'rvfastfix';
 $sites['rvfastfix.com'] = 'rvfastfix';
 $sites['www.rvfastfix.com'] = 'rvfastfix';
 
@@ -195,6 +212,7 @@ $sites['seostatecollege.org'] = 'seostatecollege';
 $sites['www.seostatecollege.fisherwebsolutions.com'] = 'seostatecollege';
 $sites['seostatecollege.fisherwebsolutions.com'] = 'seostatecollege';
 $sites['seostatecollege.fws.test'] = 'seostatecollege';
+$sites['www.seostatecollege.fws.test'] = 'seostatecollege';
 $sites['seostatecollege.com'] = 'seostatecollege';
 $sites['www.seostatecollege.com'] = 'seostatecollege';
 
@@ -206,5 +224,6 @@ $sites['tuscaloosalawncare.org'] = 'tuscaloosalawncare';
 $sites['www.tuscaloosalawncare.fisherwebsolutions.com'] = 'tuscaloosalawncare';
 $sites['tuscaloosalawncare.fisherwebsolutions.com'] = 'tuscaloosalawncare';
 $sites['tuscaloosalawncare.fws.test'] = 'tuscaloosalawncare';
+$sites['www.tuscaloosalawncare.fws.test'] = 'tuscaloosalawncare';
 $sites['tuscaloosalawncare.com'] = 'tuscaloosalawncare';
 $sites['www.tuscaloosalawncare.com'] = 'tuscaloosalawncare';

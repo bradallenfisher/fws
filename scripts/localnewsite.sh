@@ -48,6 +48,7 @@ cd /var/www/html/fws/docroot/sites/
         echo "\$sites['www.${site}.fisherwebsolutions.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
         echo "\$sites['${site}.fisherwebsolutions.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
         echo "\$sites['${site}.fws.test'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
+        echo "\$sites['www.${site}.fws.test'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
         echo "\$sites['${site}.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
         echo "\$sites['www.${site}.com'] = '${site}';"   >> /var/www/html/fws/docroot/sites/sites.php
       fi

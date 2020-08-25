@@ -592,6 +592,7 @@ class BgImageFormatter extends ImageFormatter {
           $items->getName(),
           $settings['image_style'],
           $delta,
+          $css['style'],
         ])
       );
 
