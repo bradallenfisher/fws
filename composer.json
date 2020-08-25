@@ -40,6 +40,7 @@
         "drupal/google_analytics": "^3.1",
         "drupal/google_map_field": "^1.14",
         "drupal/helper": "^1.5",
+        "drupal/honeypot": "^2.0",
         "drupal/http2_server_push": "^1.1",
         "drupal/image_effects": "^3.0",
         "drupal/inline_entity_form": "^1.0@RC",
