@@ -195,7 +195,7 @@ select {
   margin: 20px; }
 
 .testimonial blockquote {
-  background: palett(mono, dark);
+  background: palett(brand, main);
   border-radius: 5px;
   border: 0;
   color: #fff;
@@ -221,7 +221,7 @@ select {
 .testimonial .testimonial-arrow-down {
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
-  border-top: 8px solid #191a1c;
+  border-top: 8px solid #2F7AE5;
   height: 0;
   margin: 0 0 0 45px;
   width: 0; }
@@ -262,7 +262,7 @@ select {
 
 /* Style 3 */
 .testimonial.testimonial-style-3 blockquote {
-  background: #191a1c !important;
+  background: #2F7AE5 !important;
   border-radius: 4px;
   padding: 12px 30px; }
 
@@ -297,7 +297,10 @@ select {
 
 .testimonial.testimonial-style-3 .testimonial-arrow-down {
   margin-left: 20px;
-  border-top: 10px solid #191a1c !important; }
+  border-top: 10px solid #2F7AE5 !important; }
+
+.field--name-field-author-image img {
+  border-radius: 50%; }
 
 .node-page-layout-builder-form {
   text-align: center; }
@@ -1395,6 +1398,9 @@ h6 {
   margin-top: 20px;
   line-height: 1.2; }
 
+h2 {
+  color: #2F7AE5; }
+
 .block-webform-block {
   margin: 20px;
   line-height: 1.2;
@@ -1568,9 +1574,9 @@ h6 {
             flex-grow: 1; }
   .layout--threecol-section--33-34-33 > .layout-inner > .layout__region--second {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 34%;
-        -ms-flex: 0 1 34%;
-            flex: 0 1 34%;
+    -webkit-flex: 0 1 33%;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
@@ -1635,7 +1641,7 @@ h6 {
   background-repeat: no-repeat;
   padding-bottom: 80px; }
   .layout.cards .layout__region {
-    padding: 30px; }
+    padding: 20px 15px; }
   .layout.cards h2 {
     font-size: 3rem;
     font-weight: 100;
@@ -1644,8 +1650,8 @@ h6 {
     font-size: 8rem;
     color: #EAAE58; }
   .layout.cards .block-inline-blockbasic {
-    box-shadow: 6px 10px 26px #888888;
-    border-radius: 3.4rem;
+    box-shadow: 5px 7px 22px #e2e2e2;
+    border-radius: 0.4rem;
     padding: 40px;
     margin-bottom: 30px; }
 

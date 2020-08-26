@@ -1,6 +1,6 @@
 <VirtualHost *:80>
-DocumentRoot /var/www/html/fws/docroot
-<Directory /var/www/html/fws/docroot>
+DocumentRoot /var/www/html/fws/drupal/docroot
+<Directory /var/www/html/fws/drupal/docroot>
 AllowOverride All
 </Directory>
 ServerName www.website.fws.test

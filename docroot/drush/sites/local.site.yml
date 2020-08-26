@@ -56,3 +56,6 @@ pressurewashingrome:
 bds:
   root: /var/www/html/fws/docroot
   uri: www.bludigitalsolutions.fws.test
+newstamp:
+  root: /var/www/html/fws/docroot
+  uri: www.newstamp.fws.test

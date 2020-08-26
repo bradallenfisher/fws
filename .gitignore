@@ -8,3 +8,6 @@ docroot/sites/*/private
 
 # Ignore SimpleTest multi-site environment.
 docroot/sites/simpletest
+
+#ignore prod script
+scripts/livesite.sh

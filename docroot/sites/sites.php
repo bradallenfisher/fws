@@ -157,6 +157,18 @@ $sites['mobilemechanichouston.com'] = 'mobilemechanichouston';
 $sites['www.mobilemechanichouston.com'] = 'mobilemechanichouston';
 
 
+$sites['www.newstamp.co'] = 'newstamp';
+$sites['newstamp.co'] = 'newstamp';
+$sites['www.newstamp.org'] = 'newstamp';
+$sites['newstamp.org'] = 'newstamp';
+$sites['www.newstamp.fisherwebsolutions.com'] = 'newstamp';
+$sites['newstamp.fisherwebsolutions.com'] = 'newstamp';
+$sites['newstamp.fws.test'] = 'newstamp';
+$sites['www.newstamp.fws.test'] = 'newstamp';
+$sites['newstamp.com'] = 'newstamp';
+$sites['www.newstamp.com'] = 'newstamp';
+
+
 $sites['www.phoenixfoundationrepairpros.co'] = 'phoenixfoundationrepairpros';
 $sites['phoenixfoundationrepairpros.co'] = 'phoenixfoundationrepairpros';
 $sites['www.phoenixfoundationrepairpros.org'] = 'phoenixfoundationrepairpros';

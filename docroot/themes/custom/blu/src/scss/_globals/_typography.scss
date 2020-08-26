@@ -9,3 +9,6 @@ h5,
 h6 {
   @include heading_font();
 }
+h2 {
+  color: palette(brand, main);
+}

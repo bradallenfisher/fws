@@ -32,7 +32,7 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes) }} style="background-image: url({{ file_url(content.field_hero_background_image[0]['#media'].field_media_image.entity.uri.value) }}), linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.3))">
   <div class="hero-top">
     {{ title_prefix }}
     {% if label %}
@@ -45,7 +45,7 @@
     {{ title_suffix }}
     {% block content %}
 
-    {{ content.field_hero_background_image }}
+
     <div class="hero-body">
       {{ content.body }}
     </div>

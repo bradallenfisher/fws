@@ -10,7 +10,7 @@ ikk:
   uri: www.insidekellyskitchen.com
   host: 172.104.215.47
   user: fws
-rv:
+rvfastfix:
   root: /var/www/html/fws/docroot
   uri: www.rvfastfix.fisherwebsolutions.com
   host: 172.104.215.47
@@ -33,11 +33,6 @@ homeremodelinglincoln:
 greensborofoundation:
   root: /var/www/html/fws/docroot
   uri: www.greensborofoundation.com
-  host: 172.104.215.47
-  user: fws
-carpetcleaningallentown:
-  root: /var/www/html/fws/docroot
-  uri: www.carpetcleaningallentown.com
   host: 172.104.215.47
   user: fws
 huntingtonbeachfoundationrepair:
@@ -70,6 +65,11 @@ birminghamfoundationrepair:
   uri: www.birminghamfoundationrepair.org
   host: 172.104.215.47
   user: fws
+carpetcleaningallentown:
+  root: /var/www/html/fws/docroot
+  uri: www.carpetcleaningallentown.com
+  host: 172.104.215.47
+  user: fws
 pianomovingatlanta:
   root: /var/www/html/fws/docroot
   uri: www.pianomovingatlanta.com
@@ -90,7 +90,7 @@ pressurewashingrome:
   uri: www.pressurewashingrome.com
   host: 172.104.215.47
   user: fws
-bds:
+bludigitalsolutions:
   root: /var/www/html/fws/docroot
   uri: www.bludigitalsolutions.fisherwebsolutions.com
   host: 172.104.215.47

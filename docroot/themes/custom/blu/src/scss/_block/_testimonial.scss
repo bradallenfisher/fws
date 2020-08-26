@@ -4,7 +4,7 @@
 }
 
 .testimonial blockquote {
-	background: palett(mono, dark);
+	background: palett(brand, main);
 	border-radius: 5px;
 	border: 0;
 	color: palette(mono,white);
@@ -33,7 +33,7 @@
 .testimonial .testimonial-arrow-down {
 	border-left: 11px solid transparent;
 	border-right: 11px solid transparent;
-	border-top: 8px solid palette(mono,dark);
+	border-top: 8px solid palette(brand, main);
 	height: 0;
 	margin: 0 0 0 45px;
 	width: 0;
@@ -78,7 +78,7 @@
 
 /* Style 3 */
 .testimonial.testimonial-style-3 blockquote {
-	background: palette(mono, dark) !important;
+	background: palette(brand, main) !important;
 	border-radius: 4px;
 	padding: 12px 30px;
 }
@@ -117,5 +117,11 @@
 
 .testimonial.testimonial-style-3 .testimonial-arrow-down {
 	margin-left: 20px;
-	border-top: 10px solid palette(mono,dark) !important;
+	border-top: 10px solid palette(brand,main) !important;
+}
+
+.field--name-field-author-image {
+  img {
+    border-radius: 50%;
+  }
 }
