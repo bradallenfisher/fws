@@ -76,6 +76,32 @@ select {
 .block-inline-blockbasic h2 {
   text-transform: uppercase; }
 
+.block-inline-blockbasic.brand {
+  background: #2F7AE5;
+  color: white; }
+  .block-inline-blockbasic.brand h2, .block-inline-blockbasic.brand p {
+    color: white; }
+
+.block-inline-blockbasic.accent {
+  background: #EAAE58;
+  color: white; }
+  .block-inline-blockbasic.accent h2, .block-inline-blockbasic.accent p {
+    color: white; }
+
+@media (min-width: 960px) {
+  .block-inline-blockblock-w-background {
+    background-attachment: fixed !important;
+    background-position: top center !important; } }
+
+.block-inline-blockblock-w-background h2 {
+  color: black; }
+
+.block-inline-blockblock-w-background p {
+  font-weight: 900; }
+
+.font-light h2, .font-light p {
+  color: white; }
+
 .field--name-body p {
   margin-bottom: 20px; }
 
@@ -679,7 +705,7 @@ a:focus,
 a:hover,
 a:visited {
   text-decoration: none;
-  word-break: break-all; }
+  word-break: break-word; }
 
 p a:link, p a:focus, p a:visited, .paragraph--type--text-box a:link, .paragraph--type--text-box a:focus, .paragraph--type--text-box a:visited, h2 a:link, h2 a:focus, h2 a:visited, .field--name-body a:link, .field--name-body a:focus, .field--name-body a:visited {
   color: #2F7AE5;

@@ -9,3 +9,20 @@
   }
 }
 
+.block-inline-blockbasic.brand {
+  background: palette(brand, main);
+  color: white;
+
+  h2,p  {
+    color: white;
+  }
+}
+
+.block-inline-blockbasic.accent {
+  background: palette(brand, future);
+  color: white;
+
+  h2,p  {
+    color: white;
+  }
+}

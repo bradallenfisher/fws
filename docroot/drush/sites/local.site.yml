@@ -1,61 +1,61 @@
 # Application 'psufandbsites', environment 'test'.
 seosc:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.seostatecollege.fws.test
 ikk:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.ikkd8.fws.test
 rv:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.rvfastfix.fws.test
 lg:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.lg.fws.test
 tuscaloosalawncare:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.tuscaloosalawncare.fws.test
 homeremodelinglincoln:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.homeremodelinglincoln.fws.test
 greensborofoundation:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.greensborofoundation.fws.test
 carpetcleaningallentown:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.carpetcleaningallentown.fws.test
 huntingtonbeachfoundationrepair:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.huntingtonbeachfoundationrepair.fws.test
 bostonfoundations:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.bostonfoundations.fws.test
 phoenixfoundationrepairpros:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.phoenixfoundationrepairpros.fws.test
 foundationrepairprosbatonrouge:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.foundationrepairprosbatonrouge.fws.test
 gilbertfoundations:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.gilbertfoundations.fws.test
 birminghamfoundationrepair:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.birminghamfoundationrepair.fws.test
 pianomovingatlanta:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.pianomovingatlanta.fws.test
 concreteservicemiami:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.concreteservicemiami.fws.test
 mobilemechanichouston:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.mobilemechanichouston.fws.test
 pressurewashingrome:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.pressurewashingrome.fws.test
 bds:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.bludigitalsolutions.fws.test
-newstamp:
-  root: /var/www/html/fws/docroot
-  uri: www.newstamp.fws.test
+newsite:
+  root: /var/www/html/fws/drupal/docroot
+  uri: www.newsite.fws.test

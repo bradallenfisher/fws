@@ -1,97 +1,102 @@
 # this file holds all of the prod aliases
 # Application 'psufandbsites', environment 'prod'.
 seosc:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.seostatecollege.com
   host: 172.104.215.47
   user: fws
 ikk:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.insidekellyskitchen.com
   host: 172.104.215.47
   user: fws
 rvfastfix:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.rvfastfix.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws
 lg:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.lg.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws
 tuscaloosalawncare:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.tuscaloosalawncare.com
   host: 172.104.215.47
   user: fws
 homeremodelinglincoln:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.homeremodelinglincoln.com
   host: 172.104.215.47
   user: fws
 greensborofoundation:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.greensborofoundation.com
   host: 172.104.215.47
   user: fws
 huntingtonbeachfoundationrepair:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.huntingtonbeachfoundationrepair.com
   host: 172.104.215.47
   user: fws
 bostonfoundations:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.bostonfoundations.com
   host: 172.104.215.47
   user: fws
 phoenixfoundationrepairpros:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.phoenixfoundationrepairpros.com
   host: 172.104.215.47
   user: fws
 foundationrepairprosbatonrouge:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.foundationrepairprosbatonrouge.com
   host: 172.104.215.47
   user: fws
 gilbertfoundations:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.gilbertfoundations.com
   host: 172.104.215.47
   user: fws
 birminghamfoundationrepair:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.birminghamfoundationrepair.org
   host: 172.104.215.47
   user: fws
 carpetcleaningallentown:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.carpetcleaningallentown.com
   host: 172.104.215.47
   user: fws
 pianomovingatlanta:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.pianomovingatlanta.com
   host: 172.104.215.47
   user: fws
 concreteservicemiami:
-  root: /var/www/html/fws/docroot
-  uri: www.concreteservicemiami.com
+  root: /var/www/html/fws/drupal/docroot
+  uri: https://www.concreteservicemiami.com
   host: 172.104.215.47
   user: fws
 mobilemechanichouston:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.mobilemechanichouston.co
   host: 172.104.215.47
   user: fws
 pressurewashingrome:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.pressurewashingrome.com
   host: 172.104.215.47
   user: fws
 bludigitalsolutions:
-  root: /var/www/html/fws/docroot
+  root: /var/www/html/fws/drupal/docroot
   uri: www.bludigitalsolutions.fisherwebsolutions.com
+  host: 172.104.215.47
+  user: fws
+newsite:
+  root: /var/www/html/fws/drupal/docroot
+  uri: www.newsite.fisherwebsolutions.com
   host: 172.104.215.47
   user: fws

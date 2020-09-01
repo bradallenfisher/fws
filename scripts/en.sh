@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /var/www/html/fws/docroot/sites/
   # grab each directory by name
   for site in *

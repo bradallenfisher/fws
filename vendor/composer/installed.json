@@ -344,17 +344,17 @@
     },
     {
         "name": "composer/ca-bundle",
-        "version": "1.2.7",
-        "version_normalized": "1.2.7.0",
+        "version": "1.2.8",
+        "version_normalized": "1.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/composer/ca-bundle.git",
-            "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd"
+            "reference": "8a7ecad675253e4654ea05505233285377405215"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/ca-bundle/zipball/95c63ab2117a72f48f5a55da9740a3273d45b7fd",
-            "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd",
+            "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8a7ecad675253e4654ea05505233285377405215",
+            "reference": "8a7ecad675253e4654ea05505233285377405215",
             "shasum": ""
         },
         "require": {
@@ -367,7 +367,7 @@
             "psr/log": "^1.0",
             "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
         },
-        "time": "2020-04-08T08:27:21+00:00",
+        "time": "2020-08-23T12:54:47+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -738,17 +738,17 @@
     },
     {
         "name": "composer/xdebug-handler",
-        "version": "1.4.2",
-        "version_normalized": "1.4.2.0",
+        "version": "1.4.3",
+        "version_normalized": "1.4.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/composer/xdebug-handler.git",
-            "reference": "fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51"
+            "reference": "ebd27a9866ae8254e873866f795491f02418c5a5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51",
-            "reference": "fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51",
+            "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/ebd27a9866ae8254e873866f795491f02418c5a5",
+            "reference": "ebd27a9866ae8254e873866f795491f02418c5a5",
             "shasum": ""
         },
         "require": {
@@ -758,7 +758,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
         },
-        "time": "2020-06-04T11:16:35+00:00",
+        "time": "2020-08-19T10:27:58+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -5837,18 +5837,18 @@
     },
     {
         "name": "drupal/responsive_menu",
-        "version": "4.3.1",
-        "version_normalized": "4.3.1.0",
+        "version": "4.4.0",
+        "version_normalized": "4.4.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/responsive_menu.git",
-            "reference": "4.3.1"
+            "reference": "4.4.0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/responsive_menu-4.3.1.zip",
-            "reference": "4.3.1",
-            "shasum": "2f088a86cd252b97377aec493cb96364e5fa718e"
+            "url": "https://ftp.drupal.org/files/projects/responsive_menu-4.4.0.zip",
+            "reference": "4.4.0",
+            "shasum": "daa26a3f5fc3f4b5b05a56a07c93be8f158fe905"
         },
         "require": {
             "drupal/core": "^8 || ^9"
@@ -5856,8 +5856,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "4.3.1",
-                "datestamp": "1594280177",
+                "version": "4.4.0",
+                "datestamp": "1598685336",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -8615,17 +8615,17 @@
     },
     {
         "name": "nikic/php-parser",
-        "version": "v4.8.0",
-        "version_normalized": "4.8.0.0",
+        "version": "v4.9.1",
+        "version_normalized": "4.9.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/nikic/PHP-Parser.git",
-            "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e"
+            "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
-            "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/88e519766fc58bd46b8265561fb79b54e2e00b28",
+            "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28",
             "shasum": ""
         },
         "require": {
@@ -8633,17 +8633,17 @@
             "php": ">=7.0"
         },
         "require-dev": {
-            "ircmaxell/php-yacc": "^0.0.6",
+            "ircmaxell/php-yacc": "^0.0.7",
             "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
         },
-        "time": "2020-08-09T10:23:20+00:00",
+        "time": "2020-08-30T16:15:20+00:00",
         "bin": [
             "bin/php-parse"
         ],
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.8-dev"
+                "dev-master": "4.9-dev"
             }
         },
         "installation-source": "dist",
@@ -9132,17 +9132,17 @@
     },
     {
         "name": "phpdocumentor/reflection-docblock",
-        "version": "5.2.0",
-        "version_normalized": "5.2.0.0",
+        "version": "5.2.1",
+        "version_normalized": "5.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-            "reference": "3170448f5769fe19f456173d833734e0ff1b84df"
+            "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/3170448f5769fe19f456173d833734e0ff1b84df",
-            "reference": "3170448f5769fe19f456173d833734e0ff1b84df",
+            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d870572532cd70bc3fab58f2e23ad423c8404c44",
+            "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44",
             "shasum": ""
         },
         "require": {
@@ -9155,7 +9155,7 @@
         "require-dev": {
             "mockery/mockery": "~1.3.2"
         },
-        "time": "2020-07-20T20:05:34+00:00",
+        "time": "2020-08-15T11:14:08+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -10554,17 +10554,17 @@
     },
     {
         "name": "seld/jsonlint",
-        "version": "1.8.1",
-        "version_normalized": "1.8.1.0",
+        "version": "1.8.2",
+        "version_normalized": "1.8.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/jsonlint.git",
-            "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd"
+            "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/3d5eb71705adfa34bd34b993400622932b2f62fd",
-            "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd",
+            "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/590cfec960b77fd55e39b7d9246659e95dd6d337",
+            "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337",
             "shasum": ""
         },
         "require": {
@@ -10573,7 +10573,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
         },
-        "time": "2020-08-13T09:07:59+00:00",
+        "time": "2020-08-25T06:56:57+00:00",
         "bin": [
             "bin/jsonlint"
         ],
@@ -10816,8 +10816,8 @@
     },
     {
         "name": "symfony/browser-kit",
-        "version": "v3.4.43",
-        "version_normalized": "3.4.43.0",
+        "version": "v3.4.44",
+        "version_normalized": "3.4.44.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/browser-kit.git",
@@ -11007,8 +11007,8 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v3.4.43",
-        "version_normalized": "3.4.43.0",
+        "version": "v3.4.44",
+        "version_normalized": "3.4.44.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
@@ -11193,17 +11193,17 @@
     },
     {
         "name": "symfony/dom-crawler",
-        "version": "v3.4.43",
-        "version_normalized": "3.4.43.0",
+        "version": "v3.4.44",
+        "version_normalized": "3.4.44.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/dom-crawler.git",
-            "reference": "fc66039e3138db2fc54ee9ad30646d99c4495691"
+            "reference": "702ee651db23dc452bf1fd6dea6ca2f671ed2681"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/fc66039e3138db2fc54ee9ad30646d99c4495691",
-            "reference": "fc66039e3138db2fc54ee9ad30646d99c4495691",
+            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/702ee651db23dc452bf1fd6dea6ca2f671ed2681",
+            "reference": "702ee651db23dc452bf1fd6dea6ca2f671ed2681",
             "shasum": ""
         },
         "require": {
@@ -11217,7 +11217,7 @@
         "suggest": {
             "symfony/css-selector": ""
         },
-        "time": "2020-07-16T09:41:49+00:00",
+        "time": "2020-08-09T09:13:53+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -11317,24 +11317,24 @@
     },
     {
         "name": "symfony/filesystem",
-        "version": "v3.4.43",
-        "version_normalized": "3.4.43.0",
+        "version": "v3.4.44",
+        "version_normalized": "3.4.44.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/filesystem.git",
-            "reference": "0f625d0cb1e59c8c4ba61abb170125175218ff10"
+            "reference": "8e6eff546d0fe879996fa701ee2f312767e95e50"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/filesystem/zipball/0f625d0cb1e59c8c4ba61abb170125175218ff10",
-            "reference": "0f625d0cb1e59c8c4ba61abb170125175218ff10",
+            "url": "https://api.github.com/repos/symfony/filesystem/zipball/8e6eff546d0fe879996fa701ee2f312767e95e50",
+            "reference": "8e6eff546d0fe879996fa701ee2f312767e95e50",
             "shasum": ""
         },
         "require": {
             "php": "^5.5.9|>=7.0.8",
             "symfony/polyfill-ctype": "~1.8"
         },
-        "time": "2020-05-30T17:48:24+00:00",
+        "time": "2020-08-21T12:53:49+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -11369,8 +11369,8 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v3.4.43",
-        "version_normalized": "3.4.43.0",
+        "version": "v3.4.44",
+        "version_normalized": "3.4.44.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
@@ -11568,17 +11568,17 @@
     },
     {
         "name": "symfony/lock",
-        "version": "v3.4.43",
-        "version_normalized": "3.4.43.0",
+        "version": "v3.4.44",
+        "version_normalized": "3.4.44.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/lock.git",
-            "reference": "34ccf3bd733215da3037f82a85bbbf4c18fac683"
+            "reference": "7e4a5352619fae7d545c2bb93486bf098a920572"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/lock/zipball/34ccf3bd733215da3037f82a85bbbf4c18fac683",
-            "reference": "34ccf3bd733215da3037f82a85bbbf4c18fac683",
+            "url": "https://api.github.com/repos/symfony/lock/zipball/7e4a5352619fae7d545c2bb93486bf098a920572",
+            "reference": "7e4a5352619fae7d545c2bb93486bf098a920572",
             "shasum": ""
         },
         "require": {
@@ -11589,7 +11589,7 @@
         "require-dev": {
             "predis/predis": "~1.0"
         },
-        "time": "2020-07-23T12:42:41+00:00",
+        "time": "2020-08-17T07:27:37+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -11632,8 +11632,8 @@
     },
     {
         "name": "symfony/phpunit-bridge",
-        "version": "v3.4.43",
-        "version_normalized": "3.4.43.0",
+        "version": "v3.4.44",
+        "version_normalized": "3.4.44.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/phpunit-bridge.git",
@@ -12678,17 +12678,17 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v4.4.11",
-        "version_normalized": "4.4.11.0",
+        "version": "v4.4.12",
+        "version_normalized": "4.4.12.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "2125805a1a4e57f2340bc566c3013ca94d2722dc"
+            "reference": "1bef32329f3166486ab7cb88599cae4875632b99"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2125805a1a4e57f2340bc566c3013ca94d2722dc",
-            "reference": "2125805a1a4e57f2340bc566c3013ca94d2722dc",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/1bef32329f3166486ab7cb88599cae4875632b99",
+            "reference": "1bef32329f3166486ab7cb88599cae4875632b99",
             "shasum": ""
         },
         "require": {
@@ -12712,7 +12712,7 @@
             "ext-intl": "To show region name in time zone dump",
             "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
         },
-        "time": "2020-06-24T13:34:53+00:00",
+        "time": "2020-08-17T07:31:35+00:00",
         "bin": [
             "Resources/bin/var-dump-server"
         ],
