@@ -11,7 +11,7 @@
         ServerAlias website.com dev.website.com www.website.fisherwebsolutions.com website.fisherwebsolutions.com
 
         ServerAdmin webmaster@localhost
-        DocumentRoot /var/www/html/fws/docroot
+        DocumentRoot /var/www/html/fws/drupal/docroot
 
         # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
         # error, crit, alert, emerg.
@@ -34,7 +34,7 @@
     SetHandler "proxy:unix:/var/run/php/php7.3-fpm.sock|fcgi://localhost/"
   </FilesMatch>
 
-  <Directory /var/www/html/fws/docroot>
+  <Directory /var/www/html/fws/drupal/docroot>
     AllowOverride All
     Options -Indexes +FollowSymLinks
     Require all granted

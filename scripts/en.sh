@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /var/www/html/fws/docroot/sites/
+cd /var/www/html/fws/drupal/docroot/sites/
   # grab each directory by name
   for site in *
     do
