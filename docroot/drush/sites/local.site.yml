@@ -1,11 +1,11 @@
 # Application 'psufandbsites', environment 'test'.
-seosc:
+seostatecollege:
   root: /var/www/html/fws/drupal/docroot
   uri: www.seostatecollege.fws.test
-ikk:
+insidekellyskitchen:
   root: /var/www/html/fws/drupal/docroot
   uri: www.ikkd8.fws.test
-rv:
+rvfastfix:
   root: /var/www/html/fws/drupal/docroot
   uri: www.rvfastfix.fws.test
 lg:

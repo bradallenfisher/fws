@@ -5,6 +5,7 @@ cd /var/www/html/fws/drupal/docroot/sites/
       #if it is a directory not a file - and not default - and not all.
       if [[ -d $site && $site != "default" && $site != "all" ]]
       then
-        drush @prod.$site updb -y
+        echo "about to do $site"
+        drush @local.$site updb -y
       fi
     done

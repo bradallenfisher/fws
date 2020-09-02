@@ -1,11 +1,11 @@
 # this file holds all of the prod aliases
 # Application 'psufandbsites', environment 'prod'.
-seosc:
+seostatecollege:
   root: /var/www/html/fws/drupal/docroot
   uri: www.seostatecollege.com
   host: 172.104.215.47
   user: fws
-ikk:
+insidekellyskitchen:
   root: /var/www/html/fws/drupal/docroot
   uri: www.insidekellyskitchen.com
   host: 172.104.215.47
