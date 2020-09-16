@@ -97,6 +97,6 @@ bludigitalsolutions:
   user: fws
 ashevillefoundationrepair:
   root: /var/www/html/fws/drupal/docroot
-  uri: www.ashevillefoundationrepair.fisherwebsolutions.com
+  uri: www.ashevillefoundationrepair.com
   host: 172.104.215.47
   user: fws
