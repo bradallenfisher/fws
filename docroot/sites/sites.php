@@ -1,6 +1,18 @@
 <?php
 
 
+$sites['www.ashevillefoundationrepair.co'] = 'ashevillefoundationrepair';
+$sites['ashevillefoundationrepair.co'] = 'ashevillefoundationrepair';
+$sites['www.ashevillefoundationrepair.org'] = 'ashevillefoundationrepair';
+$sites['ashevillefoundationrepair.org'] = 'ashevillefoundationrepair';
+$sites['www.ashevillefoundationrepair.fisherwebsolutions.com'] = 'ashevillefoundationrepair';
+$sites['ashevillefoundationrepair.fisherwebsolutions.com'] = 'ashevillefoundationrepair';
+$sites['ashevillefoundationrepair.fws.test'] = 'ashevillefoundationrepair';
+$sites['www.ashevillefoundationrepair.fws.test'] = 'ashevillefoundationrepair';
+$sites['ashevillefoundationrepair.com'] = 'ashevillefoundationrepair';
+$sites['www.ashevillefoundationrepair.com'] = 'ashevillefoundationrepair';
+
+
 $sites['www.birminghamfoundationrepair.co'] = 'birminghamfoundationrepair';
 $sites['birminghamfoundationrepair.co'] = 'birminghamfoundationrepair';
 $sites['www.birminghamfoundationrepair.org'] = 'birminghamfoundationrepair';
@@ -11,18 +23,6 @@ $sites['birminghamfoundationrepair.fws.test'] = 'birminghamfoundationrepair';
 $sites['www.birminghamfoundationrepair.fws.test'] = 'birminghamfoundationrepair';
 $sites['birminghamfoundationrepair.com'] = 'birminghamfoundationrepair';
 $sites['www.birminghamfoundationrepair.com'] = 'birminghamfoundationrepair';
-
-
-$sites['www.bludigitalsolutions.co'] = 'bludigitalsolutions';
-$sites['bludigitalsolutions.co'] = 'bludigitalsolutions';
-$sites['www.bludigitalsolutions.org'] = 'bludigitalsolutions';
-$sites['bludigitalsolutions.org'] = 'bludigitalsolutions';
-$sites['www.bludigitalsolutions.fisherwebsolutions.com'] = 'bludigitalsolutions';
-$sites['bludigitalsolutions.fisherwebsolutions.com'] = 'bludigitalsolutions';
-$sites['bludigitalsolutions.fws.test'] = 'bludigitalsolutions';
-$sites['www.bludigitalsolutions.fws.test'] = 'bludigitalsolutions';
-$sites['bludigitalsolutions.com'] = 'bludigitalsolutions';
-$sites['www.bludigitalsolutions.com'] = 'bludigitalsolutions';
 
 
 $sites['www.bostonfoundations.co'] = 'bostonfoundations';
@@ -155,18 +155,6 @@ $sites['mobilemechanichouston.fws.test'] = 'mobilemechanichouston';
 $sites['www.mobilemechanichouston.fws.test'] = 'mobilemechanichouston';
 $sites['mobilemechanichouston.com'] = 'mobilemechanichouston';
 $sites['www.mobilemechanichouston.com'] = 'mobilemechanichouston';
-
-
-$sites['www.newstamp.co'] = 'newstamp';
-$sites['newstamp.co'] = 'newstamp';
-$sites['www.newstamp.org'] = 'newstamp';
-$sites['newstamp.org'] = 'newstamp';
-$sites['www.newstamp.fisherwebsolutions.com'] = 'newstamp';
-$sites['newstamp.fisherwebsolutions.com'] = 'newstamp';
-$sites['newstamp.fws.test'] = 'newstamp';
-$sites['www.newstamp.fws.test'] = 'newstamp';
-$sites['newstamp.com'] = 'newstamp';
-$sites['www.newstamp.com'] = 'newstamp';
 
 
 $sites['www.phoenixfoundationrepairpros.co'] = 'phoenixfoundationrepairpros';

@@ -53,9 +53,9 @@ mobilemechanichouston:
 pressurewashingrome:
   root: /var/www/html/fws/drupal/docroot
   uri: www.pressurewashingrome.fws.test
-bds:
+bludigitalsolutions:
   root: /var/www/html/fws/drupal/docroot
   uri: www.bludigitalsolutions.fws.test
-newsite:
+ashevillefoundationrepair:
   root: /var/www/html/fws/drupal/docroot
-  uri: www.newsite.fws.test
+  uri: www.ashevillefoundationrepair.fws.test
