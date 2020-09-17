@@ -14,7 +14,7 @@ class SchemaDurationBase extends SchemaNameBase {
     $element = parent::output();
     if (!empty($element)) {
       $input_value = $element['#attributes']['content'];
-      $element['#attributes']['content'] = self::outputValue($input_value);
+      $element['#attributes']['content'] = static::outputValue($input_value);
     }
     return $element;
   }

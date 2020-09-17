@@ -2,8 +2,6 @@
 
 namespace Drupal\schema_metatag\Plugin\metatag\Tag;
 
-use Drupal\schema_metatag\SchemaMetatagManager;
-
 /**
  * Schema.org Thing trait.
  */
@@ -12,29 +10,25 @@ trait SchemaThingTrait {
   use SchemaPivotTrait;
 
   /**
-   * Form keys.
+   * Return the SchemaMetatagManager.
+   *
+   * @return \Drupal\schema_metatag\SchemaMetatagManager
+   *   The Schema Metatag Manager service.
    */
-  public static function thingFormKeys() {
-    return [
-      '@type',
-      '@id',
-      'name',
-      'url',
-    ];
-  }
+  abstract protected function schemaMetatagManager();
 
   /**
    * The form element.
    */
   public function thingForm($input_values) {
 
-    $input_values += SchemaMetatagManager::defaultInputValues();
+    $input_values += $this->schemaMetatagManager()->defaultInputValues();
     $value = $input_values['value'];
 
     // Get the id for the nested @type element.
     $selector = ':input[name="' . $input_values['visibility_selector'] . '[@type]"]';
     $visibility = ['invisible' => [$selector => ['value' => '']]];
-    $selector2 = SchemaMetatagManager::altSelector($selector);
+    $selector2 = $this->schemaMetatagManager()->altSelector($selector);
     $visibility2 = ['invisible' => [$selector2 => ['value' => '']]];
     $visibility['invisible'] = [$visibility['invisible'], $visibility2['invisible']];
 
@@ -47,7 +41,16 @@ trait SchemaThingTrait {
     $form['pivot'] = $this->pivotForm($value);
     $form['pivot']['#states'] = $visibility;
 
-    $options = static::types();
+    $options = [
+      'Thing',
+      'CreativeWork',
+      'Event',
+      'Intangible',
+      'Organization',
+      'Person',
+      'Place',
+      'Product',
+    ];
     $options = array_combine($options, $options);
     $form['@type'] = [
       '#type' => 'select',
@@ -67,6 +70,7 @@ trait SchemaThingTrait {
       '#maxlength' => 255,
       '#required' => $input_values['#required'],
       '#description' => $this->t("Globally unique @id of the thing, usually a url, used to to link other properties to this object."),
+      '#states' => $visibility,
     ];
 
     $form['name'] = [
@@ -76,6 +80,7 @@ trait SchemaThingTrait {
       '#maxlength' => 255,
       '#required' => $input_values['#required'],
       '#description' => $this->t("Name of the thing."),
+      '#states' => $visibility,
     ];
 
     $form['url'] = [
@@ -85,32 +90,10 @@ trait SchemaThingTrait {
       '#maxlength' => 255,
       '#required' => $input_values['#required'],
       '#description' => $this->t("Absolute URL of the canonical Web page for the thing."),
+      '#states' => $visibility,
     ];
-
-    $keys = static::thingFormKeys();
-    foreach ($keys as $key) {
-      if ($key != '@type') {
-        $form[$key]['#states'] = $visibility;
-      }
-    }
 
     return $form;
-  }
-
-  /**
-   * Thing object types.
-   */
-  public static function types() {
-    return [
-      'Thing',
-      'CreativeWork',
-      'Event',
-      'Intangible',
-      'Organization',
-      'Person',
-      'Place',
-      'Product',
-    ];
   }
 
 }

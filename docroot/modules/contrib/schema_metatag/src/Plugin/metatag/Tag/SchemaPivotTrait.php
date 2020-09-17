@@ -3,7 +3,7 @@
 namespace Drupal\schema_metatag\Plugin\metatag\Tag;
 
 /**
- * Schema.org pivot trait.
+ * Schema.org Schema Metatag Manager trait.
  */
 trait SchemaPivotTrait {
 

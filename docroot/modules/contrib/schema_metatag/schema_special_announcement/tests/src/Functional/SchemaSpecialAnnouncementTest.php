@@ -5,7 +5,7 @@ namespace Drupal\Tests\schema_special_announcement\Functional;
 use Drupal\Tests\schema_metatag\Functional\SchemaMetatagTagsTestBase;
 
 /**
- * Tests that each of the Schema Metatag SpecialAnnouncement tags work correctly.
+ * Tests that the Schema Metatag SpecialAnnouncement tags work correctly.
  *
  * @group schema_metatag
  * @group schema_special_announcement

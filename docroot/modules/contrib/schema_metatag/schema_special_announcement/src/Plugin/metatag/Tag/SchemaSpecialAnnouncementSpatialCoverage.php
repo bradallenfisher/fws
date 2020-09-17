@@ -20,5 +20,5 @@ use Drupal\schema_metatag\Plugin\metatag\Tag\SchemaPlaceBase;
  * )
  */
 class SchemaSpecialAnnouncementSpatialCoverage extends SchemaPlaceBase {
-}
 
+}

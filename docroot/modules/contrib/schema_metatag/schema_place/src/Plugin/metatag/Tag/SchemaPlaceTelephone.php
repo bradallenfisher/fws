@@ -23,7 +23,6 @@ use Drupal\schema_metatag\Plugin\metatag\Tag\SchemaNameBase;
  *   multiple = TRUE
  * )
  */
-class SchemaPlaceTelephone extends SchemaNameBase
-{
-    // Nothing here yet. Just a placeholder class for a plugin.
+class SchemaPlaceTelephone extends SchemaNameBase {
+  // Nothing here yet. Just a placeholder class for a plugin.
 }

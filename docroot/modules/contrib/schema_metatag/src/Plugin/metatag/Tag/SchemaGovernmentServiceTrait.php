@@ -2,8 +2,6 @@
 
 namespace Drupal\schema_metatag\Plugin\metatag\Tag;
 
-use Drupal\schema_metatag\SchemaMetatagManager;
-
 /**
  * Schema.org SchemaGovernmentService trait.
  */
@@ -14,32 +12,26 @@ trait SchemaGovernmentServiceTrait {
   }
 
   /**
-   * Form keys.
+   * Return the SchemaMetatagManager.
+   *
+   * @return \Drupal\schema_metatag\SchemaMetatagManager
+   *   The Schema Metatag Manager service.
    */
-  public static function governmentServiceFormKeys() {
-    return [
-      '@type',
-      'name',
-      'url',
-      'serviceType',
-      'provider',
-      'audience',
-    ];
-  }
+  abstract protected function schemaMetatagManager();
 
   /**
    * The form element.
    */
   public function governmentServiceForm($input_values) {
 
-    $input_values += SchemaMetatagManager::defaultInputValues();
+    $input_values += $this->schemaMetatagManager()->defaultInputValues();
     $value = $input_values['value'];
 
     // Get the id for the nested @type element.
     $visibility_selector = $input_values['visibility_selector'];
     $selector = ':input[name="' . $visibility_selector . '[@type]"]';
     $visibility = ['invisible' => [$selector => ['value' => '']]];
-    $selector2 = SchemaMetatagManager::altSelector($selector);
+    $selector2 = $this->schemaMetatagManager()->altSelector($selector);
     $visibility2 = ['invisible' => [$selector2 => ['value' => '']]];
     $visibility['invisible'] = [$visibility['invisible'], $visibility2['invisible']];
 
@@ -52,7 +44,9 @@ trait SchemaGovernmentServiceTrait {
     $form['pivot'] = $this->pivotForm($value);
     $form['pivot']['#states'] = $visibility;
 
-    $options = static::types();
+    $options = [
+      'GovernmentService',
+    ];
     $options = array_combine($options, $options);
     $form['@type'] = [
       '#type' => 'select',
@@ -72,6 +66,7 @@ trait SchemaGovernmentServiceTrait {
       '#maxlength' => 255,
       '#required' => $input_values['#required'],
       '#description' => $this->t("The name of the government benefits."),
+      '#states' => $visibility,
     ];
 
     $form['url'] = [
@@ -81,6 +76,7 @@ trait SchemaGovernmentServiceTrait {
       '#maxlength' => 255,
       '#required' => $input_values['#required'],
       '#description' => $this->t("The URL to more information about the government benefits."),
+      '#states' => $visibility,
     ];
 
     $form['audience'] = [
@@ -90,6 +86,7 @@ trait SchemaGovernmentServiceTrait {
       '#maxlength' => 255,
       '#required' => $input_values['#required'],
       '#description' => $this->t("The audience that is eligible to receive the government benefits. For example, small businesses."),
+      '#states' => $visibility,
     ];
 
     $form['serviceType'] = [
@@ -99,6 +96,7 @@ trait SchemaGovernmentServiceTrait {
       '#maxlength' => 255,
       '#required' => $input_values['#required'],
       '#description' => $this->t("Service type, one of http://schema.org/BasicIncome, http://schema.org/BusinessSupport, http://schema.org/DisabilitySupport, http://schema.org/HealthCare, http://schema.org/OneTimePayments, http://schema.org/PaidLeave, http://schema.org/ParentalSupport, http://schema.org/UnemploymentSupport."),
+      '#states' => $visibility,
     ];
 
     $input_values = [
@@ -112,24 +110,7 @@ trait SchemaGovernmentServiceTrait {
     $form['provider'] = $this->personOrgForm($input_values);
     $form['provider']['#states'] = $visibility;
 
-
-    $keys = static::governmentServiceFormKeys();
-    foreach ($keys as $key) {
-      if ($key != '@type') {
-        $form[$key]['#states'] = $visibility;
-      }
-    }
-
     return $form;
-  }
-
-  /**
-   * Thing object types.
-   */
-  public static function types() {
-    return [
-      'GovernmentService',
-    ];
   }
 
 }
