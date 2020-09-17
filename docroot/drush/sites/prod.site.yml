@@ -12,7 +12,7 @@ insidekellyskitchen:
   user: fws
 rvfastfix:
   root: /var/www/html/fws/drupal/docroot
-  uri: www.rvfastfix.fisherwebsolutions.com
+  uri: www.rvfastfix.com
   host: 172.104.215.47
   user: fws
 lg:
