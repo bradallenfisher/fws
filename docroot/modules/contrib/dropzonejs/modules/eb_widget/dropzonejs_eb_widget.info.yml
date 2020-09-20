@@ -9,7 +9,7 @@ dependencies:
   - entity_browser:entity_browser
 
 
-# Information added by Drupal.org packaging script on 2020-09-15
-version: '8.x-2.2'
+# Information added by Drupal.org packaging script on 2020-09-17
+version: '8.x-2.3'
 project: 'dropzonejs'
-datestamp: 1600192555
+datestamp: 1600310563
