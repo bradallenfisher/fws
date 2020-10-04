@@ -7,7 +7,7 @@ core_version_requirement: ^8 || ^9
 dependencies:
   - drupal:layout_builder
 
-# Information added by Drupal.org packaging script on 2020-08-11
-version: '8.x-1.0-rc2'
+# Information added by Drupal.org packaging script on 2020-09-28
+version: '8.x-1.0'
 project: 'layout_bg'
-datestamp: 1597161365
+datestamp: 1601300872

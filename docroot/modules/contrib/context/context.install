@@ -71,4 +71,5 @@ function context_update_8003() {
       }
     }
   }
+  drupal_flush_all_caches();
 }
