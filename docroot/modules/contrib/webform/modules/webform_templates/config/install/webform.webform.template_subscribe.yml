@@ -32,7 +32,7 @@ elements: |
     '#type': webform_actions
     '#title': 'Submit button(s)'
     '#submit__label': Subscribe
-  
+
 css: ''
 javascript: ''
 settings:
@@ -74,7 +74,6 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
-  form_elements_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
@@ -215,6 +214,7 @@ handlers:
   email_notification:
     id: email
     label: 'Email Notification'
+    notes: ''
     handler_id: email_notification
     status: true
     conditions: {  }

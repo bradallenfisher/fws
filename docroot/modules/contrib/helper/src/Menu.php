@@ -87,6 +87,7 @@ class Menu {
     // For menu blocks with start level greater than 1, only show menu items
     // from the current active trail. Adjust the root according to the current
     // position in the menu in order to determine if we can show the subtree.
+    $do_tree_build = TRUE;
     if ($level > 1) {
       if (count($parameters->activeTrail) >= $level) {
         // Active trail array is child-first. Reverse it, and pull the new menu
@@ -99,17 +100,34 @@ class Menu {
         }
       }
       else {
-        return [];
+        $do_tree_build = FALSE;
       }
     }
 
-    $tree = $this->menuTree->load($menu_name, $parameters);
-    $manipulators = [
-      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
-      ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
-    ];
-    $tree = $this->menuTree->transform($tree, $manipulators);
-    return $this->menuTree->build($tree);
+    if ($do_tree_build) {
+      $tree = $this->menuTree->load($menu_name, $parameters);
+      $manipulators = [
+        ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+        ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+      ];
+      $tree = $this->menuTree->transform($tree, $manipulators);
+      $build = $this->menuTree->build($tree);
+    }
+
+    // Even when the menu renders to the empty string for a user, we want the
+    // cache tag for this menu to be set: whenever the menu is changed, this
+    // menu output must also be re-rendered for that user, because maybe a menu
+    // link that is accessible for that user has been added.
+    if (empty($build['#items'])) {
+      $build['#cache']['tags'][] = 'config:system.menu.' . $menu_name;
+    }
+
+    // We must vary the rendered menu by the active trail of the rendered menu
+    // Additional cache contexts, e.g. those that determine link text or
+    // accessibility of a menu, will be bubbled automatically.
+    $build['#cache']['contexts'][] = 'route.menu_active_trails:' . $menu_name;
+
+    return $build;
   }
 
   /**
@@ -199,8 +217,8 @@ class Menu {
       '#sorted' => TRUE,
     ];
 
-    $cache = CacheableMetadata::createFromObject($items->getEntity());
-    $cache->applyTo($build);
+    $metadata = CacheableMetadata::createFromObject($items->getEntity());
+    $metadata->applyTo($build);
 
     return $build;
   }

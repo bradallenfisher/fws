@@ -4,6 +4,8 @@ namespace Drupal\helper;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\file\FileInterface;
+use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
+use Symfony\Component\HttpFoundation\File\MimeType\MimeTypeGuesserInterface;
 
 /**
  * Provides helpers for working with files.
@@ -15,16 +17,26 @@ class File {
    *
    * @var \Drupal\Core\Entity\EntityStorageInterface
    */
-  private $fileStorage;
+  protected $fileStorage;
+
+  /**
+   * The mime type guesser.
+   *
+   * @var \Symfony\Component\HttpFoundation\File\MimeType\MimeTypeGuesserInterface
+   */
+  protected $mimeTypeGuesser;
 
   /**
    * File constructor.
    *
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
    *   The entity type manager.
+   * @param \Symfony\Component\HttpFoundation\File\MimeType\MimeTypeGuesserInterface $mime_type_guesser
+   *   The mime type guesser.
    */
-  public function __construct(EntityTypeManagerInterface $entity_type_manager) {
+  public function __construct(EntityTypeManagerInterface $entity_type_manager, MimeTypeGuesserInterface $mime_type_guesser) {
     $this->fileStorage = $entity_type_manager->getStorage('file');
+    $this->mimeTypeGuesser = $mime_type_guesser;
   }
 
   /**
@@ -66,6 +78,37 @@ class File {
    */
   public static function filterValidFiles(FileInterface $file) {
     return $file->isPermanent() || $file->getOwnerId() == \Drupal::currentUser()->id();
+  }
+
+  /**
+   * Converts a file URL into a data URI.
+   *
+   * @param string $uri
+   *   The file URI.
+   * @param bool $base_64_encode
+   *   TRUE to return the data URI as base-64 encoded content.
+   * @param string|null $mimetype
+   *   The optional mime type to provide for the data URI. If not provided
+   *   the mime type guesser service will be used.
+   *
+   * @return string
+   *   The image data URI for use in a src attribute.
+   *
+   * @throws \Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException
+   *   If the file cannot be read.
+   */
+  public function getDataUri($uri, $base_64_encode = TRUE, $mimetype = NULL) {
+    if (!isset($mimetype)) {
+      $mimetype = $this->mimeTypeGuesser->guess($uri);
+    }
+    $contents = file_get_contents($uri);
+    if ($contents === FALSE) {
+      throw new AccessDeniedException($uri);
+    }
+    if ($base_64_encode) {
+      $contents = base64_encode($contents);
+    }
+    return 'data:' . $mimetype . ($base_64_encode ? ';base64' : '') . ',' . $contents;
   }
 
 }

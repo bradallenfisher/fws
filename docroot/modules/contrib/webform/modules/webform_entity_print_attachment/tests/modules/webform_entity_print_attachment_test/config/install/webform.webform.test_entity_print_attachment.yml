@@ -34,7 +34,7 @@ elements: |
     '#display_on': both
     '#view_mode': twig
     '#template': '{This is a custom template}'
-  
+
 css: ''
 javascript: ''
 settings:
@@ -76,7 +76,6 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
-  form_elements_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
@@ -217,6 +216,7 @@ handlers:
   email:
     id: email
     label: Email
+    notes: ''
     handler_id: email
     status: true
     conditions: {  }

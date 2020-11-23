@@ -19,7 +19,7 @@ recaptcha_element.settings:
       label: 'Whether or not to log successful reCAPTCHA responses'
 
 recaptcha_element.element:
-  type: map
+  type: mapping
   label: 'ReCAPTCHA Element settings'
   mapping:
     action:
@@ -32,9 +32,8 @@ recaptcha_element.element:
       type: boolean
       label: 'Whether or not to check the hostname during reCAPTCHA verification'
     error_message:
-      type: string
+      type: text
       label: 'Error message'
-      translatable: true
 
 webform.handler.recaptcha_element:
   type: mapping

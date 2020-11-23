@@ -23,7 +23,7 @@ elements: |
     '#options':
       4: '4 -- Four'
       5: '5 -- Five'
-  
+
 css: ''
 javascript: ''
 settings:
@@ -65,7 +65,6 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
-  form_elements_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
@@ -206,6 +205,7 @@ handlers:
   debug:
     id: debug
     label: Debug
+    notes: ''
     handler_id: debug
     status: true
     conditions: {  }

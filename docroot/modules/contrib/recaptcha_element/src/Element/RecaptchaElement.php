@@ -2,8 +2,10 @@
 
 namespace Drupal\recaptcha_element\Element;
 
+use Drupal\Component\Utility\Xss;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element\Hidden;
+use Drupal\Core\Render\Markup;
 use ReCaptcha\ReCaptcha;
 
 /**
@@ -77,6 +79,10 @@ class RecaptchaElement extends Hidden {
    */
   public static function validateRecaptcha(&$element, FormStateInterface $form_state) {
     $config = \Drupal::config('recaptcha_element.settings');
+    if (!$config->get('enabled')) {
+      return;
+    }
+
     $request = \Drupal::request();
 
     $recaptcha = new Recaptcha($config->get('secret_key'));
@@ -91,7 +97,7 @@ class RecaptchaElement extends Hidden {
     $recaptcha_response = $recaptcha->verify($element['#value'], $request->getClientIp());
 
     if (!$recaptcha_response->isSuccess()) {
-      $form_state->setError($element, $element['#recaptcha']['error_message']);
+      $form_state->setError($element, Markup::create(Xss::filterAdmin($element['#recaptcha']['error_message'])));
     }
 
     \Drupal::service('recaptcha_element.logger')->log($recaptcha_response);
@@ -138,8 +144,7 @@ class RecaptchaElement extends Hidden {
     ];
 
     $form['error_message'] = [
-      '#type' => 'textfield',
-      '#size' => 128,
+      '#type' => 'textarea',
       '#title' => t('Error message'),
       '#description' => t('This message will be displayed to the user when reCAPTCHA verification fails.'),
       '#default_value' => $configuration['error_message'] ?? NULL,

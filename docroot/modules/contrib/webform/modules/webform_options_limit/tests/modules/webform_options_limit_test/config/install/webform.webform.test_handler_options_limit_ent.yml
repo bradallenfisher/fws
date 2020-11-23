@@ -27,7 +27,7 @@ elements: |
     '#selection_settings':
       target_bundles:
         page: page
-  
+
 css: ''
 javascript: ''
 settings:
@@ -69,7 +69,6 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
-  form_elements_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
@@ -210,6 +209,7 @@ handlers:
   options_limits_entity_select:
     id: options_limit
     label: options_limits_entity_select
+    notes: ''
     handler_id: options_limits_entity_select
     status: true
     conditions: {  }

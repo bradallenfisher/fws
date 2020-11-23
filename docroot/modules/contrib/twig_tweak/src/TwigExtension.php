@@ -476,7 +476,7 @@ class TwigExtension extends AbstractExtension {
     if ($wrapper && !Element::isEmpty($build['content'])) {
       $build += [
         '#theme' => 'block',
-        '#id' => $configuration['id'] ?? $id,
+        '#id' => $configuration['id'] ?? NULL,
         '#attributes' => [],
         '#contextual_links' => [],
         '#configuration' => $block_plugin->getConfiguration(),

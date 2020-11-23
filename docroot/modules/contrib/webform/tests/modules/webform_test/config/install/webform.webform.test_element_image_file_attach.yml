@@ -21,7 +21,7 @@ elements: |
     '#title': webform_image_file_attachment
     '#file_extensions': gif
     '#attachment_image_style': thumbnail
-  
+
 css: ''
 javascript: ''
 settings:
@@ -63,7 +63,6 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
-  form_elements_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''
@@ -204,6 +203,7 @@ handlers:
   email:
     id: email
     label: Email
+    notes: ''
     handler_id: email
     status: true
     conditions: {  }

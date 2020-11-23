@@ -7,7 +7,7 @@ services:
     arguments: ['@config.factory', '@config.manager', '@logger.channel.helper', '@file_system']
   helper.file:
     class: Drupal\helper\File
-    arguments: ['@entity_type.manager']
+    arguments: ['@entity_type.manager', '@file.mime_type.guesser']
   helper.install_profile:
     class: Drupal\helper\InstallProfile
     arguments: ['@extension.list.profile', '@config.factory', '@state', '@module_handler', '@keyvalue']
