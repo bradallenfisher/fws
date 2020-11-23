@@ -7,5 +7,6 @@ cd /var/www/html/fws/drupal/docroot/sites/
       then
         echo "about to do $site"
         drush @prod.$site updb -y
+        drush @prod.$site cr -y
       fi
     done

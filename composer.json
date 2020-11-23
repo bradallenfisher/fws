@@ -57,6 +57,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/printfriendly": "^3.4",
+        "drupal/recaptcha": "^3.0",
         "drupal/recaptcha_element": "^1.0",
         "drupal/redirect": "^1.6",
         "drupal/replicate": "^1.0",
