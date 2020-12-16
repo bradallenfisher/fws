@@ -9,7 +9,8 @@
 
 .view-media-gallery .item-list ul li,
 .view-media-galleries .view-content .views-row,
-.path-media-gallery .field--name-images .field__item {
+.path-media-gallery .field--name-images .field__item,
+.path-media-gallery .field--name-images .field--item {
   padding: 3px;
 }
 

@@ -6,3 +6,6 @@ adstxt.settings:
     content:
       type: string
       label: 'Contents of ads.txt'
+    app_content:
+      type: string
+      label: 'Contents of app-ads.txt'

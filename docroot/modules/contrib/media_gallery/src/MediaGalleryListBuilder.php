@@ -91,7 +91,7 @@ class MediaGalleryListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\media_gallery\MediaGalleryInterface */
+    /** @var \Drupal\media_gallery\MediaGalleryInterface $entity */
     $row['id'] = $entity->id();
     $row['title'] = $entity->toLink();
     $row['status'] = $entity->isEnabled() ? $this->t('Enabled') : $this->t('Disabled');

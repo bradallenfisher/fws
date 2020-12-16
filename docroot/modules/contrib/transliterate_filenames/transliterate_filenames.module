@@ -22,7 +22,14 @@ function transliterate_filenames_file_validate(FileInterface $file) {
   $basename = \Drupal::service('file_system')->basename($file->destination);
   $basename = transliterate_filenames_transliteration($basename);
   $dirname = \Drupal::service('file_system')->dirname($file->destination);
-  $file->destination = \Drupal::service('file_system')->createFilename($basename, $dirname);
+  // @todo The file_create_filename() procedural function is deprecated in
+  //   drupal:8.7.0 and above. Remove this workaround when we bump to 8.7.
+  if (function_exists('file_create_filename')) {
+    $file->destination = file_create_filename($basename, $dirname);
+  }
+  else {
+    $file->destination = \Drupal::service('file_system')->createFilename($basename, $dirname);
+  }
 }
 
 /**

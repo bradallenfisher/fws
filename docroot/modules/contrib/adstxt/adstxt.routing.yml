@@ -11,4 +11,13 @@ adstxt.content:
   defaults:
     _controller: '\Drupal\adstxt\Controller\AdsTxtController::build'
   requirements:
+    # callback is open for accessing adstxt file.
+    _access: 'TRUE'
+
+adstxt.app_content:
+  path: '/app-ads.txt'
+  defaults:
+    _controller: '\Drupal\adstxt\Controller\AdsTxtController::buildAppAds'
+  requirements:
+    # callback is open for accessing adstxt file.
     _access: 'TRUE'

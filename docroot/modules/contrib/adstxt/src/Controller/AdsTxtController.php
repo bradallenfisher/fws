@@ -5,6 +5,7 @@ namespace Drupal\adstxt\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
@@ -70,6 +71,37 @@ class AdsTxtController extends ControllerBase implements ContainerInjectionInter
     $content = array_map('trim', $content);
     $content = array_filter($content);
     $content = implode("\n", $content);
+
+    if (empty($content)) {
+      throw new NotFoundHttpException();
+    }
+
+    return new Response($content, 200, ['Content-Type' => 'text/plain']);
+  }
+
+  /**
+   * Serves the configured app-ads.txt file.
+   *
+   * @return \Symfony\Component\HttpFoundation\Response
+   *   The app-ads.txt file as a response object with 'text/plain' content type.
+   */
+  public function buildAppAds() {
+    $content = [];
+    $content[] = $this->moduleConfig->get('app_content');
+
+    // Hook other modules for adding additional lines.
+    if ($additions = $this->moduleHandler->invokeAll('app_adstxt')) {
+      $content = array_merge($content, $additions);
+    }
+
+    // Trim any extra whitespace and filter out empty strings.
+    $content = array_map('trim', $content);
+    $content = array_filter($content);
+    $content = implode("\n", $content);
+
+    if (empty($content)) {
+      throw new NotFoundHttpException();
+    }
 
     return new Response($content, 200, ['Content-Type' => 'text/plain']);
   }

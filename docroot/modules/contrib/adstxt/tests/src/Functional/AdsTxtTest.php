@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\adstxt\Tests;
+namespace Drupal\Tests\adstxt\Functional;
 
 use Drupal\Tests\BrowserTestBase;
 
@@ -11,6 +11,14 @@ use Drupal\Tests\BrowserTestBase;
  */
 class AdsTxtTest extends BrowserTestBase {
 
+  /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'stark';
+
+  /**
+   * {@inheritdoc}
+   */
   protected $profile = 'standard';
 
   /**
@@ -54,6 +62,18 @@ class AdsTxtTest extends BrowserTestBase {
     $this->assertText('greenadexchange.com, 12345, DIRECT, AEC242');
     $this->assertText('blueadexchange.com, 4536, DIRECT');
     $this->assertText('silverssp.com, 9675, RESELLER');
+    $this->assertHeader('Content-Type', 'text/plain; charset=UTF-8', 'The ads.txt file was served with header Content-Type: "text/plain; charset=UTF-8"');
+  }
+
+  /**
+   * Test that the ads.txt path delivers content with an appropriate header.
+   */
+  public function testAppAdsTxtPath() {
+    $this->drupalGet('app-ads.txt');
+    $this->assertResponse(200, 'No local ads.txt file was detected, and an anonymous user is delivered content at the /ads.txt path.');
+    $this->assertText('onetwothree.com, 12345, DIRECT, AEC242');
+    $this->assertText('fourfivesix.com, 4536, DIRECT');
+    $this->assertText('97whatever.com, 9675, RESELLER');
     $this->assertHeader('Content-Type', 'text/plain; charset=UTF-8', 'The ads.txt file was served with header Content-Type: "text/plain; charset=UTF-8"');
   }
 

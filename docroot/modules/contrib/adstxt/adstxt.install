@@ -28,6 +28,24 @@ function adstxt_install() {
   }
 
   \Drupal::configFactory()->getEditable('adstxt.settings')->set('content', $content)->save();
+
+  $app_content = '';
+
+  // List of candidates for import.
+  $files = [
+    DRUPAL_ROOT . '/app-ads.txt',
+    DRUPAL_ROOT . '/sites/default/default.app-ads.txt',
+    drupal_get_path('module', 'adstxt') . '/app-ads.txt',
+  ];
+
+  foreach ($files as $file) {
+    if (file_exists($file) && is_readable($file)) {
+      $app_content = file_get_contents($file);
+      break;
+    }
+  }
+
+  \Drupal::configFactory()->getEditable('adstxt.settings')->set('app_content', $app_content)->save();
 }
 
 /**

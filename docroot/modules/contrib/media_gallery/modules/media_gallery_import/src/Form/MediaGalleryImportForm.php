@@ -107,7 +107,7 @@ class MediaGalleryImportForm extends FormBase {
       $gallery_csv = fopen($gallery_dir_path . '/gallery.csv', 'r');
       $files_dir = 'public://' . date('Y') . '-' . date('m');
 
-      if (!$this->fileSystemInterface->prepareDirectory($files_dir)) {
+      if (!$this->fileSystemInterface->prepareDirectory($files_dir, FileSystemInterface::CREATE_DIRECTORY)) {
         $this->messenger()->addMessage($this->t('Can not create directory to import files! Aborting.'));
         return;
       }

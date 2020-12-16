@@ -1,9 +1,16 @@
-Transliterate filenames for uploads
-https://www.drupal.org/project/transliterate_filenames
-======================================================
+CONTENTS OF THIS FILE
+---------------------
+
+ * Introduction
+ * Requirements
+ * Installation
+ * Configuration
+ * Maintainers
+
 
 INTRODUCTION
------------
+------------
+
 Transliteration for all uploading files (includes fields and ckeditor inline
 upload)
 
@@ -18,26 +25,36 @@ After release new core just disable this module (or not, if you don't want to
 click all checkboxes on all filefields for transliteration and use this one
 simple module for global settings).
 
+ * For a full description of the module, visit the project page:
+   https://drupal.org/project/transliterate_filenames
+
+ * To submit bug reports and feature suggestions, or to track changes:
+   https://drupal.org/project/issues/transliterate_filenames
+
+
 REQUIREMENTS
 ------------
 
-This module has no requires
+This module requires no modules outside of Drupal core.
+
 
 INSTALLATION
 ------------
 
-Install as you would normally install a contributed Drupal module. Visit:
-https://www.drupal.org/docs/8/extending-drupal-8/installing-drupal-8-modules
-for further information.
+ * Install as you would normally install a contributed Drupal module. Visit:
+   https://www.drupal.org/node/1897420 for further information.
+
 
 CONFIGURATION
 -------------
 
-Module has no configuration
+The module has no configuration
+
 
 MAINTAINERS
 -----------
 
 Current maintainers:
-* Alexander Dubovskoy - https://www.drupal.org/u/adubovskoy
-* Andrey Ivnitsky - https://www.drupal.org/u/itcrowd72
+ * Alexander Dubovskoy - https://www.drupal.org/u/adubovskoy
+ * Andrei Ivnitskii    - https://www.drupal.org/u/ivnish
+ * Krzysztof Domański  - https://www.drupal.org/u/krzysztof-domański

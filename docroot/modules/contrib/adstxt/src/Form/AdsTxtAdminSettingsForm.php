@@ -38,6 +38,14 @@ class AdsTxtAdminSettingsForm extends ConfigFormBase {
       '#rows' => 20,
     ];
 
+    $form['app_adstxt_content'] = [
+      '#type' => 'textarea',
+      '#title' => $this->t('Contents of app-ads.txt'),
+      '#default_value' => $config->get('app_content'),
+      '#cols' => 60,
+      '#rows' => 20,
+    ];
+
     return parent::buildForm($form, $form_state);
   }
 
@@ -48,6 +56,7 @@ class AdsTxtAdminSettingsForm extends ConfigFormBase {
     $config = $this->config('adstxt.settings');
     $config
       ->set('content', $form_state->getValue('adstxt_content'))
+      ->set('app_content', $form_state->getValue('app_adstxt_content'))
       ->save();
 
     parent::submitForm($form, $form_state);
