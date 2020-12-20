@@ -54,7 +54,7 @@ $header_shift_3: 1500px;
 
     .logo {
       grid-column-start: 1;
-      grid-column-end: 6;
+      grid-column-end: 9;
       display: flex;
       align-items: center;
       padding: 10px;
@@ -62,8 +62,14 @@ $header_shift_3: 1500px;
 
       @include breakpoint($header_shift_1, true) {
         grid-column-start: 1;
-        grid-column-end: 3;
-        justify-content: flex-end;
+        grid-column-end: 5;
+        justify-content: flex-start;
+      }
+
+      i {
+        font-size:2.5em;
+        padding-left:10px;
+        color:#FF69B4;
       }
 
       img {
@@ -79,8 +85,8 @@ $header_shift_3: 1500px;
 
       @include breakpoint($header_shift_1, true) {
         display: flex !important;
-        grid-column-start: 3;
-        grid-column-end: 10;
+        grid-column-start: 5;
+        grid-column-end: 12;
         order: 2;
         align-items: center;
       }
@@ -96,8 +102,7 @@ $header_shift_3: 1500px;
             background: none;
             display: block;
             font-size: 1rem;
-            padding: 5px 20px;
-            margin: 0 10px;
+            padding: 5px 15px;
             cursor: pointer;
 
             &:hover {
