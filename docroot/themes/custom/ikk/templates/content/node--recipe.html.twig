@@ -92,10 +92,6 @@
   {% endif %}
   {{ title_suffix }}
 
-
-
-
-
   {% if display_submitted %}
     <footer class="node__meta">
       {{ author_picture }}
@@ -108,25 +104,26 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
     <div class="top-content">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Recipes Text and Banner -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-5270832306245806"
+           data-ad-slot="5755103978"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
       {{ content.field_intro }}
 
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Recipes Text and Banner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5270832306245806"
-     data-ad-slot="5755103978"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
       {% if content.field_blog[0] is not empty %}
       <div class="jump-section">
         <p><a class="btn btn-dark" href="#jump">Jump To Recipe</a></p>
       </div>
       {% endif %}
+
 
       {% if content.field_video[0] is not empty %}
       <div class="video-container">
