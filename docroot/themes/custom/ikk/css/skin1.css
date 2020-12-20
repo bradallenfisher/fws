@@ -752,7 +752,7 @@ button, select {
           min-width: 275px; } }
     .header .header-inner .logo {
       grid-column-start: 1;
-      grid-column-end: 6;
+      grid-column-end: 9;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -769,11 +769,15 @@ button, select {
       @media (min-width: 990px) {
         .header .header-inner .logo {
           grid-column-start: 1;
-          grid-column-end: 3;
-          -webkit-box-pack: end;
-          -webkit-justify-content: flex-end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end; } }
+          grid-column-end: 5;
+          -webkit-box-pack: start;
+          -webkit-justify-content: flex-start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start; } }
+      .header .header-inner .logo i {
+        font-size: 2.5em;
+        padding-left: 10px;
+        color: #FF69B4; }
       .header .header-inner .logo img {
         width: 280px; }
     .header .header-inner .navigation {
@@ -790,8 +794,8 @@ button, select {
           display: -webkit-flex !important;
           display: -ms-flexbox !important;
           display: flex !important;
-          grid-column-start: 3;
-          grid-column-end: 10;
+          grid-column-start: 5;
+          grid-column-end: 12;
           -webkit-box-ordinal-group: 3;
           -webkit-order: 2;
               -ms-flex-order: 2;
@@ -808,8 +812,7 @@ button, select {
           background: none;
           display: block;
           font-size: 1rem;
-          padding: 5px 20px;
-          margin: 0 10px;
+          padding: 5px 15px;
           cursor: pointer; }
           .header .header-inner .navigation ul.horizontal-menu li a:hover, .header .header-inner .navigation ul.horizontal-menu li span:hover {
             color: #FF69B4;
