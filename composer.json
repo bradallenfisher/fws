@@ -79,6 +79,7 @@
         "drupal/vardumper": "^1.5",
         "drupal/views_bulk_edit": "^2.4",
         "drupal/views_bulk_operations": "^3.8",
+        "drupal/views_data_export": "^1.0",
         "drupal/webform": "^5.13",
         "drupal/xmlsitemap": "^1.0",
         "drupal/yoast_seo": "^1.5",
