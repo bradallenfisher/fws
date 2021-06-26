@@ -8,7 +8,7 @@ dependencies:
   - layout_bg:layout_bg
   - drupal:media
 
-# Information added by Drupal.org packaging script on 2020-09-28
-version: '8.x-1.0'
+# Information added by Drupal.org packaging script on 2021-01-19
+version: '8.x-1.1'
 project: 'layout_bg'
-datestamp: 1601300872
+datestamp: 1611067112

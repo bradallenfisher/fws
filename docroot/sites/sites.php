@@ -11,3 +11,4 @@ $sites['www.rvfastfix.com'] = 'rvfastfix';
 $sites['seostatecollege.com'] = 'seostatecollege';
 $sites['www.seostatecollege.com'] = 'seostatecollege';
 
+$sites['www.lgd8.bludigitalsolutions.com'] = 'lgd8';

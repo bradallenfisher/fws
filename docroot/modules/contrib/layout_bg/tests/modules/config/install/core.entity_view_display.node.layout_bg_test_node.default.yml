@@ -28,6 +28,7 @@ third_party_settings:
           overlay_opacity: '0.3'
           set_text_color: true
           text_color: '#ffffff'
+          link_underline: true
         components:
           b1eaf946-da91-4401-a14c-4ab118196f26:
             uuid: b1eaf946-da91-4401-a14c-4ab118196f26
@@ -121,6 +122,7 @@ third_party_settings:
           overlay_opacity: '0.3'
           set_text_color: true
           text_color: '#ffffff'
+          link_underline: true
         components:
           0789e2b1-d612-4d21-af74-51b20c7b5f79:
             uuid: 0789e2b1-d612-4d21-af74-51b20c7b5f79

@@ -36,37 +36,37 @@ class LayoutBgTest extends BrowserTestBase {
     // Node 1 has only a hero image, which is the fallback.
     $session = $this->assertSession();
     // One-column is first.
-    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout__region--content', 'This is the first node');
-    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout__region--content', 'Here is a short bit of text.');
+    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout__region--content', 'This is the first node');
+    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout__region--content', 'Here is a short bit of text.');
     $session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper img[alt="Node one should have alt text."]');
     // Two-column is last.
-    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout--twocol-section .layout__region--first', 'This is the first node');
-    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout--twocol-section .layout__region--second', 'Here is a short bit of text.');
+    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout--twocol-section .layout__region--first', 'This is the first node');
+    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout--twocol-section .layout__region--second', 'Here is a short bit of text.');
     $session->elementExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper img[alt="Node one should have alt text."]');
 
     $this->drupalGet('/node/2');
     // Node two has only a teaser image, which is first choice for background.
     $session = $this->assertSession();
     // One-column is first.
-    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout__region--content', 'Another node please!');
-    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout__region--content', 'Another node, another bit of text.');
+    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout__region--content', 'Another node please!');
+    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout__region--content', 'Another node, another bit of text.');
     $session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper img[alt="Node two should have alt text."]');
     // Two-column is last.
-    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout--twocol-section .layout__region--first', 'Another node please!');
-    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout--twocol-section .layout__region--second', 'Another node, another bit of text.');
+    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout--twocol-section .layout__region--first', 'Another node please!');
+    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout--twocol-section .layout__region--second', 'Another node, another bit of text.');
     $session->elementExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper img[alt="Node two should have alt text."]');
 
     $this->drupalGet('/node/3');
     // Node 3 has both images. Make sure only the teaser image renders.
     $session = $this->assertSession();
     // One-column is first.
-    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout__region--content', 'One more!');
-    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout__region--content', 'All for one and one for all.');
+    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout__region--content', 'One more!');
+    $session->elementTextContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout__region--content', 'All for one and one for all.');
     $session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper img[alt="I want this alt text."]');
     $session->elementNotExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper img[alt="I do not want this text."]');
     // Two-column is last.
-    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout--twocol-section .layout__region--first', 'One more!');
-    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color .layout--twocol-section .layout__region--second', 'All for one and one for all.');
+    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout--twocol-section .layout__region--first', 'One more!');
+    $session->elementTextContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline .layout--twocol-section .layout__region--second', 'All for one and one for all.');
     $session->elementExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper img[alt="I want this alt text."]');
     $session->elementNotExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper img[alt="I do not want this text."]');
 
@@ -76,7 +76,7 @@ class LayoutBgTest extends BrowserTestBase {
     $session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper.static-image');
     $session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper + .layout-bg-overlay');
     $session->elementAttributeContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper + .layout-bg-overlay', 'style', 'background-color: #000000; opacity: 0.3;');
-    $session->elementAttributeContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color', 'style', 'color: #ffffff;');
+    $session->elementAttributeContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container.center-content.set-text-color.link-underline', 'style', 'color: #ffffff;');
     // Two-column overlay and style attributes.
     $session->elementAttributeContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper', 'style', 'background-color: #aaaaaa;');
     $session->elementExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper.static-image');
@@ -103,13 +103,13 @@ class LayoutBgTest extends BrowserTestBase {
     $session->elementAttributeContains('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper', 'style', 'background-color: #aaaaaa;');
     $session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper.absolute-image');
     $session->elementNotExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper + .layout-bg-overlay');
-    $session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container:not(.center-content):not(.set-text-color)');
+    $session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container:not(.center-content):not(.set-text-color):not(.link-underline)');
     $this->assertFalse($session->elementExists('css', '.layout-bg-section:first-child .layout-bg-row .layout-bg-content-container')->hasAttribute('style'));
     // Two-column overlay and style attributes.
     $session->elementAttributeContains('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper', 'style', 'background-color: #aaaaaa;');
     $session->elementExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper.absolute-image');
     $session->elementNotExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-bg-container .layout-bg-bg-wrapper + .layout-bg-overlay');
-    $session->elementExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container:not(.center-content):not(.set-text-color)');
+    $session->elementExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container:not(.center-content):not(.set-text-color):not(.link-underline)');
     $this->assertFalse($session->elementExists('css', '.layout-bg-section:last-child .layout-bg-row .layout-bg-content-container')->hasAttribute('style'));
   }
 

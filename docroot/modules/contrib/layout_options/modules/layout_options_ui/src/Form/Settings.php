@@ -71,7 +71,7 @@ class Settings extends ConfigFormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('layout_options.settings');
-    $settings = $config->get('layout_overrides');
+    $settings = $config->get('layout_overrides') ?? [];
 
     $header = [
       'provider' => $this->t("Provider"),

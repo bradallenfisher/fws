@@ -23,7 +23,6 @@ use Drupal\user\UserInterface;
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\media_gallery\MediaGalleryListBuilder",
  *     "views_data" = "Drupal\views\EntityViewsData",
- *     "access" = "Drupal\media\MediaAccessControlHandler",
  *     "form" = {
  *       "add" = "Drupal\media_gallery\Form\MediaGalleryForm",
  *       "edit" = "Drupal\media_gallery\Form\MediaGalleryForm",
@@ -31,10 +30,11 @@ use Drupal\user\UserInterface;
  *     },
  *     "route_provider" = {
  *       "html" = "Drupal\Core\Entity\Routing\AdminHtmlRouteProvider",
- *     }
+ *     },
+ *     "access" = "Drupal\media_gallery\Access\MediaGalleryEntityAccessControlHandler"
  *   },
  *   base_table = "media_gallery",
- *   admin_permission = "administer media gallery",
+ *   admin_permission = "access media gallery overview",
  *   entity_keys = {
  *     "id" = "id",
  *     "label" = "title",

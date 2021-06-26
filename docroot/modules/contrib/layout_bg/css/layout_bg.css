@@ -59,9 +59,14 @@
 .layout-bg-content-container.set-text-color a:active,
 .layout-bg-content-container.set-text-color a:visited {
   color: inherit;
-  text-decoration: underline;
 }
 
+.layout-bg-content-container.set-text-color.link-underline a,
+.layout-bg-content-container.set-text-color.link-underline a:hover,
+.layout-bg-content-container.set-text-color.link-underline a:active,
+.layout-bg-content-container.set-text-color.link-underline a:visited {
+  text-decoration: underline;
+}
 
 .layout-bg-bg-container * {
   height: 100% !important;

@@ -60,6 +60,9 @@ trait LayoutBgTrait {
     if ($this->configuration['set_text_color']) {
       $build['content_attributes']['#attributes']['style'] = ["color: {$this->configuration['text_color']};"];
       $build['content_attributes']['#attributes']['class'][] = 'set-text-color';
+      if ($this->configuration['link_underline']) {
+        $build['content_attributes']['#attributes']['class'][] = 'link-underline';
+      }
     }
 
     if ($this->configuration['add_overlay']) {
@@ -91,6 +94,7 @@ trait LayoutBgTrait {
       'overlay_opacity' => '0.3',
       'set_text_color' => TRUE,
       'text_color' => '#FFFFFF',
+      'link_underline' => TRUE,
     ];
   }
 
@@ -133,6 +137,17 @@ trait LayoutBgTrait {
       '#title' => $this->t('Text Color'),
       '#default_value' => $this->configuration['text_color'],
       '#description' => $this->t('Choose a text color. Use a light color if your overlay/image are dark, for example.'),
+      '#states' => [
+        'visible' => [
+          ':input[name="layout_settings[set_text_color]"]' => ['checked' => TRUE],
+        ],
+      ],
+    ];
+    $form['link_underline'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Underline Links'),
+      '#default_value' => $this->configuration['link_underline'],
+      '#description' => $this->t('If checked, links will be underlined.'),
       '#states' => [
         'visible' => [
           ':input[name="layout_settings[set_text_color]"]' => ['checked' => TRUE],
@@ -183,6 +198,7 @@ trait LayoutBgTrait {
     $this->configuration['center_content'] = $form_state->getValue('center_content');
     $this->configuration['set_text_color'] = $form_state->getValue('set_text_color');
     $this->configuration['text_color'] = $form_state->getValue('text_color');
+    $this->configuration['link_underline'] = $form_state->getValue('link_underline');
     $this->configuration['add_overlay'] = $form_state->getValue('add_overlay');
     $this->configuration['overlay_color'] = $form_state->getValue('overlay_color');
     $this->configuration['overlay_opacity'] = $form_state->getValue('overlay_opacity');

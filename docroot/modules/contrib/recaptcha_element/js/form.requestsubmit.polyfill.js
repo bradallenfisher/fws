@@ -21,7 +21,7 @@
 
   function validateSubmitter(submitter, form) {
     submitter instanceof HTMLElement || raise(TypeError, "parameter 1 is not of type 'HTMLElement'");
-    submitter.type === "submit" || raise(TypeError, "The specified element is not a submit button");
+    submitter.type === "submit" || submitter.type === "image" || raise(TypeError, "The specified element is not a submit button");
     submitter.form === form || raise(DOMException, "The specified element is not owned by this form element", "NotFoundError");
   }
 

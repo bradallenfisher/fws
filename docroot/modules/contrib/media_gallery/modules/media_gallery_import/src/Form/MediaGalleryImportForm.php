@@ -94,12 +94,16 @@ class MediaGalleryImportForm extends FormBase {
 
     $galleries_csv = fopen($import_dir_path . '/galleries.csv', 'r');
 
-    while (($galleries_data = fgetcsv($galleries_csv, 255, ';')) !== FALSE) {
+    while (($galleries_data = fgetcsv($galleries_csv, 0, ';')) !== FALSE) {
       $gallery_id = $galleries_data[0];
       $gallery_title = $galleries_data[1];
+      $gallery_desc = $galleries_data[2];
 
       // Create Gallery if doesn't exists.
-      $gallery = $galleries_storage->create(['title' => $gallery_title]);
+      $gallery = $galleries_storage->create([
+        'title' => $gallery_title,
+        'description' => $gallery_desc,
+      ]);
       $gallery->save();
 
       $gallery_dir = $import_dir . '/' . $gallery_id;

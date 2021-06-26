@@ -1,6 +1,6 @@
 layout_bg:
   css:
-    theme:
+    component:
       css/layout_bg.css: {}
 
 layout_bg_onecol:

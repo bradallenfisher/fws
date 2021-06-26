@@ -25,6 +25,9 @@ layout_plugin.settings.layout_bg_twocol:
     text_color:
       type: string
       label: 'Text Color'
+    link_underline:
+      type: boolean
+      label: 'Link Underline'
 
 layout_plugin.settings.layout_bg_onecol:
   type: layout_plugin.settings
@@ -53,3 +56,6 @@ layout_plugin.settings.layout_bg_onecol:
     text_color:
       type: string
       label: 'Text Color'
+    link_underline:
+      type: boolean
+      label: 'Link Underline'

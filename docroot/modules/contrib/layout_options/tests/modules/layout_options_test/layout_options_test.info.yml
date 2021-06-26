@@ -4,8 +4,9 @@ description: 'Support module for testing layout optionss.'
 package: Testing
 # version: VERSION
 core: 8.x
+core_version_requirement: ^8 || ^9
 
-# Information added by Drupal.org packaging script on 2020-02-24
-version: '8.x-1.0-rc2'
+# Information added by Drupal.org packaging script on 2021-02-01
+version: '8.x-1.0'
 project: 'layout_options'
-datestamp: 1582562569
+datestamp: 1612212974

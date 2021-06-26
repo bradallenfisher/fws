@@ -6,13 +6,25 @@ core: 8.x
 libraries:
   - lead_gen/global-styling
   - lead_gen/global-scripts
-  - lead_gen/poppins
-  - lead_gen/slick-css
-  - lead_gen/slick-css-theme
-  - lead_gen/slick-js
 
-base theme: classy
-
+base theme: false
+libraries-override:
+  system/base: false
+  system/admin: false
+  system/maintenance: false
+  system/drupal.system: false
+  system/drupal.system.modules: false
+  system/diff: false
+  system/drupal.system.date: false
+  contextual/drupal.contextual-links: false
+  quickedit/quickedit: false
+  views/views.module: false
+  drupal/paragraphs.unpublished: false
+  paragraphs/drupal.paragraphs.unpublished: false
+  core/jquery.ui:
+    css:
+      component:
+        assets/vendor/jquery.ui/themes/base/core.css: false
 regions:
   header: Header
   contact: Contact
