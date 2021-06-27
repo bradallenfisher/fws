@@ -12,3 +12,4 @@ $sites['seostatecollege.com'] = 'seostatecollege';
 $sites['www.seostatecollege.com'] = 'seostatecollege';
 
 $sites['www.lgd8.bludigitalsolutions.com'] = 'lgd8';
+$sites['www.dt.fisherwebsolutions.com'] = 'dt';
