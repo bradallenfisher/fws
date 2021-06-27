@@ -5,11 +5,6 @@ package: ikk
 core: 8.x
 libraries:
   - ikk/global-styling
-  - ikk/global-scripts
-  - ikk/karla
-  - ikk/slick-css
-  - ikk/slick-css-theme
-  - ikk/slick-js
 
 base theme: classy
 
