@@ -104,20 +104,7 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
     <div class="top-content">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Recipes Text and Banner -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-5270832306245806"
-           data-ad-slot="5755103978"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
       {{ content.field_intro }}
-
-
       {% if content.field_blog[0] is not empty %}
       <div class="jump-section">
         <p><a class="btn btn-dark" href="#jump">Jump To Recipe</a></p>
@@ -130,25 +117,8 @@
         {{ content.field_video}}
       </div>
       {% endif %}
-
       {{ content.field_blog }}
     </div>
-
-    {% if content.field_blog[0] is not empty %}
-    <div class="google-middle-ad">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Recipes Text and Banner -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-5270832306245806"
-           data-ad-slot="5755103978"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-    {% endif %}
 
     <div id="jump"></div>
 
