@@ -1602,7 +1602,7 @@ a:visited {
 // Typography
 ///////////////////////////////////////*/
 body, p {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   color: #191a1c;
   font-weight: 400;
   font-size: 1.2rem;
@@ -1614,7 +1614,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-weight: 700;
   color: #191a1c;
   margin-bottom: 20px;
