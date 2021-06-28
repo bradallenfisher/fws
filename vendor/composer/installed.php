@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '7eb3ce377cc5c03f530a96759d9606fe5bd804a0',
+        'reference' => '912fc2ec3bf3b29f18dedcca65f76dba37415bf4',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -227,6 +227,15 @@
             'install_path' => __DIR__ . '/../cweagans/composer-patches',
             'aliases' => array(),
             'reference' => '9888dcc74993c030b75f3dd548bb5e20cdbd740c',
+            'dev_requirement' => false,
+        ),
+        'd8-contrib-modules/cloudflarephpsdk' => array(
+            'pretty_version' => '1.0.0-alpha5',
+            'version' => '1.0.0.0-alpha5',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../d8-contrib-modules/cloudflarephpsdk',
+            'aliases' => array(),
+            'reference' => '4bd00bacdb3aa56e88cbd871c3db7925eb0a9e66',
             'dev_requirement' => false,
         ),
         'dflydev/dot-access-data' => array(
@@ -480,6 +489,15 @@
             'replaced' => array(
                 0 => '8.9.16',
             ),
+        ),
+        'drupal/cloudflare' => array(
+            'pretty_version' => '1.0.0-beta2',
+            'version' => '1.0.0.0-beta2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/cloudflare',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-beta2',
+            'dev_requirement' => false,
         ),
         'drupal/coder' => array(
             'pretty_version' => '8.3.13',
@@ -1306,6 +1324,15 @@
             'reference' => '8.x-3.5',
             'dev_requirement' => false,
         ),
+        'drupal/purge' => array(
+            'pretty_version' => '3.0.0',
+            'version' => '3.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/purge',
+            'aliases' => array(),
+            'reference' => '8.x-3.0',
+            'dev_requirement' => false,
+        ),
         'drupal/quickedit' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1342,7 +1369,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '7eb3ce377cc5c03f530a96759d9606fe5bd804a0',
+            'reference' => '912fc2ec3bf3b29f18dedcca65f76dba37415bf4',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(
