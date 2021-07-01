@@ -418,6 +418,14 @@ table {
         margin-right: 40px;
         width: inherit; } }
 
+.view-blog .view-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
+
+.node--type-blog h2 {
+  font-size: 1em; }
+
 .container {
   box-sizing: border-box;
   max-width: 1350px;
@@ -808,7 +816,8 @@ button, select {
           display: block;
           font-size: 1rem;
           padding: 5px 15px;
-          cursor: pointer; }
+          cursor: pointer;
+          font-weight: bold; }
           .header .header-inner .navigation ul.horizontal-menu li a:hover, .header .header-inner .navigation ul.horizontal-menu li span:hover {
             color: #FF69B4;
             background: white;
@@ -960,6 +969,9 @@ a:visited {
 
 .horizontal-menu li li {
   min-width: 300px; }
+
+.menu li a {
+  font-weight: bold; }
 
 /* Icon 1 */
 #nav-icon {

@@ -1,7 +1,10 @@
 .menu-item {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .horizontal-menu li li {
   min-width: 300px;
+}
+.menu li a {
+	font-weight: bold;
 }

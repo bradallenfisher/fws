@@ -1,8 +1,0 @@
-<?php
-
-
-$sites['insidekellyskitchen.com'] = 'insidekellyskitchen';
-$sites['www.insidekellyskitchen.com'] = 'insidekellyskitchen';
-$sites['insidekellyskitchen.test'] = 'insidekellyskitchen';
-
-
