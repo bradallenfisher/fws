@@ -25,7 +25,7 @@ $palettes: (
 @mixin reg_font {
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: palette(mono,dark);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.2rem;
   line-height: 2;
 }

@@ -18,5 +18,6 @@
     "autoprefixer": "^9.7.3",
     "gulp-postcss": "^8.0.0",
     "gulp": "^3.9.1"
-  }
+  },
+  "dependencies": {}
 }

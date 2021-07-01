@@ -117,11 +117,13 @@
         {{ content.field_video}}
       </div>
       {% endif %}
-
-      {{ content.field_blog }}
+      {% if content.field_blog[0] is not empty %}
+        {{ content.field_blog }}
+      {% endif %}
     </div>
+    {% if content.field_blog[0] is not empty %}
     <div id="jump"></div>
-
+    {% endif %}
     <div class="recipe-section">
       {{ content.field_recipe_image }}
       <h2>{{ label }}</h2>

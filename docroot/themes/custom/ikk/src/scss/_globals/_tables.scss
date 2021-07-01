@@ -1,0 +1,66 @@
+table {
+    cursor: default;
+    font-size: .9em;
+    border-width: 1px;
+    border-color: lightgray;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  table caption {
+    font-size: 1.4em;
+    text-align: left;
+    background:inherit;
+    padding: 10px 0;
+    color: palette(brand, main);
+    text-align: left;
+  }
+
+  table th {
+	  text-align: left;
+    vertical-align: middle;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 8px;
+    background-color: inherit;
+    color: palette(brand, main);
+
+    a {
+
+      img {
+        position: absolute;
+        right: 5px;
+        bottom:15px;
+      }
+    }
+  }
+
+  table th[scope=col] {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  table th[scope=row] {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  table tr:nth-child(even) td {
+    background-color: #F1F1F1;
+  }
+
+  table td {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 8px;
+    background-color: #ffffff;
+  }
+
+  table th {
+
+    a {
+      color: palette(mono, white);
+    }
+  }
