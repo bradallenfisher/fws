@@ -1036,7 +1036,6 @@ a:visited {
   background: url(../img/pinterest.svg); }
 
 .click-search-form {
-  display: none;
   padding: 20px; }
   .click-search-form #edit-submit {
     display: none; }
@@ -1598,13 +1597,70 @@ a:visited {
 .width100 {
   width: 100%; }
 
+table {
+  cursor: default;
+  font-size: .9em;
+  border-width: 1px;
+  border-color: lightgray;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%; }
+
+table caption {
+  font-size: 1.4em;
+  text-align: left;
+  background: inherit;
+  padding: 10px 0;
+  color: #FF69B4;
+  text-align: left; }
+
+table th {
+  text-align: left;
+  vertical-align: middle;
+  position: relative;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 8px;
+  background-color: inherit;
+  color: #FF69B4; }
+  table th a img {
+    position: absolute;
+    right: 5px;
+    bottom: 15px; }
+
+table th[scope=col] {
+  text-align: left;
+  font-weight: bold; }
+
+table th[scope=row] {
+  text-align: left;
+  font-weight: bold; }
+
+table tr:nth-child(even) td {
+  background-color: #F1F1F1; }
+
+table td {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 8px;
+  background-color: #ffffff; }
+
+table th a {
+  color: #fff; }
+
+.block-page-title-block {
+  box-sizing: border-box;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*////////////////////////////////////////
 // Typography
 ///////////////////////////////////////*/
 body, p {
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: #191a1c;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.2rem;
   line-height: 2; }
 
@@ -1628,12 +1684,6 @@ h1 {
   font-size: 3rem;
   letter-spacing: -2px;
   margin: 10px 0; }
-
-h1.page-title {
-  text-align: center;
-  padding: 20px 0;
-  background: #f9f9fb;
-  margin: 0; }
 
 h2 {
   font-size: 2.5rem;
