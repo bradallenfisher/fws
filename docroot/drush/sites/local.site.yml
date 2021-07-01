@@ -4,7 +4,7 @@ seostatecollege:
   uri: www.seostatecollege.fws.test
 insidekellyskitchen:
   root: /var/www/html/fws/drupal/docroot
-  uri: www.insidekellyskitchen.test
+  uri: insidekellyskitchen.test
 rvfastfix:
   root: /var/www/html/fws/drupal/docroot
   uri: www.rvfastfix.fws.test
