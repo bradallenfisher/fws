@@ -2,7 +2,7 @@
 seostatecollege:
   root: /var/www/html/fws/drupal/docroot
   uri: www.seostatecollege.fws.test
-insidekellyskitchen:
+ikk:
   root: /var/www/html/fws/drupal/docroot
   uri: insidekellyskitchen.test
 rvfastfix:

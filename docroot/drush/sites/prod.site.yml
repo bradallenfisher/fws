@@ -5,7 +5,7 @@ seostatecollege:
   uri: www.seostatecollege.com
   host: 172.104.215.47
   user: fws
-insidekellyskitchen:
+ikk:
   root: /var/www/html/fws/drupal/docroot
   uri: www.insidekellyskitchen.com
   host: 172.104.215.47
