@@ -1,10 +1,10 @@
 .view-blog {
   .view-content{
-	  display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-
-
+	  @include breakpoint(650px, true){
+		  display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 1rem;
+	  }
   }
 }
 

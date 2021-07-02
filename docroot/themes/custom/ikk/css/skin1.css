@@ -418,10 +418,11 @@ table {
         margin-right: 40px;
         width: inherit; } }
 
-.view-blog .view-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem; }
+@media (min-width: 650px) {
+  .view-blog .view-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; } }
 
 .node--type-blog h2 {
   font-size: 1em; }

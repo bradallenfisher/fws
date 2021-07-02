@@ -84,7 +84,7 @@
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content') }}>
   {{ content.field_blog_image }}
-    <h2>{{ label }}</h2>
+    <h2><a href="{{ url }}">{{ label }}</a></h2>
     {{ content.body }}
   </div>
 </article>
