@@ -6,20 +6,13 @@ $header_shift_3: 1500px;
 
 .header {
   background: white;
-  padding-top: 5px;
-
-  @include breakpoint($header_shift_1, true) {
-    padding-top: 15px;
-  }
+  @include container();
 
   .header-inner {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
 
-    @include breakpoint ($header_shift_1, true) {
-      padding: 0 20px;
-    }
     .click-search-form.open {
       grid-column-start: 2;
       grid-column-end: 12;
@@ -57,7 +50,6 @@ $header_shift_3: 1500px;
       grid-column-end: 9;
       display: flex;
       align-items: center;
-      padding: 10px;
       order: 1;
 
       @include breakpoint($header_shift_1, true) {
